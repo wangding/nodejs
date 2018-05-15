@@ -6,8 +6,8 @@
 
 在 Win10 操作系统下载下列软件包：
 
-- 从百度软件中心下载 [VMWare Worksation Pro 最新版](http://rj.baidu.com/soft/detail/13808.html)
-- 从百度软件中心下载 [XShell 最新版](http://rj.baidu.com/soft/detail/15201.html)
+- 从腾讯软件中心下载 VMWare Worksation Pro 最新版  
+- 从腾讯软件中心下载 XShell 最新版  
 - 从 CentOS 官网下载 [CentOS 安装镜像包](http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Everything-1708.iso)
 
 ## 安装软件包
