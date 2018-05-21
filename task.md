@@ -1,26 +1,3 @@
-# 第五课：流：最强大和最易误解的功能
-
-要求：  
-- 阅读 [流 API 资料](http://nodejs.cn/api/stream.html)  
-- 阅读 [流 资料](http://javascript.ruanyifeng.com/nodejs/stream.html)  
-
-- 创建 09-stream 目录  
-
-- 编写 01-stdin-stdout.js 脚本  
-
-- 编写 02-static-http-server.js 脚本  
-
-- 编写 02-static-http-server-stream.js 脚本  
-
-- 编写 03-readable-push.js 脚本  
-
-- 编写 03-readable-pull.js 脚本  
-
-- 编写 03-my-readable.js 脚本  
-
-- 编写 04-green-stream.js 脚本  
-  - 阅读 [ANSI 转义码资料](https://en.wikipedia.org/wiki/ANSI_escape_code)  
-
 # 第六课：文件系统：同步/异步操作
 
 要求：  
