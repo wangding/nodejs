@@ -271,7 +271,7 @@ browser-sync --version  // 应该看到版本号：2.23.6 或以上
 
 ## 检查 vim 插件
 
-1. 验证 JavaScript 代码补全插件，操作步骤如下：
+- 验证 JavaScript 代码补全插件，操作步骤如下：
 
 ```bash
 cd
@@ -309,7 +309,7 @@ process.             // 输入 process 然后按 . 看一下是否有 process �
 :q!                  // 不保存退出
 ```
 
-2. 验证 emmet vim 插件，操作步骤如下：
+- 验证 emmet vim 插件，操作步骤如下：
 
 ```bash
 vim  a.html          // 命令行打开 vim 编辑器
@@ -319,7 +319,7 @@ i                    // 进入插入模式
 :q!                  // 不保存退出
 ```
 
-3. 验证 jsdoc vim 插件，操作步骤如下：
+- 验证 jsdoc vim 插件，操作步骤如下：
 
 ```bash
 vim  a.js            // 命令行打开 vim 编辑器
@@ -334,7 +334,7 @@ ESC                  // 退出插入模式，进入普通模式，移动光标�
 :q!                  // 不保存退出
 ```
 
-4. 验证 CSS 代码补全功能，操作步骤如下：
+- 验证 CSS 代码补全功能，操作步骤如下：
 
 ```bash
 vim  a.css           // 命令行打开 vim 编辑器
