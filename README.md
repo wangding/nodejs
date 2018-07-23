@@ -2,6 +2,8 @@
 
 Node.js 应用开发课程资料。
 
+[Node.js 应用开发课程大纲](http://naotu.baidu.com/file/78f10df711456bbfed4cd77fcfa19045?token=7e206da2e15795da)
+
 王顶老师的 QQ 学习交流群：301862163，加群时请报上自己的真实姓名，以及正在学习的课程内容。
 
 <img src="http://seide.wangding.in/student-group.jpg" height="400">
