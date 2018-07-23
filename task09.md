@@ -1,66 +1,57 @@
 # 第九课：网络
 
-## 任务 1：
+## 任务 1：阅读 Node.js API 资料
 
-要求：  
-- 阅读 [net API 资料](http://nodejs.cn/api/net.html)  
-- 阅读 [net 资料](http://javascript.ruanyifeng.com/nodejs/net.html)  
+- [net API 资料](http://nodejs.cn/api/net.html)  
 
-## 任务 1：
+## 任务 2：TCP 服务端程序
 
-- 创建 11-tcp 目录
+- 创建 13-tcp 目录
 - 编写 01-server.js 脚本  
+- 接收客户端的字符数据
+- 收到 `ls` 时，将当前目录的文件名以及子目录名发送到客户端
+- 收到 `quit` 时，服务程序退出运行
+- 监听 8080 端口
+- 用 telnet 测试本程序
 
-## 任务 2：
+## 任务 3：TCP 客户端程序
 
-- 编写 02-my-telnet.js 脚本  
-- 阅读 [dgram API 资料](http://nodejs.cn/api/dgram.html)  
+- 编写 02-my-telnet.js 脚本
+- 支持命令行参数
+- 第一个命令行参数是需要连接的远程服务器 IP 地址
+- 第二个命令行参数是需要连接的远程服务器端口号
+- 接收键盘输入字符
+- 将接收到的键盘数据发送到远程服务器上
+- 将远程服务器的响应数据打印到控制台上
+- 连接到 HTTP 服务器上做测试，测试服务器地址：http://sample.wangding.in/web/one-div.html
+- 连接到 FTP 服务器上做测试，测试服务器地址：ftp://ftp.gnu.org
 
-## 任务 3：
+## 任务 4：阅读 Node.js API 资料
 
-- 创建 12-udp 目录  
-- 编写 01-server.js 脚本  
+- [dgram API 资料](http://nodejs.cn/api/dgram.html)  
 
-## 任务 4：
+## 任务 5：UDP 服务端程序
 
-- 编写 02-my-nc.js 脚本  
-- 阅读 [http API 资料](http://nodejs.cn/api/http.html)  
-- 阅读 [http 资料](http://javascript.ruanyifeng.com/nodejs/http.html)  
+- 创建 14-udp 目录  
+- 编写 01-server.js 脚本
+- 监听 8080 端口
+- 收到客户端消息后，将客户端消息打印到控制台
+- 用 nc 测试 UDP 服务端程序
 
-## 任务 5：
+## 任务 6：UDP 客户端程序
 
-- 创建 13-http 目录  
-- 编写 01-server.js 脚本  
+- 编写 02-my-nc.js 脚本
+- 支持命令行参数
+- 第一个命令行参数是需要连接的远程服务器 IP 地址
+- 第二个命令行参数是需要连接的远程服务器端口号
+- 接收键盘输入字符
+- 将接收到的键盘数据发送到远程服务器上
 
-## 任务 6：
+## 任务 7：域名解析
 
-- 编写 02-my-crul.js 脚本  
-
-## 任务 7：
-
-- 编写 03-get-weather.js 脚本，实现以下功能：  
-  - 调用天气预报 API，实现城市天气查询：https://www.jisuapi.com/api/weather/  
-  - 用 GET 方法请求天气信息  
-
-## 任务 8：
-
-- 编写 03-get-repos.js 脚本，实现以下功能：  
-  - 获取某个账户的所有 GitHub 仓库的数量和名称  
-  - API 地址：`https://api.github.com/search/repositories?q=user:wangding`  
-  - API 参考：https://developer.github.com/v3/
-  - 运行效果如下图所示：  
-  - ![github-api，王顶，408542507@qq.com](./images/github-api.png)  
-
-## 任务 9：
-
-- 编写 04-post.js 脚本  
-- 编写 04-post-weather.js 脚本，实现以下功能：
-  - 调用天气预报 API，实现城市天气查询：https://www.jisuapi.com/api/weather/  
-  - 用 POST 方法请求天气信息  
-- 阅读 [dns API 资料](http://nodejs.cn/api/net.html)  
-
-## 任务 10：
-
-- 创建 14-dns 目录
+- 创建 15-dns 目录
 - 编写 01-dns.js 脚本  
+- 支持命令行参数
+- 命令行参数是需要解析的域名
+- 将域名解析的结果 IP 地址打印到控制台
 
