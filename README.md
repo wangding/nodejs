@@ -6,7 +6,7 @@ Node.js 应用开发课程资料。
 
 王顶老师的 QQ 学习交流群：301862163，加群时请报上自己的真实姓名，以及正在学习的课程内容。
 
-<img src="http://seide.wangding.in/student-group.jpg" height="400">
+<img src="images/student-group.jpg" height="400">
 
 ## <img src="https://raw.githubusercontent.com/wangding/courses/master/images/video.png" height="30">课程视频
 
