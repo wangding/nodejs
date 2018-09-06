@@ -9,8 +9,8 @@
     "type": "git",
     "url": "git+https://github.com/wangding/nodejs.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "wangding",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/wangding/nodejs/issues"
   },

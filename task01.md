@@ -23,17 +23,19 @@
 - 下载并安装 xshell 5  
 - 配置 mocha 虚拟机的网卡 IP 地址  
 - 配置 mocha 虚拟机的 git 参数，包括：user.name 和 user.email  
+- 具体操作请参考：[教学视频](https://ke.qq.com/webcourse/index.html#cid=244604&term_id=100288380&taid=1695519944719228&vid=e1421d3pl7e)
 
 **方式二：从头安装**
 
-- 参考：[Node.js 开发环境搭建](./setup-dev-env.md)
+- 安装步骤请参考：[Node.js 开发环境搭建](./setup-dev-env.md)
+- 安装 CentOS 虚拟机，请参考：[教学视频](http://edu.51cto.com/center/course/lesson/index?id=166501)
 
 ## 任务 5：编写 hello world 命令行程序
 
 要求：
 - 创建 nodejs-demo 目录
 - 把 .tern-project 代码自动补全配置文件，放到 nodejs-demo 目录下，操作方法如下：
-  - 在 nodejs-demo 目录下，运行 `wget http://sample.wangding.in/nodejs/tern-project`  
+  - 在 nodejs-demo 目录下，运行 `wget https://sample.wangding.in/nodejs/tern-project`  
   - 在 nodejs-demo 目录下，运行 `mv tern-project .tern-project`  
 - 创建 01-introduction 目录
 - 编写 01-hello-world.js
