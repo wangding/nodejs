@@ -3,6 +3,7 @@
 ## 任务 1：静态代码检查
 
 要求：
+- 浏览 [ESLint 官网](https://cn.eslint.org/)
 - 在 nodejs-demo 目录下初始化 ESLint 配置文件
 - 如果不希望 ESLint 检查某些文件夹或文件，则配置 .eslintignore 文件
 - 用 ESLint 工具检查自己写过的所有代码
