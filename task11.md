@@ -1,5 +1,104 @@
 # 第十一课：web 应用开发
 
+## 任务 1：解析 HTTP 方法
+
+要求：
+- 创建文件夹 17-web
+- 编写脚本代码 01-method-parse.js
+- 使用 http 模块创建 web 服务监听 8080 端口
+- 解析 HTTP 请求的方法
+- 使用 switch case 语句
+- 至少解析 GET、POST、PUT 和 DELETE 四个 HTTP 方法
+- 需要在 web 服务器程序中打印 HTTP 请求的方法名称
+- 需要给客户端反馈信息
+- 用 curl -X 参数测试各种 HTTP 请求方法
+
+## 任务 2：解析 URL
+
+要求：
+- 编写脚本代码 02-url-parse.js
+- 使用 http 模块、url 模块以及 querystring 模块
+- 创建 web 服务监听 8080 端口
+- 对 HTTP 请求的 URL 地址进行解析
+- 在控制台打印解析的结果
+- 对 URL 中的查询字符串进行解析，在控制台打印结果
+- 解析给定的 url 地址：`http://wangding:123@www.baidu.com:8080/a/b/c?age=20&gender=M#/d/e/f`，并在控制台打印解析的结果
+
+## 任务 3：解析 HTTP 请求头
+
+要求：
+- 编写脚本代码 03-req-header-parse.js
+- 使用 http 模块创建 web 服务监听 8080 端口
+- 在控制台打印完整的 http 请求头信息
+- 在控制台打印 http 请求头信息中的 User-Agent、Host 和 Content-Type 三个字段信息
+- 在 curl 程序中向 web 服务发送特定的头部字段信息 `Content-Type:appliction/json`，测试服务程序
+
+## 任务 4：处理 HTTP 响应
+
+要求：
+- 编写脚本代码 04-response.js
+- 使用 http 模块创建 web 服务监听 8080 端口
+- 当客户端请求网站根路径（/）时，发送给客户端一个 h1 格式的 hello world! 网页
+- 并且发送响应状态码 200
+- 并且发送响应头字段列表：Content-Type: text/html 以及 Content-Length: XXX（这三个 X 表示响应体的实际字节数）
+- 当客户端请求网站其他路径时，发送状态码 404，以及 Resource not found！信息
+- 用 curl 程序测试这个 web 服务的不同 URL，查看响应起始行、响应报文头以及响应体
+
+## 任务 5：处理上传数据
+
+要求：
+- 编写脚本代码 05-upload.js
+- 使用 http 模块创建 web 服务监听 8080 端口
+- 请求的 URL 不是网站根路径（/）时，提示客户端 404 错误
+- 如果 HTTP 请求的方法不是 POST 时，提示客户端 404 错误
+- 接收客户端 HTTP POST 请求中携带的数据
+- 将收到的数据打印到控制台上
+- 用 curl 程序测试服务程序，包括以下一些场景
+- 用 curl 向服务程序发送 FORM 表单数据
+- 用 curl 向服务程序发送 JSON 数据
+- 用 curl 向服务程序上传文件
+
+## 任务 6：处理 GET 请求的 FORM 表单
+
+要求：
+- 编写脚本代码 05-form-get.js
+- 使用 http 模块创建 web 服务监听 8080 端口
+- 当 HTTP 请求的 URL 不是网站根路径（/）时，提示客户端 404 错误
+- 向客户端发送一个 TODO list 表单页面，页面上用户可以填写待办事项
+- 用户点击提交按钮后，表单使用 HTTP 的 GET 方法提交到服务程序
+- 服务程序接收表单数据，并将待办事项放到 TODO list 表单页面，发送给客户端
+- 用 chrome 浏览器测试服务程序
+- 用 curl 测试服务程序
+- TODO list 表单页面样式如下：  
+  ![form-get，王顶，node.js，408542507@qq.com](./images/todo-list.png)  
+
+## 任务 7：处理 POST 请求的 FORM 表单
+
+要求：
+- 编写脚本代码 05-form-post.js
+- 使用 http 模块创建 web 服务监听 8080 端口
+- 当 HTTP 请求的 URL 不是网站根路径（/）时，提示客户端 404 错误
+- 当收到客户端 HTTP GET 请求时，发送给客户端 TODO list 表单页面
+- 页面上用户可以填写待办事项
+
+## 任务 8：网页 Linux 命令行
+
+要求：
+- 编写 05-form-cmd.js 脚本  
+- 基于 05-form-post.js 代码框架  
+- 用户在表单页面上提交 linux 命令  
+- 服务程序利用子进程技术执行 linux 命令  
+- 服务程序将 linux 命令的运行结果返回到网页上  
+- 命令运行结果要求能够正确的换行显示  
+- 程序的运行效果，如下图所示：  
+  ![form-cmd，王顶，node.js，408542507@qq.com](./images/form-cmd.gif)  
+
+## 任务 9：处理文件上传
+
+要求：
+- 编写 05-upload-file.js 脚本
+
+
 ## 任务 1：提交代办事项表单
 
 要求：
@@ -8,36 +107,6 @@
 - 编写 03-form-html.js 脚本，实现 03-form.js 的功能，但是有以下要求：  
   - 将 03-form.js 脚本中的 HTML 代码，保存在单独的文件中 template.html，内容如下：  
   - 03-form-html.js 程序读取 template.html 模板文件，并将占位符 % 替换为具体的待办事项数据  
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Todo list</title>
-  </head>
-  
-  <body>
-    <h1>Todo List</h1>
-    <form method="post" action="/">
-      <p><input type="text" name="item" id="item"/>
-      <input type="submit" value="Add Item" /></p>
-    </form>
-    <ul>%</ul>
-  </body>
-</html>
-```
-
-## 任务 2：网页 Linux 命令行
-
-要求：
-- 编写 03-form-cmd.js 脚本  
-- 基于 03-form.js 程序框架  
-- 用户在表单中提交 linux 命令  
-- 服务程序利用子进程技术执行 linux 命令  
-- 服务程序将 linux 命令的运行结果返回到网页上  
-- 命令运行结果要求能够正确的换行显示  
-- 程序的运行效果，如下图所示：  
-- ![form-cmd，王顶，node.js，408542507@qq.com](./images/form-cmd.gif)  
 
 ## 任务 3：实现 RESTful API
 
