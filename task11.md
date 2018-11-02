@@ -1,122 +1,103 @@
-# 第十一课：web 应用开发
+# 第十一课：HTTP 高级编程
 
-## 任务 1：解析 HTTP 方法
+## 任务 1：Cookie 基本操作
 
 要求：
-- 创建文件夹 17-web
-- 编写脚本代码 01-method-parse.js
+- 创建 17-http-advanced 目录
+- 编写 01-cookie-opt.js 脚本
 - 使用 http 模块创建 web 服务监听 8080 端口
-- 解析 HTTP 请求的方法
-- 使用 switch case 语句
-- 至少解析 GET、POST、PUT 和 DELETE 四个 HTTP 方法
-- 需要在 web 服务器程序中打印 HTTP 请求的方法名称
-- 需要给客户端反馈信息
-- 用 curl -X 参数测试各种 HTTP 请求方法
+- 解析请求头中的 Cookie 数据，将解析的 Cookie 信息打印到控制台上
+- 在响应头中封装 Cookie 数据，将响应数据发送给客户端
 
-## 任务 2：解析 URL
+## 任务 2：Cookie 状态保持
 
 要求：
-- 编写脚本代码 02-url-parse.js
-- 使用 http 模块、url 模块以及 querystring 模块
-- 创建 web 服务监听 8080 端口
-- 对 HTTP 请求的 URL 地址进行解析
-- 在控制台打印解析的结果
-- 对 URL 中的查询字符串进行解析，在控制台打印结果
-- 解析给定的 url 地址：`http://wangding:123@www.baidu.com:8080/a/b/c?age=20&gender=M#/d/e/f`，并在控制台打印解析的结果
-
-## 任务 3：解析 HTTP 请求头
-
-要求：
-- 编写脚本代码 03-req-header-parse.js
+- 编写 01-cookie-status.js 脚本
 - 使用 http 模块创建 web 服务监听 8080 端口
-- 在控制台打印完整的 http 请求头信息
-- 在控制台打印 http 请求头信息中的 User-Agent、Host 和 Content-Type 三个字段信息
-- 在 curl 程序中向 web 服务发送特定的头部字段信息 `Content-Type:appliction/json`，测试服务程序
+- 客户端程序每次请求服务程序时，对总请求的次数计数，打印到控制台
+- 将客户端请求的次数信息保存到客户端的 Cookie 中
+- 将请求的次数信息发送给客户端
+- 用不同的浏览器测试服务程序
+- 请思考：
+  - 为什么不同的浏览器上请求的次数不同？
+  - 为什么不同的浏览器上请求的次数不是服务器接收到请求的总和？
+  - 为什么 chrome 浏览器每次刷新，请求的次数加 2？如何改为加 1？
+  - 为什么服务程序重启后，客户端再次请求服务程序，客户端的请求次数没有清零？
+  - 人为修改客户端 Cookie 信息，再次请求服务程序，看看收到的反馈信息
 
-## 任务 4：处理 HTTP 响应
+## 任务 3：Cookie 辅助登录
 
 要求：
-- 编写脚本代码 04-response.js
+- 编写 01-cookie-auth.js 脚本
 - 使用 http 模块创建 web 服务监听 8080 端口
-- 当客户端请求网站根路径（/）时，发送给客户端一个 h1 格式的 hello world! 网页
-- 并且发送响应状态码 200
-- 并且发送响应头字段列表：Content-Type: text/html 以及 Content-Length: XXX（这三个 X 表示响应体的实际字节数）
-- 当客户端请求网站其他路径时，发送状态码 404，以及 Resource not found！信息
-- 用 curl 程序测试这个 web 服务的不同 URL，查看响应起始行、响应报文头以及响应体
+- 在客户端的 Cookie 中保存登录的状态信息
+- 如果客户端的 Cookie 没有信息或者登录的状态是未登录
+- 客户端访问服务程序时，得到是登录页面
+- 登录页面提交 POST 表单数据，包括：用户名和密码信息
+- 服务程序验证收到的 POST 表单中的用户名和密码信息
+- 如果账户信息没有验证通过，则服务程序继续发送客户端登录页面
+- 如果账户信息验证通过，则服务程序设置客户端 Cookie 的登录状态信息为已经登录
+- 如果客户端的 Cookie 中的登录状态是已经登录
+- 客户端访问服务程序时，得到的是网站首页，而不是登录页面
+- 在网站首页，用户可以点击退出登录链接
+- 服务程序会设置客户端 Cookie 的登录状态信息为未登录
+- 服务程序会发送客户端登录页面
+- 用浏览器测试服务程序
+- 人为修改浏览器的 Cookie 信息，是否能伪装成已经登录，得到网站的首页
 
-## 任务 5：处理上传数据
+## 任务 4：实现 Session
 
 要求：
-- 编写脚本代码 05-upload.js
+- 编写 02-session.js 脚本
 - 使用 http 模块创建 web 服务监听 8080 端口
-- 请求的 URL 不是网站根路径（/）时，提示客户端 404 错误
-- 如果 HTTP 请求的方法不是 POST 时，提示客户端 404 错误
-- 接收客户端 HTTP POST 请求中携带的数据
-- 将收到的数据打印到控制台上
-- 用 curl 程序测试服务程序，包括以下一些场景
-- 用 curl 向服务程序发送 FORM 表单数据
-- 用 curl 向服务程序发送 JSON 数据
-- 用 curl 向服务程序上传文件
+- 在客户端的 Cookie 中保存 SessionID 信息
+- 在服务程序中实现对客户端 Cookie 中 SessionID 的解析
+- 在服务程序中用内存维护一个 Session 列表
+- 服务程序能够创建 Session，包括 SessionID 和过期时间
+- 服务程序能够检查客户端 Cookie 中的 SessionID 是否存在，或者 Session 是否过期
+- 对于过期的客户端 Session 服务器会重新分配 SessionID，并将过期的 Session 从列表中删除
+- 对于没有过期的客户端 Session 服务器会更新该 Session 的过期日期
 
-## 任务 6：处理 GET 请求的 FORM 表单
-
-要求：
-- 编写脚本代码 05-form-get.js
-- 使用 http 模块创建 web 服务监听 8080 端口
-- 当 HTTP 请求的 URL 不是网站根路径（/）时，提示客户端 404 错误
-- 向客户端发送一个 TODO list 表单页面，页面上用户可以填写待办事项
-- 用户点击提交按钮后，表单使用 HTTP 的 GET 方法提交到服务程序
-- 服务程序接收表单数据，并将待办事项放到 TODO list 表单页面，发送给客户端
-- 用 chrome 浏览器测试服务程序
-- 用 curl 测试服务程序
-- TODO list 表单页面样式如下：  
-  ![form-get，王顶，node.js，408542507@qq.com](./images/todo-list.png)  
-
-## 任务 7：处理 POST 请求的 FORM 表单
+## 任务 5：Session 辅助登录
 
 要求：
-- 编写脚本代码 05-form-post.js
-- 使用 http 模块创建 web 服务监听 8080 端口
-- 当 HTTP 请求的 URL 不是网站根路径（/）时，提示客户端 404 错误
-- 当收到客户端 HTTP GET 请求时，发送给客户端 TODO list 表单页面
-- 页面上用户可以填写待办事项
+- 在任务 3 和任务 4 的基础上编写 02-session-auth.js 脚本
+- 使用 SessionID 作为登录状态的验证
+- Cookie 中 SessionID 如果不存在，打开登录页面
+- Cookie 中 SessionID 过期，打开登录页面，重新登录
+- Cookie 中 SessionID 存在，并且没有过期，打开首页，并且更新 Session 的过期时间
+- 用浏览器测试服务程序
+- 看看人为修改浏览器的 Cookie 信息，是否能伪装成已经登录，得到网站的首页
 
-## 任务 8：网页 Linux 命令行
-
-要求：
-- 编写 05-form-cmd.js 脚本  
-- 基于 05-form-post.js 代码框架  
-- 用户在表单页面上提交 linux 命令  
-- 服务程序利用子进程技术执行 linux 命令  
-- 服务程序将 linux 命令的运行结果返回到网页上  
-- 命令运行结果要求能够正确的换行显示  
-- 程序的运行效果，如下图所示：  
-  ![form-cmd，王顶，node.js，408542507@qq.com](./images/form-cmd.gif)  
-
-## 任务 9：处理文件上传
+## 任务 6：实现 HTTP 基本验证
 
 要求：
-- 编写 05-upload-file.js 脚本
+- 编写 03-auth-basic.js 脚本
+- 实现 web 服务程序
+- 当浏览器对根路由（/）发出 HTTP 请求时，脚本不需要身份验证，发送给客户端非敏感信息
+- 当浏览器对后台管理路由（admin）发出 HTTP 请求时，脚本需要身份验证
+- 身份验证基于 HTTP 协议的基本验证
+- 当收到用户名和密码信息之后，验证身份信息
+- 如果身份信息正确，发送给客户端敏感信息
+- 如果身份信息不合法，则继续提示用户输入身份信息
 
-
-## 任务 1：提交代办事项表单
-
-要求：
-- 创建 17-web 目录  
-- 编写 03-form.js 脚本，实现查询和增加待办事项的功能  
-- 编写 03-form-html.js 脚本，实现 03-form.js 的功能，但是有以下要求：  
-  - 将 03-form.js 脚本中的 HTML 代码，保存在单独的文件中 template.html，内容如下：  
-  - 03-form-html.js 程序读取 template.html 模板文件，并将占位符 % 替换为具体的待办事项数据  
-
-## 任务 3：实现 RESTful API
+## 任务 7：实现 HTTP 代理
 
 要求：
-- 阅读[理解 RESTful 架构](http://www.ruanyifeng.com/blog/2011/09/restful.html)  
-- 阅读 [RESTful API 设计指南](http://www.ruanyifeng.com/blog/2014/05/restful_api.html)
-- 编写 04-rest-api.js 脚本  
-- 阅读 [fetch 官方文档](https://fetch.spec.whatwg.org/)  
-- 阅读 [fetch 用法说明](http://blog.csdn.net/kajweb/article/details/72593482)  
-- 编写客户端代码使用 RESTful API  
-- 执行 `wget http://sample.wangding.in/nodejs/todo.html` 命令，获取网页 html 代码  
-- 在页面上实现查询和增加代办事项的功能  
-- 在页面上实现删除和修改代办事项的功能  
+- 编写 04-proxy.js 脚本
+- 实现对 HTTP 协议的 GET 请求的代理
+- 在代理程序中捕获浏览器的 HTTP 请求信息，输出到控制台
+- 将 HTTP 响应信息输出到控制台
+- 配置 chrome 浏览器的代理设置
+- 测试代理程序
+
+## 任务 8：阅读 Node.js API 资料
+
+- [https API 资料](http://nodejs.cn/api/https.html)
+
+## 任务 9：实现 HTTPS 服务
+
+要求：
+- 编写 05-https-server.js 脚本
+- 实现 HTTPS 协议的 Web 服务
+- 收到浏览器请求后，发送给客户端 hello world 信息
