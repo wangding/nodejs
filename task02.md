@@ -67,21 +67,7 @@
 - 如果命令行参数多于 3 个，多余的参数忽略
 - 对命令行参数的表达式进行求值，打印求值结果
 - 命令行参数的格式如下：
-
-```bash
-./02-calc.js
-usage: cmd-name [OPTION] [expression]
-evaluate the expression.
-
-Mandatory arguments to long options are mandatory for short options too.
--h, --help output help information and exit
-
-./02-calc.js 2+4
-2+4=6
-
-./02-calc.js 2\*Math.PI
-2*Math.PI=6.283185307179586
-```
+  ![02-calc，王顶，408542507@qq.com](./images/02-calc.gif)  
 
 ## 任务 8：处理退出码
 
