@@ -134,3 +134,8 @@
 - 执行 `wget http://sample.wangding.in/nodejs/todo.html` 命令，获取网页 html 代码  
 - 在页面上实现查询和增加代办事项的功能  
 - 在页面上实现删除和修改代办事项的功能  
+- 复制 09-stream/02-static-web-server.js 到当前目录
+- 修改文件名 02-static-web-server.js 为 08-static-web-server.js
+- 修改 08-static-web-server.js 脚本，监听 3000 端口
+- 同时运行 08-static-web-server.js 和 08-rest-api.js 脚本
+- 用 chrome 测试 web 服务程序
