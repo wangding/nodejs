@@ -23,4 +23,5 @@
 
 ## 附录
 
-- [Node.js 开发环境搭建](setup-dev-env.md)
+- [搭建 Node.js 开发环境](setup-dev-env.md)
+- [升级开发环境](mocha-dev-env.md)

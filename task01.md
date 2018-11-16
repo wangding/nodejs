@@ -24,6 +24,7 @@
 - 配置 mocha 虚拟机的网卡 IP 地址  
 - 配置 mocha 虚拟机的 git 参数，包括：user.name 和 user.email  
 - 具体操作请参考：[教学视频](https://ke.qq.com/webcourse/index.html#cid=244604&term_id=100288380&taid=1695519944719228&vid=e1421d3pl7e)
+- 上述步骤完成后，需要升级 mocha 虚拟机环境，请按[这个文档](./mocha-dev-env.md)操作
 
 **方式二：从头安装**
 
