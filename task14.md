@@ -1,22 +1,22 @@
-# 第十四课：测试
+# 第 14 课：测试
 
-## 任务 1：阅读 Node.js API 资料
+## 阅读 Node.js API 资料
 
 - [assert API 资料](http://nodejs.cn/api/assert.html)  
 
-## 任务 2：使用 assert 模块
+## 使用 assert 模块
 
 - 创建 17-test 目录  
 - 编写 todo.js 脚本  
 - 编写 todo.test.js 脚本  
 
-## 任务 3：了解 Mocha
+## 了解 Mocha
 
 要求：
 - 浏览 [Mocha 官方网站](http://mochajs.org)
 - 浏览 [Mocha GitHub 仓库](https://github.com/mochajs/mocha)
 
-## 任务 4：创建被测项目
+## 创建被测项目
 
 要求：
 - 创建 mocha-demo 项目文件夹
@@ -33,7 +33,7 @@
 - 初始化代码：[calc.js][calc_js_origin]
 - 完成后代码：[calc.js][calc_js_final]
 
-## 任务 5：编写测试脚本
+## 编写测试脚本
 
 要求：
 - 编写 calc.js 模块的自动化测试脚本 calc.test.js
@@ -49,7 +49,7 @@
 参考：
 - 自动化测试脚本代码：[calc.test.js][calc_test_js]
 
-## 任务 6：mocha 的基本用法
+## mocha 的基本用法
 
 要求：
 - 参考[初始 date.js 代码][date_js_origin]，实现 date.js 模块的各个函数
@@ -61,7 +61,7 @@
 - 完成后代码：[date.js][date_js_final]
 - 自动化测试脚本代码：[date.test.js][date_test_js]
 
-## 任务 7：命令行参数
+## 命令行参数
 
 要求：
 - 生成 mochawesome 网页格式的报告
@@ -74,7 +74,7 @@
 - 完成后代码：[package.json][package_json]
 
 
-## 任务 8：测试用例管理
+## 测试用例管理
 
 要求：
 - 改写 calc.test.js 脚本，skip 所有测试套件中 0 ? 0 = 0 的测试案例
@@ -86,7 +86,7 @@
 初始的代码：[calc.test.js][calc_test_js_origin_task01]  
 完成后代码：[calc.test.js][calc_test_js_final_task01]  
 
-## 任务 9：测试用例钩子
+## 测试用例钩子
 
 要求：
 - 改写 calc.test.js 脚本，在加法测试套件中增加 befor，after，beforeEach，afterEach 四个钩子函数
@@ -98,7 +98,7 @@
 初始的代码：[calc.test.js][calc_test_js_final_task01]  
 完成后代码：[calc.test.js][calc_test_js_final_task02]  
 
-## 任务 10：异步测试
+## 异步测试
 
 要求：
 - 编写简单的异步测试脚本，设置超时时间为 3000ms
@@ -114,7 +114,7 @@
 - [async.test.js][async_test_js]    
 - [promise.test.js][promise_test_js]    
 
-## 任务 11：测试前端代码 
+## 测试前端代码 
 
 要求：
 - 在 mocha-demo 目录下，创建 browser 子目录
@@ -131,7 +131,7 @@
 - [index.html][index_html]  
 - [tests.js][tests_js]  
 
-## 任务 12：ES6 测试脚本
+## ES6 测试脚本
 
 要求：
 - 用 ES6 来改写 calc.test.js 和 date.test.js 两个测试脚本
@@ -147,7 +147,7 @@
 - [calc.test.js][calc_test_js_es6]  
 - [date.test.js][date_test_js_es6]  
 
-## 任务 13：代码覆盖率
+## 代码覆盖率
 
 要求：
 - 安装 istanbul 工具
@@ -156,7 +156,7 @@
 - 调整覆盖率边界，检查测试覆盖率报告
 - 与 mocha 结合，对 calc.test.js 执行覆盖率测试
 
-## 任务 14：webdriver 整合
+## webdriver 整合
 
 要求：
 - 安装 selenium-webdriver
@@ -168,7 +168,7 @@
 完成后的代码：   
 - [hosted-redmine-login.test.js][hosted-redmine-login-test-js]   
 
-## 任务 15：持续集成工具整合
+## 持续集成工具整合
 
 要求：
 - 用 GitHub 账户登录 travis-ci 网站

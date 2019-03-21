@@ -4,7 +4,8 @@ Mocha 虚拟机开发环境，可以完成 Node.js 后端开发。下面的安�
 
 在确保自己的虚拟机能上网的前提下，执行以下搭建前端开发环境的步骤：
 
-1. 更新 tools 仓库，操作步骤如下：
+## 更新 tools 仓库
+
 ```bash
 cd
 cd wd
@@ -12,21 +13,24 @@ rm -rf tools
 git clone https://github.com/wangding/tools
 ```
 
-2. 安装 tools 仓库的 vim 配置文件，操作步骤如下：
+## 安装 tools 仓库的 vim 配置文件
+
 ```bash
 cd
 cd wd/tools
 ./install.sh
 ```
 
-3. 安装 zsh 插件，操作步骤如下：
+## 安装 zsh 插件
+
 ```bash
 cd
 zsh                // 安装 zsh 插件
 exit               // 退出终端窗口，重新进入
 ```
 
-4. 安装 vim 插件，操作步骤如下：
+## 安装 vim 插件
+
 ```
 vim                // 命令行打开 vim 编辑器
 :PluginInstall     // vim 的普通模式下，按冒号进入命令模式
@@ -36,7 +40,8 @@ vim                // 命令行打开 vim 编辑器
 ```
 ![vim-plugin-install](https://user-images.githubusercontent.com/1182720/36183222-5b502030-1168-11e8-836b-46be8a9dd9c7.png)
 
-5. 验证安装的 emmet vim 插件，操作步骤如下：
+## 验证安装的 emmet vim 插件
+
 ```
 vim  a.html       // 命令行打开 vim 编辑器
 i                 // 进入插入模式
@@ -45,7 +50,8 @@ i                 // 进入插入模式
 :q!               // 不保存退出
 ```
 
-6. 验证安装的 jsdoc vim 插件，操作步骤如下：  
+## 验证安装的 jsdoc vim 插件
+
 ```
 vim  a.js            // 命令行打开 vim 编辑器
 i                    // 进入插入模式
@@ -59,7 +65,8 @@ ESC                  // 退出插入模式，进入普通模式，移动光标�
 :q!                  // 不保存退出
 ```
 
-7. 验证 CSS 代码补全功能，操作步骤如下：
+## 验证 CSS 代码补全功能
+
 ```
 vim  a.css            // 命令行打开 vim 编辑器
 i                     // 进入插入模式
@@ -70,7 +77,8 @@ ESC                   // 回到普通模式
 :q!                   // 不保存退出
 ```
 
-8. 安装开发辅助工具，操作步骤如下：
+## 安装开发辅助工具
+
 ```bash
 su                    // 切换到 root 账户
 yum install -y tree python-pygments     // 安装 Linux 命令行 tree 工具和语法高亮工具
@@ -81,7 +89,8 @@ npm i -g browser-sync // 安装热加载工具
 su wangding           // 切换到开发者账户
 ```
 
-9. 验证开发辅助工具，操作步骤如下：
+## 验证开发辅助工具
+
 ```bash
 tree ~/wd               // 应该看到 wd 目录的树状结构
 htmlhint --version      // 应该看到版本号：0.9.13
@@ -90,8 +99,9 @@ eslint --version        // 应该看到版本号：v4.17.0
 browser-sync --version  // 应该看到版本号：2.23.6
 ```
 
-10. 验证 JavaScript 前端代码自动补全，操作步骤如下：
+## 验证 JavaScript 前端代码自动补全
 ```
+
 cd ~/spa
 vim  a.js             // 命令行打开 vim 编辑器
 i                     // 进入插入模式
@@ -105,7 +115,8 @@ ESC                   // 回到普通模式
 :q!                   // 不保存退出 
 ```
 
-11. 安装 nvm 并升级 node.js 版本，操作步骤如下：
+## 安装 nvm 并升级 node.js 版本
+
 ```
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
 ```
@@ -140,10 +151,11 @@ node -v               // 升级后 Node.js 版本应该是 8
 4. JavaScript 静态代码检查的规则，请参考：http://eslint.cn/docs/rules/
 5. 创建 HTML、CSS 和 JavaScript 三个代码文件，在 vim 中编辑代码，体验静态代码检查插件的用法
 
-### 热加载工具
+## 热加载工具
 
 1. 安装热加载工具，上面的开发环境搭建已经介绍过了
 2. 执行如下操作，掌握热加载工具的用法：  
+
 ```  
 cd ~/spa        // 进入前端页面所在的目录  
 lrd             // 运行热加载程序，热加载程序会启动一个 Web 静态文件服务  

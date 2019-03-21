@@ -1,10 +1,10 @@
-# 第四课：事件 
+# 第 4 课：事件 
 
-## 任务 1：阅读 Node.js API 资料  
+## 阅读 Node.js API 资料  
 
 - [EventEmitter API 资料](http://nodejs.cn/api/events.html)  
 
-## 任务 2：使用 EventEmitter 类
+## 使用 EventEmitter 类
 
 要求：
 - 创建 08-event 目录  
@@ -15,7 +15,7 @@
 - hello 事件处理函数在控制台打印 hello world 信息  
 - bye 事件处理函数在控制台打印 goodbye 信息，并结束程序  
 
-## 任务 3：原型继承 EventEmitter 类
+## 原型继承 EventEmitter 类
 
 要求：
 - 编写 02-dog.js 以及 02-play-dog.js 脚本  
@@ -32,7 +32,7 @@
 - 不同的狗采用同一个 bark 事件处理函数  
 - bark 事件处理函数在控制台打印狗的名字以及它的能量
 
-## 任务 4：util.inherts 方法继承 EventEmitter 类
+## util.inherts 方法继承 EventEmitter 类
 
 要求：
 - 编写 03-radio.js 以及 03-listen-radio.js 脚本 
@@ -46,7 +46,7 @@
 - 处理 radio 对象的 play 和 stop 事件  
 - play 和 stop 事件处理函数打印 station 电台信息以及状态
 
-## 任务 5：复制 EventEmitter 类成员
+## 复制 EventEmitter 类成员
 
 要求：
 - 复制 03-radio.js 和 03-listen-radio.js 脚本
@@ -55,7 +55,7 @@
 - 将 EventEmitter 类中方法复制到 radio 类中
 - 测试程序
 
-## 任务 6：自己实现事件机制
+## 自己实现事件机制
 
 - 要求：
 - 复制 03-radio.js 和 03-listen-radio.js 脚本
@@ -63,7 +63,7 @@
 - 不使用 EventEmitter 类，自己实现事件机制
 - 测试程序的运行
 
-## 任务 7：管理事件
+## 管理事件
 
 要求：
 - 复制 03-listen-radio.js 脚本

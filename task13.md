@@ -1,6 +1,6 @@
-# 第十三课：数据存储
+# 第 13 课：数据存储
 
-## 任务 1： Web 静态文件服务
+##  Web 静态文件服务
 
 要求：
 - 创建目录 19-data-storage
@@ -13,7 +13,7 @@
 - 如果请求的 url 中的文件在内存缓存中
   - 直接将缓存中的文件内容发送给浏览器
 
-## 任务 2：基于文件存储 RESTful API
+## 基于文件存储 RESTful API
 
 要求：
 - 复制 16-http-server/08-rest-api.js 到当前目录
@@ -22,7 +22,7 @@
 - 服务程序退出时将待办事项数组保存到当前目录的 data.txt 中
 - 服务程序启动时将待办事项从 data.txt 中读取到 items 数组中
 
-## 任务 3：安装 MySQL
+## 安装 MySQL
 
 要求：
 - 在 CentOS 7 Linux 上安装 MySQL
@@ -38,7 +38,7 @@ systemctl start mariadb
 mysql_secure_installation
 ```
 
-## 任务 4：命令行操作 MySQL
+## 命令行操作 MySQL
 
 要求：
 - Linux 命令行连接 MySQL
@@ -54,11 +54,11 @@ mysql_secure_installation
 ```
 - 在 books 表上练习 CURD 操作
 
-## 任务 3：阅读 mysql API 资料
+## 阅读 mysql API 资料
 
 - [mysql API 资料](https://github.com/mysqljs/mysql)
 
-## 任务 4：用 Node.js 对 MySQL 做 CURD 操作
+## 用 Node.js 对 MySQL 做 CURD 操作
 
 要求：
 - 编写 03-mysql.js 脚本
@@ -72,7 +72,7 @@ mysql_secure_installation
 - 查询 books 表中的记录
 - 关闭连接
 
-## 任务 5：基于 MySQL 存储的 Todo List
+## 基于 MySQL 存储的 Todo List
 
 要求：
 - 复制 18-express/06-todo-list 代码到 19-data-storage 目录
@@ -90,7 +90,7 @@ mysql_secure_installation
 - 改写 router/index.js 路由模块，使用数据库操作模块 models/todo-list.js 来操作待办事项数据
 - 用 chrome 或 curl 测试服务程序
 
-## 任务 6：基于 MySQL 存储的 Todo List API
+## 基于 MySQL 存储的 Todo List API
 
 要求：
 - 复制 18-express/07-todo-list-api 代码到 19-data-storage 目录

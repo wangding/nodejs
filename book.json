@@ -1,0 +1,19 @@
+{
+  "author": "王顶",
+  "plugins": [
+    "-lunr",
+    "-search",
+    "-highlight",
+    "-sharing",
+    "books"
+  ],
+  "pluginsConfig": {
+    "books": {
+      "prism_themes": "prismjs/themes/prism-okaidia.css",
+      "github_url": "https://github.com/wangding/nodejs"
+    },
+    "theme-default": {
+      "showLevel": false
+    }
+  }
+}

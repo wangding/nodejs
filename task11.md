@@ -1,6 +1,6 @@
-# 第十一课：HTTP 高级编程
+# 第 11 课：HTTP 高级编程
 
-## 任务 1：Cookie 基本操作
+## Cookie 基本操作
 
 要求：
 - 创建 17-http-advanced 目录
@@ -9,7 +9,7 @@
 - 解析请求头中的 Cookie 数据，将解析的 Cookie 信息打印到控制台上
 - 在响应头中封装 Cookie 数据，将响应数据发送给客户端
 
-## 任务 2：Cookie 状态保持
+## Cookie 状态保持
 
 要求：
 - 编写 01-cookie-status.js 脚本
@@ -25,7 +25,7 @@
   - 为什么服务程序重启后，客户端再次请求服务程序，客户端的请求次数没有清零？
   - 人为修改客户端 Cookie 信息，再次请求服务程序，看看收到的反馈信息
 
-## 任务 3：Cookie 辅助登录
+## Cookie 辅助登录
 
 要求：
 - 编写 01-cookie-auth.js 脚本
@@ -45,7 +45,7 @@
 - 用浏览器测试服务程序
 - 人为修改浏览器的 Cookie 信息，是否能伪装成已经登录，得到网站的首页
 
-## 任务 4：实现 Session
+## 实现 Session
 
 要求：
 - 编写 02-session.js 脚本
@@ -58,7 +58,7 @@
 - 对于过期的客户端 Session 服务器会重新分配 SessionID，并将过期的 Session 从列表中删除
 - 对于没有过期的客户端 Session 服务器会更新该 Session 的过期日期
 
-## 任务 5：Session 辅助登录
+## Session 辅助登录
 
 要求：
 - 在任务 3 和任务 4 的基础上编写 02-session-auth.js 脚本
@@ -69,7 +69,7 @@
 - 用浏览器测试服务程序
 - 看看人为修改浏览器的 Cookie 信息，是否能伪装成已经登录，得到网站的首页
 
-## 任务 6：实现 HTTP 基本验证
+## 实现 HTTP 基本验证
 
 要求：
 - 编写 03-auth-basic.js 脚本
@@ -81,7 +81,7 @@
 - 如果身份信息正确，发送给客户端敏感信息
 - 如果身份信息不合法，则继续提示用户输入身份信息
 
-## 任务 7：实现 HTTP 代理
+## 实现 HTTP 代理
 
 要求：
 - 编写 04-proxy.js 脚本
@@ -91,11 +91,11 @@
 - 配置 chrome 浏览器的代理设置
 - 测试代理程序
 
-## 任务 8：阅读 Node.js API 资料
+## 阅读 Node.js API 资料
 
 - [https API 资料](http://nodejs.cn/api/https.html)
 
-## 任务 9：实现 HTTPS 服务
+## 实现 HTTPS 服务
 
 要求：
 - 编写 05-https-server.js 脚本

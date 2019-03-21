@@ -3,6 +3,7 @@ node_js:
   - "node"
 
 after_script:
+  - gitbook install
   - gitbook build
   - cd ./_book
   - git init

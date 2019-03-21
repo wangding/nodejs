@@ -1,11 +1,11 @@
-# 第十二课：Express 框架
+# 第 12 课：Express 框架
 
-## 任务 1：阅读 Express API 资料
+## 阅读 Express API 资料
 
 - [Express 4.x API](http://www.expressjs.com.cn/4x/api.html)
 - [ejs](https://ejs.bootcss.com/)
 
-## 任务 2：编写 hello world web 程序
+## 编写 hello world web 程序
 
 要求：
 - 创建目录 18-express
@@ -18,7 +18,7 @@
 - 当浏览器请求网站根路径（/）时，返回客户端 hello world 响应
 - 用 curl 或者 chrome 浏览器测试这个 web 服务
 
-## 任务 3：Web 静态文件服务
+## Web 静态文件服务
 
 要求：
 - 创建目录 02-static-web-server
@@ -32,7 +32,7 @@
 - 当 URL 地址中的资源文件不存在时，提示用户文件不存在的错误信息
 - 用 curl 或者 chrome 浏览器测试这个 web 服务
 
-## 任务 4：了解 Express 框架代码
+## 了解 Express 框架代码
 
 要求：
 - 切换到 linux 的 root 账户
@@ -52,7 +52,7 @@
 - 如何让服务程序运行在 8080 端口
 - 尝试修改框架代码，用浏览器测试网站，观察修改后的效果
 
-## 任务 5：基本路由
+## 基本路由
 
 要求：
 - 创建子目录 04-basic-router
@@ -89,7 +89,7 @@
 - books 路由模块中，处理 books/list 路由，返回客户端 books-list 字符串
 - 用 chrome 或 curl 测试服务程序
 
-## 任务 7：Express 版 TODO List
+## Express 版 TODO List
 
 要求：
 - 用 express 代码生成器生成框架代码 06-todo-list
@@ -106,7 +106,7 @@
 - 表单下方就是 TODO List 的 ul 列表
 - 用 chrome 或 curl 测试服务程序
 
-## 任务 8：Express 版 TODO List API
+## Express 版 TODO List API
 
 要求：
 - 用 express 代码生成器生成框架代码 07-todo-list-api
@@ -121,7 +121,7 @@
 - 修改 index.js 路由模块，支持对 TODO List 的增、删、改、查
 - 用 curl 测试服务程序
 
-## 任务 9：Express 版 cookie-opt
+## Express 版 cookie-opt
 
 要求：
 - 创建子目录 08-cookie-opt
@@ -136,7 +136,7 @@
 - 发送客户端 ok 响应信息
 - 用 chrome 测试服务程序
 
-## 任务 10：Express 版 cookie-status
+## Express 版 cookie-status
 
 要求：
 - 用 express 代码生成器生成框架代码 09-cookie-status
@@ -148,7 +148,7 @@
 - 在模板页面上显示用户访问次数的信息
 - 用 chrome 测试服务程序
 
-## 任务 11：Express 版 cookie-auth
+## Express 版 cookie-auth
 
 要求：
 - 用 express 代码生成器生成框架代码 10-cookie-auth
@@ -161,7 +161,7 @@
 - 实现退出登录请求，修改 cookie 登录状态的功能
 - 用 chrome 测试服务程序
 
-## 任务 12：签名 Cookie
+## 签名 Cookie
 
 要求：
 - 创建子目录 11-signed-cookie
@@ -173,7 +173,7 @@
 - 实现对 cookie 数据 name = wangding 和 age = 41 进行签名加密
 - 用 chrome 测试服务程序
 
-## 任务 13：Express session 辅助验证
+## Express session 辅助验证
 
 要求：
 - 用 express 代码生成器生成框架代码 12-session-auth

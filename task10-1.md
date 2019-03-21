@@ -1,10 +1,10 @@
-# 第十课：HTTP 网络编程（客户端）
+# 第 10 课：HTTP 网络编程（客户端）
 
-## 任务 1：阅读 Node.js API 资料
+## 阅读 Node.js API 资料
 
 - [http API 资料](http://nodejs.cn/api/http.html)  
 
-## 任务 2：了解 HTTP 协议
+## 了解 HTTP 协议
 
 要求：
 - HTTP 协议相关的知识主要包括：
@@ -23,7 +23,7 @@
 - 搞明白响应头部字段列表中每个字段的含义和作用  
   ![http-headers，王顶，408542507@qq.com](./images/http-headers.png)  
 
-## 任务 3：GET 请求网站页面  
+## GET 请求网站页面  
 
 要求：
 - 创建 16-http-client 目录
@@ -34,7 +34,7 @@
 - 用 http 模块的 get 方法
 - 定义 user-agent 为 01-my-curl
 
-## 任务 4：GET 请求 HTTP API
+## GET 请求 HTTP API
 
 要求：
 - 编写 02-get-weather.js 脚本
@@ -49,7 +49,7 @@
 - 运行效果如下图所示：  
   ![github-api，王顶，408542507@qq.com](./images/github-api.png)  
 
-## 任务 5：POST 发送数据
+## POST 发送数据
 
 要求：
 - 编写 03-post.js 脚本  
@@ -60,7 +60,7 @@
 - 接收 03-post.js 脚本发送的 POST 请求数据
 - 将接收到的数据打开到控制台
 
-## 任务 6：爬虫程序
+## 爬虫程序
 
 要求：  
 - 创建 04-crawler 目录
@@ -74,7 +74,7 @@
 - 将爬取的课程信息格式化输出到控制台
 - 实现多任务并发爬取
 
-## 任务 7：HTTP 重定向
+## HTTP 重定向
 
 要求：
 - 编写 05-redirection.js 脚本

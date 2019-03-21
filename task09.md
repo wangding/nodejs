@@ -1,10 +1,10 @@
-# 第九课：网络
+# 第 9 课：网络
 
-## 任务 1：阅读 Node.js API 资料
+## 阅读 Node.js API 资料
 
 - [net API 资料](http://nodejs.cn/api/net.html)  
 
-## 任务 2：TCP 服务端程序
+## TCP 服务端程序
 
 - 创建 13-tcp 目录
 - 编写 01-server.js 脚本  
@@ -14,7 +14,7 @@
 - 监听 8080 端口
 - 用 telnet 测试本程序
 
-## 任务 3：TCP 客户端程序
+## TCP 客户端程序
 
 - 编写 02-my-telnet.js 脚本
 - 支持命令行参数
@@ -26,11 +26,11 @@
 - 连接到 HTTP 服务器上做测试，测试服务器地址：http://sample.wangding.in/web/one-div.html
 - 连接到 FTP 服务器上做测试，测试服务器地址：ftp://ftp.gnu.org
 
-## 任务 4：阅读 Node.js API 资料
+## 阅读 Node.js API 资料
 
 - [dgram API 资料](http://nodejs.cn/api/dgram.html)  
 
-## 任务 5：UDP 服务端程序
+## UDP 服务端程序
 
 - 创建 14-udp 目录  
 - 编写 01-server.js 脚本
@@ -38,7 +38,7 @@
 - 收到客户端消息后，将客户端消息打印到控制台
 - 用 nc 测试 UDP 服务端程序
 
-## 任务 6：UDP 客户端程序
+## UDP 客户端程序
 
 - 编写 02-my-nc.js 脚本
 - 支持命令行参数
@@ -47,11 +47,11 @@
 - 接收键盘输入字符
 - 将接收到的键盘数据发送到远程服务器上
 
-## 任务 7：阅读 Node.js API 资料
+## 阅读 Node.js API 资料
 
 - [dns API 资料](http://nodejs.cn/api/dns.html)
 
-## 任务 8：域名解析
+## 域名解析
 
 - 创建 15-dns 目录
 - 编写 01-dns.js 脚本  

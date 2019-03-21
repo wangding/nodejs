@@ -1,20 +1,20 @@
-# 第一课：Node.js 简介
+# 第 1 课：Node.js 简介
 
-## 任务 1：浏览 Node.js 官网
+## 浏览 Node.js 官网
 
 - [Node.js 官方网站](https://nodejs.org/)  
 - [Node.js 中文网站](http://nodejs.cn/)  
 
-## 任务 2：浏览 Node.js API
+## 浏览 Node.js API
 
 - [Node.js 官方 API](https://nodejs.org/dist/latest-v8.x/docs/api/)  
 - [Node.js 中文 API](http://nodejs.cn/api/)  
 
-## 任务 3：下载并浏览电子书
+## 下载并浏览电子书
 
 - 电子书网盘链接：http://pan.baidu.com/s/1nuU6C8h 密码: h6jc  
 
-## 任务 4：搭建开发环境
+## 搭建开发环境
 
 **方式一：导入虚拟机**
 
@@ -31,7 +31,7 @@
 - 安装步骤请参考：[Node.js 开发环境搭建](./setup-dev-env.md)
 - 安装 CentOS 虚拟机，请参考：[教学视频](http://edu.51cto.com/center/course/lesson/index?id=166501)
 
-## 任务 5：编写 hello world 命令行程序
+## 编写 hello world 命令行程序
 
 要求：
 - 创建 nodejs-demo 目录
@@ -42,7 +42,7 @@
 - 编写 01-hello-world.js
 - 在命令行打印 `hello world!` 字符
 
-## 任务 6：编写 hello world web 程序
+## 编写 hello world web 程序
 
 要求：
 - 编写 02-hello-world-server.js

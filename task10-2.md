@@ -1,6 +1,6 @@
-# 第十课：HTTP 网络编程（服务端）
+# 第 10 课：HTTP 网络编程（服务端）
 
-## 任务 1：解析 HTTP 方法
+## 解析 HTTP 方法
 
 要求：
 - 创建文件夹 16-http-server
@@ -13,7 +13,7 @@
 - 需要给客户端反馈信息
 - 用 curl -X 参数测试各种 HTTP 请求方法
 
-## 任务 2：解析 URL
+## 解析 URL
 
 要求：
 - 编写脚本代码 02-url-parse.js
@@ -24,7 +24,7 @@
 - 对 URL 中的查询字符串进行解析，在控制台打印结果
 - 解析给定的 url 地址：`http://wangding:123@www.baidu.com:8080/a/b/c?age=20&gender=M#/d/e/f`，并在控制台打印解析的结果
 
-## 任务 3：解析 HTTP 请求头
+## 解析 HTTP 请求头
 
 要求：
 - 编写脚本代码 03-req-header-parse.js
@@ -33,7 +33,7 @@
 - 在控制台打印 http 请求头信息中的 User-Agent、Host 和 Content-Type 三个字段信息
 - 在 curl 程序中向 web 服务发送特定的头部字段信息 `Content-Type:appliction/json`，测试服务程序
 
-## 任务 4：处理 HTTP 响应
+## 处理 HTTP 响应
 
 要求：
 - 编写脚本代码 04-response.js
@@ -44,7 +44,7 @@
 - 当客户端请求网站其他路径时，发送状态码 404，以及 Resource not found！信息
 - 用 curl 程序测试这个 web 服务的不同 URL，查看响应起始行、响应报文头以及响应体
 
-## 任务 5：处理上传数据
+## 处理上传数据
 
 要求：
 - 编写脚本代码 05-upload.js
@@ -58,7 +58,7 @@
 - 用 curl 向服务程序发送 JSON 数据
 - 用 curl 向服务程序上传文件
 
-## 任务 6：处理 GET 请求的 FORM 表单
+## 处理 GET 请求的 FORM 表单
 
 要求：
 - 编写脚本代码 05-form-get.js
@@ -72,7 +72,7 @@
 - TODO list 表单页面样式如下：  
   ![form-get，王顶，node.js，408542507@qq.com](./images/todo-list.png)  
 
-## 任务 7：处理 POST 请求的 FORM 表单
+## 处理 POST 请求的 FORM 表单
 
 要求：
 - 编写脚本代码 05-form-post.js
@@ -84,7 +84,7 @@
 - 用 curl 测试服务程序
 - TODO list 表单页面样式见任务六
 
-## 任务 8：网页 Linux 命令行
+## 网页 Linux 命令行
 
 要求：
 - 编写 05-form-cmd.js 脚本  
@@ -96,7 +96,7 @@
 - 程序的运行效果，如下图所示：  
   ![form-cmd，王顶，node.js，408542507@qq.com](./images/form-cmd.gif)  
 
-## 任务 9：处理文件上传
+## 处理文件上传
 
 要求：
 - 编写 06-upload-file.js 脚本
@@ -108,7 +108,7 @@
 - 用浏览器访问上传文件的 HTML 页面，实现文件上传
 - 改进程序，让程序能够同时支持多个文件上传
 
-## 任务 10：后台模板渲染
+## 后台模板渲染
 
 要求：
 - 编写 07-form-html.js 脚本
@@ -119,7 +119,7 @@
 - 并将占位符 % 替换为具体的待办事项数据
 - 用 chrome 测试服务程序
 
-## 任务 11：实现 RESTful API
+## 实现 RESTful API
 
 要求：
 - 阅读[理解 RESTful 架构](http://www.ruanyifeng.com/blog/2011/09/restful.html)  
