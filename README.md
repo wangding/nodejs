@@ -10,7 +10,7 @@
 
 王顶老师的 QQ 学习交流群：301862163，加群时请报上自己的真实姓名，以及正在学习的课程内容。
 
-<img src="images/student-group.jpg" height="400">
+<img src="chapters/images/student-group.jpg" height="400">
 
 ## 课程视频
 
