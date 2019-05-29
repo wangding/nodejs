@@ -17,6 +17,8 @@
   "homepage": "https://github.com/wangding/nodejs#readme",
   "devDependencies": {
     "gitbook-cli": "^2.3.2",
-    "books-cli": "^1.0.21"
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-htmlmin": "^2.4.0"
   }
 }
