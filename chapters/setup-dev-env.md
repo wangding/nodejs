@@ -127,6 +127,24 @@ sudo make install
 vim --version
 ```
 
+上面是源代码编译安装，或者使用 `yum` 安装
+
+```
+# 切换到 root 账户下
+su
+
+rpm -Uvh http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch.rpm
+rpm --import http://mirror.ghettoforge.org/distributions/gf/RPM-GPG-KEY-gf.el7
+yum -y remove vim-minimal vim-common vim-enhanced sudo
+yum -y --enablerepo=gf-plus install vim-enhanced sudo
+
+# 切换到 wangding 账户
+exit
+
+# 检查 vim 版本，应该是 8
+vim --version
+```
+
 ## 安装 node.js
 
 ```bash
@@ -244,7 +262,7 @@ sudo yum install -y automake gcc gcc-c++ kernel-devel cmake python-devel python3
 cd ~/.vim/bundle/YouCompleteMe
 
 # 安装 YCM
-install.py --tern-completer
+./install.py --tern-completer
 ```
 
 ## 安装开发辅助工具
