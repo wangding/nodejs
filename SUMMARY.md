@@ -13,11 +13,9 @@
 - [第十课：HTTP 客户端](chapters/ch10-http-client.md)
 - [第十课：HTTP 服务端](chapters/ch10-http-server.md)
 - [第十一课：HTTP 进阶](chapters/ch11-http-advanced.md)
-- [第十二课：Express 框架](chapters/ch12-express.md)
-- [第十三课：数据存储](chapters/ch13-data-storage.md)
-- [第十四课：测试](chapters/ch14-testing.md)
-- [第十五课：压缩与加密](chapters/ch15-zip-crypto.md)
-- [第十六课：综合案例](chapters/ch16-project.md)
+- [第十二课：数据存储](chapters/ch12-data-storage.md)
+- [第十三课：Express 框架](chapters/ch13-express.md)
+- [第十四课：综合案例](chapters/ch14-project.md)
 
 ## 附录
 
