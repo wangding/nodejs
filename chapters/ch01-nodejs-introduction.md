@@ -44,6 +44,19 @@
 要求：
 - 编写 02-hello-world-server.js
 - 监听端口：8080
-- 当收到 HTTP 请求时，发送响应文本 `hello world!`
+- 当收到 HTTP 请求时，发送响应文本 `Hello world!`
+- 代码风格是 `createSever` 方法和 `listen` 方法的链式调用
+- 用浏览器测试 web 程序
+- 用 curl linux 命令行程序测试 web 程序
+
+## hello world web 服务程序
+
+要求：
+- 编写 03-hello-world-server.js
+- 监听端口：8080
+- 当收到 HTTP 请求时，发送响应文本 `Hello world!`
+- 代码风格是首先调用 `createSever` 方法创建的服务对象
+- 其次，监听服务对象的 `request` 事件
+- 最后，调用服务对象的 `listen` 方法
 - 用浏览器测试 web 程序
 - 用 curl linux 命令行程序测试 web 程序
