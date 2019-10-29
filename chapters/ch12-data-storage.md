@@ -3,7 +3,7 @@
 ##  Web 静态文件服务
 
 要求：
-- 创建目录 19-data-storage
+- 创建目录 18-data-storage
 - 复制 09-stream/02-static-web-server.js 到当前目录
 - 修改文件名为 01-static-web-server.js
 - 实现内存缓存机制，提升 web 服务器的性能
@@ -27,15 +27,29 @@
 要求：
 - 在 CentOS 7 Linux 上安装 MySQL
 - 运行安装命令
+
 ```bash
-su
-yum install -y mariadb mariadb-server
-systemctl start mariadb
-```
-- 配置 MySQL
-- 运行配置命令
-```bash
+# 安装 mariadb 和 mariadb-server
+sudo yum install -y mariadb mariadb-server
+
+# 启动数据库服务
+sudo systemctl start mariadb
+
+# 配置 MariaDB root 账户的密码
 mysql_secure_installation
+
+# 配置项如下：
+Enter current password for root (enter for none):回车
+Set root password? [Y/n]回车
+New password:输入密码（自己要记住）
+Re-enter new password:再次输入密码
+Remove anonymous users? [Y/n]回车
+Remove test database and access to it? [Y/n]n
+Reload privilege tables now? [Y/n]回车
+
+# 访问 MariaDB
+mysql -u root -p
+# -p 参数会提示输入密码，输入密码后，就可以访问数据库了。
 ```
 
 ## 命令行操作 MySQL
@@ -75,19 +89,17 @@ mysql_secure_installation
 ## 基于 MySQL 存储的 Todo List
 
 要求：
-- 复制 18-express/06-todo-list 代码到 19-data-storage 目录
-- 将 06-todo-list 目录改名为 04-todo-list
-- 进入 04-todo-list 目录
-- npm 安装 mysql 模块
-- 创建 models 和 test 两个子目录
+- 创建 04-todo-list 子目录
+- 复制 16-http-server/05-form-post 代码到 04-todo-list 目录下，改名为 index.js
+- 在 04-todo-list 子目录 npm 初始化项目配置文件 package.json
+- npm 安装 mysql 模块，作为开发依赖项写入项目配置文件
+- 创建 models 子目录
 - models 目录下，编写 config.json 文件，配置 mysql 数据库连接参数
 - models 目录下，编写 database.js 脚本，创建 mysql 数据库连接池
 - models 目录下，编写 todo-list.js 脚本，定义 TodoList 类
 - TodoList 类的 getAll 方法获取 todo 表中的所有记录
 - TodoList 类的 addItem 方法向 todo 表中添加一条待办事项
 - 命令行连接 mysql 数据库，创建 todo_list 数据库以及 todo 表
-- test 目录下，编写 todo-list-test.js 脚本，测试 models/todo-list.js 脚本
-- 改写 router/index.js 路由模块，使用数据库操作模块 models/todo-list.js 来操作待办事项数据
 - 用 chrome 或 curl 测试服务程序
 
 ## 基于 MySQL 存储的 Todo List API
