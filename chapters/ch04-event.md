@@ -58,19 +58,15 @@
 ## 自己实现事件机制
 
 - 要求：
-- 复制 03-radio.js 和 03-listen-radio.js 脚本
-- 编写 05-radio.js 和 05-listen-radio.js 脚本
+- 复制 02-dog.js 和 02-play-dog.js 脚本
+- 编写 05-dog.js 和 05-play-dog.js 脚本
 - 不使用 EventEmitter 类，自己实现事件机制
 - 测试程序的运行
 
-## 管理事件
+## 自己实现事件机制
 
-要求：
-- 复制 03-listen-radio.js 脚本
-- 编写 06-listen-radio.js 脚本  
-- 对 open 事件添加第二个事件响应函数
-- 在第二个事件响应函数中
-- 打印 radio 的事件名称
-- 打印 open 事件的监听数量
-- 打印 open 事件的监听者
-- 观察程序运行的结果
+- 要求：
+- 复制 03-radio.js 和 03-listen-radio.js 脚本
+- 编写 06-radio.js 和 06-listen-radio.js 脚本
+- 不使用 EventEmitter 类，自己实现事件机制
+- 测试程序的运行
