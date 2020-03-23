@@ -157,7 +157,7 @@ tree jsnotepad         // 查看 jsnotepad 项目下的代码文件
 1. 安装 Emmet vim 插件，上面的开发环境搭建已经介绍过了
 2. Emmet 工具在 vim 编辑器中的快捷键：**<ctrl>+y,**
 3. Emmet 语法，请参考：https://docs.emmet.io/abbreviations/syntax/
-4. Emmet vim 插件用法，请参考：https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL
+4. Emmet vim 插件用法，请参考：https://github.com/mattn/emmet-vim/blob/master/TUTORIAL
 5. 掌握 Emmet vim 常用的快捷键，<ctrl>+y，逗号，d，a，m，k，/，n
 6. 创建一个 emmet.html 文件，在 vim 中打开此文件，练习 Emmet 插件的用法
 
