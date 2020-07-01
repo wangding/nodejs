@@ -70,6 +70,26 @@ ESC                   // 回到普通模式
 :q!                   // 不保存退出
 ```
 
+## 验证代码注释工具
+
+```
+vi a.js               // 命令行打开 vim 编辑器
+i                     // 进入插入模式，接下来，写六行代码
+var name = 'wangding',
+    qq   = '408542507',
+    log  = console.log;
+
+log(`name: ${name}`);
+log(`qq  : ${qq}`);
+ESC                   // 回到普通模式
+                      // 上下移动光标到任意一行代码
+<space>cc             // 按空格和两个 c 键，对当前行注释
+<space>c<space>       // 按空格和 c 键以及空格键，取消当前行注释
+<space>V              // 块选当前行
+jj                    // 向下选中两行
+<space>cc             // 对选中多行进行注释。取消注释，选中多行，按<space>c<space>
+```
+
 ## 安装开发辅助工具
 
 ```bash

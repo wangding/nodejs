@@ -85,7 +85,7 @@ luajit-devel ctags git python python-devel \
 python3 python3-devel tcl-devel ncurses-devel\
 perl perl-devel perl-ExtUtils-ParseXS \
 perl-ExtUtils-XSpp perl-ExtUtils-CBuilder \
-perl-ExtUtils-Embed
+perl-ExtUtils-Embed gcc lrzsz ncurses-devel
 
 # 切换到家目录
 cd
@@ -109,8 +109,6 @@ cd vim-master/src
 --enable-rubyinterp=yes \
 --enable-pythoninterp=yes \
 --with-python-config-dir=/usr/lib/python2.7/config \
---enable-python3interp=yes \
---with-python3-config-dir=/usr/lib/python3.5/config \
 --enable-perlinterp=yes \
 --enable-luainterp=yes \
 --enable-gui=gtk2 \
@@ -118,7 +116,7 @@ cd vim-master/src
 --prefix=/usr/local
 
 # 编译软件
-make VIMRUNTIMEDIR=/usr/local/share/vim/vim80
+make
 
 # 安装软件
 sudo make install
@@ -149,7 +147,7 @@ vim --version
 
 ```bash
 sudo yum install -y gcc-c++ make
-curl --location https://rpm.nodesource.com/setup_8.x | sudo bash -
+curl --location https://rpm.nodesource.com/setup_10.x | sudo bash -
 sudo yum install -y nodejs
 
 # 检查 node.js 安装是否成功
