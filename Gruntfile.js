@@ -8,7 +8,7 @@ module.exports = function (grunt) {
       files: {
         expand: true,
         cwd: '_book',
-        src: ['*.html', 'chapters/*.html'],
+        src: ['*.html', 'advanced/*.html'],
         dest: 'dist/'
       }
     },
@@ -36,7 +36,7 @@ module.exports = function (grunt) {
           {
             expand: true,
             cwd: 'dist',
-            src: ['*.html', 'chapters/*.html'],
+            src: ['*.html', 'advanced/*.html'],
             dest: '_book/'
           }
         ]

@@ -4,13 +4,17 @@ node_js:
 
 after_script:
   - gitbook install
-  - gitbook build
+  - cp -r node_modules basic/
+  - cp -r node_modules advanced/
+  - gitbook build basic/ _book
+  - gitbook build advanced/ _book/advanced/
   - grunt minify
   - cd ./_book
   - git init
   - git config user.name "${USER_NAME}"
   - git config user.email "${USER_EMAIL}"
   - cp ../CNAME .
+  - cp ../book.json .
   - git add .
   - git commit -m "publish gitbook"
   - git push --force --quiet "https://${ACC_TOKEN}@${GH_REF}" master:${BRANCH}
