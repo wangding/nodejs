@@ -16,3 +16,8 @@
 - [第十二课：数据存储](ch12-data-storage.md)
 - [第十三课：Express 框架](ch13-express.md)
 - [第十四课：综合案例](ch14-project.md)
+
+## 附录
+
+- [搭建 Node.js 开发环境](setup-dev-env.md)
+- [升级开发环境](mocha-dev-env.md)

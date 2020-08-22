@@ -175,7 +175,7 @@ sudo yum install -y wget
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 
 # 却换 bash 至 zsh
-sudo chsh -s /bin/zsh
+chsh -s /bin/zsh
 
 # 查新登录 shell
 exit
