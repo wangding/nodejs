@@ -10,22 +10,22 @@
 
 王顶老师的 QQ 学习交流群：301862163，加群时请报上自己的真实姓名，以及正在学习的课程内容。
 
-![QQ 群二维码，王顶，408542507@qq.com](http://sample.wangding.in/images/student-group.png)
+![QQ 群二维码，王顶，408542507@qq.com](https://cdn.jsdelivr.net/gh/wangding/sample@master/images/student-group.png)
 
 ## 课程视频
 
-- [Node.js 应用开发（上）](https://ke.qq.com/course/244604)  
-- [Node.js 应用开发（中）](https://ke.qq.com/course/252061)  
-- [Node.js 应用开发（下）](#)  
+- [Node.js 应用开发（上）](https://ke.qq.com/course/244604)
+- [Node.js 应用开发（中）](https://ke.qq.com/course/252061)
+- [Node.js 应用开发（下）](#)
 
 【说明】  
 - Node.js 应用开发（下）课程视频并不完整，因此没有上传视频网站。如有需要，请加 QQ 群，在群文件共享中下载。
 
 ## 幻灯片
 
-- [Node.js 应用开发（上）](https://github.com/wangding/courses/blob/master/nodejs/nodejs01.pptx)  
-- [Node.js 应用开发（中）](https://github.com/wangding/courses/blob/master/nodejs/nodejs02.pptx)  
-- [Node.js 应用开发（下）](https://github.com/wangding/courses/blob/master/nodejs/nodejs03.pptx)  
+- [Node.js 应用开发（上）](https://github.com/wangding/courses/blob/master/nodejs/nodejs01.pptx)
+- [Node.js 应用开发（中）](https://github.com/wangding/courses/blob/master/nodejs/nodejs02.pptx)
+- [Node.js 应用开发（下）](https://github.com/wangding/courses/blob/master/nodejs/nodejs03.pptx)
 
 ## 通关任务
 
@@ -33,5 +33,5 @@
 
 ## 示例代码
 
-- [Demo Code](https://github.com/wangding/nodejs-demo)  
+- [Demo Code](https://cdn.jsdelivr.net/gh/wangding/nodejs-demo/)
 
