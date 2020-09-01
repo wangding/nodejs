@@ -1,6 +1,6 @@
 # Node.js 应用开发
 
-本电子书含 Node.js 应用开发课程的全部教学资料，包括：课程大纲、学习交流 QQ 群、课程视频、幻灯片、通关任务以及示例代码。
+本网站包含 Node.js 应用开发课程的全部教学资料，包括：课程大纲、学习交流 QQ 群、课程视频、幻灯片、通关任务以及示例代码。
 
 ## 课程大纲
 
@@ -14,18 +14,13 @@
 
 ## 课程视频
 
-- [Node.js 应用开发（上）](https://ke.qq.com/course/244604)  
-- [Node.js 应用开发（中）](https://ke.qq.com/course/252061)  
-- [Node.js 应用开发（下）](#)  
-
-【说明】  
-- Node.js 应用开发（下）课程视频并不完整，因此没有上传视频网站。如有需要，请加 QQ 群，在群文件共享中下载。
+每个视频其内容相对独立，时长较短，因此整个课程的视频数量比较多。把视频链接和课程大纲整合在一起，形成整门课程的[视频清单](video.md)方便大家按需观看。
 
 ## 幻灯片
 
-- [Node.js 应用开发（上）](https://github.com/wangding/courses/blob/master/nodejs/nodejs01.pptx)  
-- [Node.js 应用开发（中）](https://github.com/wangding/courses/blob/master/nodejs/nodejs02.pptx)  
-- [Node.js 应用开发（下）](https://github.com/wangding/courses/blob/master/nodejs/nodejs03.pptx)  
+- [Node.js 应用开发（上）](https://github.com/wangding/courses/blob/master/nodejs/nodejs01.pptx)
+- [Node.js 应用开发（中）](https://github.com/wangding/courses/blob/master/nodejs/nodejs02.pptx)
+- [Node.js 应用开发（下）](https://github.com/wangding/courses/blob/master/nodejs/nodejs03.pptx)
 
 ## 通关任务
 
@@ -33,5 +28,4 @@
 
 ## 示例代码
 
-- [Demo Code](https://cdn.jsdelivr.net/gh/wangding/nodejs-demo/)
-
+- [Demo Code](https://github.com/wangding/nodejs-demo/)

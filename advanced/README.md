@@ -1,6 +1,6 @@
 # Node.js 高级实战
 
-本电子书含 Node.js 高级实战课程的全部教学资料，包括：课程大纲、学习交流 QQ 群、课程视频、通关任务以及示例代码。
+本网站包含 Node.js 高级实战课程的全部教学资料，包括：课程大纲、学习交流 QQ 群、课程视频、通关任务以及示例代码。
 
 ## 课程大纲
 
@@ -22,4 +22,4 @@
 
 ## 示例代码
 
-- [Demo Code](https://cdn.jsdelivr.net/gh/wangding/nodejs-advanced-demo/)
+- [Demo Code](https://github.com/wangding/nodejs-advanced-demo/)
