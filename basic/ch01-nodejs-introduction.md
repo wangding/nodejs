@@ -35,6 +35,7 @@
 
 ## 熟悉开发环境的使用
 
+- 熟悉[开发环境的使用](./env-manual.md)
 - 熟悉常用的 [linux 命令用法](https://note.wangding.in/linux/centos.html)
 - 熟悉 [Git 命令](https://note.wangding.in/office/git.html)的用法
 - 熟悉 [vim 的用法](https://note.wangding.in/office/vim.html)
