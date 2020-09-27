@@ -93,7 +93,7 @@
 
 要求：
 - 创建 07-module 目录
-- 编写 01-third-module.js 脚本
+- 编写 01-chalk.js 脚本
 - 阅读 [chalk 模块](https://www.npmjs.com/package/chalk)文档
 - 导入 chalk 模块
 - 调用 chalk 模块的颜色方法，在控制台打印带颜色的信息
@@ -109,7 +109,7 @@
 - 打印 module 信息
 - 编写 02-main.js 脚本
 - 导入 02-export-var.js
-- 打印导入模块的变量
+- 打印导入模块的变量，打印的文字用绿色
 - 打印 module 信息
 - 运行 02-main.js，观察程序的输出
 
@@ -125,7 +125,7 @@
 - 打印 module 信息
 - 编写 03-main.js 脚本
 - 导入 03-export-function.js
-- 调用 circle 的面积和周长方法，并打印结果
+- 调用 circle 的面积和周长方法，并打印结果，打印的文字为绿色
 - 打印 module 信息
 - 运行 03-main.js，观察程序的输出
 
@@ -139,7 +139,7 @@
 - 打印 module 信息
 - 编写 04-main.js 脚本
 - 导入 04-export-object.js
-- 调用 circle 的直径、面积和周长方法，并打印结果
+- 调用 circle 的直径、面积和周长方法，并打印结果，打印的文字为绿色
 - 打印 module 信息
 - 运行 04-main.js，观察程序的输出
 
@@ -153,7 +153,7 @@
 - 打印 module 信息
 - 编写 05-main.js 脚本
 - 导入 05-export-object.js
-- 调用 circle 的直径、面积和周长方法，并打印结果
+- 调用 circle 的直径、面积和周长方法，并打印结果，打印的结果为绿色
 - 打印 module 信息
 - 运行 05-main.js，观察程序的输出
 
@@ -166,7 +166,7 @@
 - 打印 module 信息
 - 编写 06-main.js 脚本
 - 导入 06-export-object.js
-- 调用 circle 的直径、面积和周长方法，并打印结果
+- 调用 circle 的直径、面积和周长方法，并打印结果，打印的结果为绿色
 - 打印 module 信息
 - 运行 06-main.js，观察程序的输出
 - 思考上面四个任务代码的作用、编写方式，等差异
@@ -192,11 +192,27 @@
 
 要求：
 - 创建 08-circle 文件夹
-- 编写 area.js 脚本，导出计算圆面积的函数
-- 编写 diameter.js 脚本，导出计算圆直径的函数
-- 编写 circumference.js 脚本，导出计算圆周长的函数
+- 目录结构如下
+```
+08-circle
+├── bin
+│   └── circle
+├── index.js
+├── lib
+│   ├── area.js
+│   ├── circumference.js
+│   └── diameter.js
+└── package.json
+```
+- 编写 lib/area.js 脚本，导出计算圆面积的函数
+- 编写 lib/diameter.js 脚本，导出计算圆直径的函数
+- 编写 lib/circumference.js 脚本，导出计算圆周长的函数
 - 编写 index.js 脚本，导出对象 circle，具有三个方法分别计算圆的直径、周长和面积
 - 这三个方法是从上面定义的三个脚本文件导入而来
-- 编写 08-main.js 脚本，将 08-circle 文件夹视为包导入 circle 对象
+- 编写 bin/circle 脚本，导入 index.js 中的 circle 对象
 - 调用 circle 的直径、面积和周长方法，并打印结果
-- 运行 08-main.js，观察程序的输出
+- 运行 bin/circle，观察程序的输出
+- `cd ~/nodejs-demo/ && cp -r 07-module/08-circle node_modules/circle`
+- 运行上面的命令，把 `08-circle` 目录，复制到 `node_modules` 文件下，并改名为 `circle`
+- 编写 08-main.js 脚本
+- 导入 circle 对象，调用 circle 的三个方法
