@@ -23,3 +23,4 @@
 - [升级开发环境](mocha-dev-env.md)
 - [开发环境使用](env-manual.md)
 - [视频清单](video.md)
+- [课堂测验](test.md)
