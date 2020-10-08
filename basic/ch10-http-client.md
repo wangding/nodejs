@@ -2,7 +2,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [http API 资料](http://nodejs.cn/api/http.html)  
+- [http API 资料](http://nodejs.cn/api/http.html)
 
 ## 了解 HTTP 协议
 
@@ -11,10 +11,10 @@
   - HTTP 命令，包括：GET、POST，等
   - HTTP 报文，包括：请求报文头，请求报文体、响应报文头和响应报文体
   - HTTP 响应状态码
-- 阅读 [HTTP 协议资料](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Message_format)  
-- 阅读 [HTTP 协议入门](http://www.ruanyifeng.com/blog/2016/08/http.html)  
-- 阅读 [HTTP 头部字段资料](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)  
-- 阅读 [HTTP 状态码资料](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)  
+- 阅读 [HTTP 协议资料](https://encyclopedia.thefreedictionary.com/HTTP)
+- 阅读 [HTTP 协议入门](http://www.ruanyifeng.com/blog/2016/08/http.html)
+- 阅读 [HTTP 头部字段资料](https://encyclopedia.thefreedictionary.com/List+of+HTTP+headers)
+- 阅读 [HTTP 状态码资料](https://encyclopedia.thefreedictionary.com/List+of+HTTP+status+codes)
 - 用 telnet 工具了解 HTTP 协议的相关知识
 - 用 curl 工具了解 HTTP 协议的相关知识
 - 用 chrome 开发者工具了解 HTTP 协议的相关知识

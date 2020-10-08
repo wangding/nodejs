@@ -13,7 +13,7 @@
 - 创建 09-stream 目录
 - 编写 01-std-io.js 脚本
 - 通过 `data` 事件消费标准输入流中的数据
-- 消费标准输入流中的数据，就是将标准输入流的数据写到标准输出流中
+- 将标准输入流的字符转成大写，然后输出到标准输出流中
 - 在标准输入流中 push 一些字符串
 - 通过 `pipe` 方法将标准输入流接到标准输出流上，消费标准输入流中的数据
 - 用 `for` 循环在标准输出流上输出 a-z 26 个字母
@@ -75,7 +75,7 @@
 
 要求：
 - 编写 07-green-stream.js 脚本
-- 阅读 [ANSI 转义码资料](https://en.wikipedia.org/wiki/ANSI_escape_code)
+- 阅读 [ANSI 转义码资料](https://encyclopedia.thefreedictionary.com/ANSI+escape+code)
 - 定义 GreenStream 类继承 Writable 类
 - GreenStream 类将收到的数据输出到标准输出流中
 - 输出的文本信息格式化成绿色，参考下面代码：

@@ -21,7 +21,7 @@
 
 要求：
 - 编写 02-encode.js 脚本
-- 阅读 [basic authentication 资料](https://en.wikipedia.org/wiki/Basic_access_authentication)
+- 阅读 [basic authentication 资料](https://encyclopedia.thefreedictionary.com/Basic+access+authentication)
 - 从命令行参数获取登录网站的用户名和密码信息
 - 命令行参数的格式：`cmd user_name password`
 - 命令行参数不正确时，提示用户命令行参数的正确格式
@@ -68,7 +68,7 @@
 
 要求：
 - 编写 05-bmp-info.js 脚本
-- 阅读 [BMP 文件格式资料](https://en.wikipedia.org/wiki/BMP_file_format)
+- 阅读 [BMP 文件格式资料](https://encyclopedia.thefreedictionary.com/BMP+file+format)
 - 从命令行参数获取图片文件名
 - 命令行参数的格式：`cmd file_name`
 - 命令行参数不正确时，提示用户命令行参数的正确格式
