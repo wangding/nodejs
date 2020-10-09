@@ -151,7 +151,7 @@
 - 阅读 [fetch 官方文档](https://fetch.spec.whatwg.org/)  
 - 阅读 [fetch 用法说明](http://blog.csdn.net/kajweb/article/details/72593482)  
 - 编写客户端代码使用 RESTful API  
-- 执行 `wget http://sample.wangding.in/nodejs/todo.html` 命令，获取网页 html 代码  
+- 执行 `wget https://sample.wangding.in/nodejs/todo.html` 命令，获取网页 html 代码  
 - 在页面上实现查询和增加代办事项的功能  
 - 在页面上实现删除和修改代办事项的功能  
 - 用 chrome 测试 web 服务程序
