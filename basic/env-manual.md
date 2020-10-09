@@ -12,15 +12,11 @@
 ## 关闭开发环境
 
 操作步骤如下：
-- 如果 vim 在编辑代码文件，退出 vim 编辑器
-- 如果自己的 web 服务程序正在运行，Ctrl + C 终止服务程序，或者 kill 进程
-- 在 linux 命令行，输入 `exit` 命令，退出 linux 登录
-- xshell 的窗口为 dos 命令行
-- 在 dos 命令行，再输入 `exit` 命令，会关闭 xshell 会话窗口
-- 如果 xshell 有一个会话窗口，则 xshell 窗口会关闭
-- 如果 xshell 有多个会话窗口，在其他会话窗口，做上述同样的操作，直到 xshell 窗口关闭为止
-- xshell 窗口关闭后，在 vmware 虚拟机窗口中，找到 mocha 虚拟机标签
-- 点暂停按钮，挂起 linux 虚拟机
+- 切换到 XShell 终端窗口
+- 输入 `sudo shutdown -h  now` 命令，关闭 linux 操作系统
+- XShell 的窗口为 DOS 命令行
+- 在 DOS 命令行，输入 `exit` 命令，关闭 XShell 会话窗口
+- XShell 窗口关闭后，关闭 VMware 程序窗口
 
 ## JavaScript 前端代码和后端代码自动补全
 
