@@ -238,6 +238,7 @@ vim
 # 退出 vim
 :q
 ```
+
 ![vim 插件的安装过程：王顶，408542507@qq.com](images/vim-plugin-install.png)
 
 ## 安装 tern_for_vim 的第三方依赖

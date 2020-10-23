@@ -21,6 +21,7 @@
 - 用上面三个工具访问 http://sample.wangding.in/web/one-div.html ，查看请求和响应的头信息，如下图所示：
 - 搞明白请求头部字段列表中每个字段的含义和作用
 - 搞明白响应头部字段列表中每个字段的含义和作用
+
   ![http-headers，王顶，408542507@qq.com](./images/http-headers.png)
 
 ## GET 请求网站页面
@@ -52,6 +53,7 @@
 - API 参考：https://developer.github.com/v3/
 - 运行并测试程序
 - 运行效果如下图所示：
+
   ![github-api，王顶，408542507@qq.com](./images/github-api.png)
 
 ## POST 发送数据

@@ -76,8 +76,9 @@
 - 服务程序接收表单数据，并将待办事项放到 TODO list 表单页面，发送给客户端
 - 用 chrome 浏览器测试服务程序
 - 用 curl 测试服务程序
-- TODO list 表单页面样式如下：  
-  ![form-get，王顶，node.js，408542507@qq.com](./images/todo-list.png)  
+- TODO list 表单页面样式如下：
+
+  ![form-get，王顶，node.js，408542507@qq.com](./images/todo-list.png)
 
 ## 处理 POST 请求的 FORM 表单
 
@@ -96,12 +97,13 @@
 要求：
 - 基于 07-form-post.js 代码
 - 编写 08-form-cmd.js 脚本
-- 用户在表单页面上提交 linux 命令  
-- 服务程序利用子进程技术执行 linux 命令  
-- 服务程序将 linux 命令的运行结果返回到网页上  
-- 命令运行结果要求能够正确的换行显示  
-- 程序的运行效果，如下图所示：  
-  ![form-cmd，王顶，node.js，408542507@qq.com](./images/form-cmd.gif)  
+- 用户在表单页面上提交 linux 命令
+- 服务程序利用子进程技术执行 linux 命令
+- 服务程序将 linux 命令的运行结果返回到网页上
+- 命令运行结果要求能够正确的换行显示
+- 程序的运行效果，如下图所示：
+
+  ![form-cmd，王顶，node.js，408542507@qq.com](./images/form-cmd.gif)
 
 ## 处理文件上传
 
@@ -130,7 +132,7 @@
 
 要求：
 - 编写 11-form-html.js 脚本
-- 对 07-form-post.js 重构  
+- 对 07-form-post.js 重构
 - 将 07-form-post.js 脚本中的 HTML 代码，保存在单独的文件中 template.html
 - 将 template.html 中的待办事项数据部分用占位符 % 来代替
 - 11-form-html.js 程序读取 template.html 模板文件
@@ -140,7 +142,7 @@
 ## 实现 RESTful API
 
 要求：
-- 阅读[理解 RESTful 架构](http://www.ruanyifeng.com/blog/2011/09/restful.html)  
+- 阅读[理解 RESTful 架构](http://www.ruanyifeng.com/blog/2011/09/restful.html)
 - 阅读 [RESTful API 设计指南](http://www.ruanyifeng.com/blog/2014/05/restful_api.html)
 - 编写 12-rest-api.js 脚本
 - 使用任务 1 方法解析的框架代码
@@ -148,12 +150,13 @@
 - 实现对待办事项的增、删、改、查
 - 服务端程序还要向客户端发送静态页面
 - 用 curl 测试 RESTful API
-- 阅读 [fetch 官方文档](https://fetch.spec.whatwg.org/)  
-- 阅读 [fetch 用法说明](http://blog.csdn.net/kajweb/article/details/72593482)  
-- 编写客户端代码使用 RESTful API  
-- 执行 `wget https://sample.wangding.in/nodejs/todo.html` 命令，获取网页 html 代码  
-- 在页面上实现查询和增加代办事项的功能  
-- 在页面上实现删除和修改代办事项的功能  
+- 阅读 [fetch 官方文档](https://fetch.spec.whatwg.org/)
+- 阅读 [fetch 用法说明](http://blog.csdn.net/kajweb/article/details/72593482)
+- 编写客户端代码使用 RESTful API
+- 执行 `wget https://sample.wangding.in/nodejs/todo.html` 命令，获取网页 html 代码
+- 在页面上实现查询和增加代办事项的功能
+- 在页面上实现删除和修改代办事项的功能
 - 用 chrome 测试 web 服务程序
 - 程序的运行效果，如下图所示：
+
   ![todo-api，王顶，node.js，408542507@qq.com](./images/todo-api.gif)
