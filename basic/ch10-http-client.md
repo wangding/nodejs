@@ -18,16 +18,16 @@
 - 用 telnet 工具了解 HTTP 协议的相关知识
 - 用 curl 工具了解 HTTP 协议的相关知识
 - 用 chrome 开发者工具了解 HTTP 协议的相关知识
-- 用上面三个工具访问 http://sample.wangding.in/web/one-div.html ，查看请求和响应的头信息，如下图所示：  
-- 搞明白请求头部字段列表中每个字段的含义和作用  
-- 搞明白响应头部字段列表中每个字段的含义和作用  
-  ![http-headers，王顶，408542507@qq.com](./images/http-headers.png)  
+- 用上面三个工具访问 http://sample.wangding.in/web/one-div.html ，查看请求和响应的头信息，如下图所示：
+- 搞明白请求头部字段列表中每个字段的含义和作用
+- 搞明白响应头部字段列表中每个字段的含义和作用
+  ![http-headers，王顶，408542507@qq.com](./images/http-headers.png)
 
-## GET 请求网站页面  
+## GET 请求网站页面
 
 要求：
 - 创建 16-http-client 目录
-- 编写 01-my-curl.js 脚本  
+- 编写 01-my-curl.js 脚本
 - 获取命令行参数：要请求的 URL 地址
 - 向该 URL 地址发出 GET 请求
 - 将 HTTP 响应的起始行、响应头和响应体内容打印到控制台
@@ -39,7 +39,7 @@
 
 要求：
 - 编写 02-get-weather.js 脚本
-- 调用天气预报 API，实现城市天气查询：https://www.juhe.cn/docs/api/id/39
+- 调用天气预报 API，实现城市天气查询：https://www.free-api.com/doc/396
 - 用 GET 方法请求天气信息
 - 支持命令行参数：城市名称
 - 运行并测试程序
@@ -48,16 +48,16 @@
 - 编写 03-get-repos.js 脚本
 - 获取某个账户的所有 GitHub 仓库的数量和名称
 - 账户信息通过命令行参数获取
-- API 地址：`https://api.github.com/search/repositories?q=user:wangding`  
+- API 地址：`https://api.github.com/search/repositories?q=user:wangding`
 - API 参考：https://developer.github.com/v3/
 - 运行并测试程序
-- 运行效果如下图所示：  
-  ![github-api，王顶，408542507@qq.com](./images/github-api.png)  
+- 运行效果如下图所示：
+  ![github-api，王顶，408542507@qq.com](./images/github-api.png)
 
 ## POST 发送数据
 
 要求：
-- 编写 04-post.js 脚本  
+- 编写 04-post.js 脚本
 - 向指定的 URL 地址发出 HTTP POST 请求
 - POST 请求中携带向服务器程序发送的特定数据
 - 向服务器程序发送的数据通过命令行参数获取
@@ -69,14 +69,13 @@
 
 ## 爬虫程序
 
-要求：  
-- 创建 05-crawler 目录
-- 创建项目配置文件：package.json
+要求：
+- 编写 05-crawler.js 脚本
 - `npm i -S cheerio` 安装项目依赖 cheerio
 - 用 cheerio 对爬取的 HTML 页面进行 DOM 元素解析
 - cheerio 用法请参考：[cheerio API](https://cnodejs.org/topic/5203a71844e76d216a727d2e)
 - 爬取 segmentfault 网站的免费课程信息
-- 需爬取的网页地址：https://segmentfault.com/lives/free
+- 需爬取的网页地址：https://ke.sifou.com/free
 - 从爬取的网页中解析出课程信息，包括：课程名称，课程地址
 - 将爬取的课程信息格式化输出到控制台
 
