@@ -46,6 +46,9 @@ module.exports = function (grunt) {
         }, {
           from: 'src="gitbook',
           to: 'src="https://cdn.jsdelivr.net/gh/wangding/nodejs@gh-pages/gitbook'
+        }, {
+          from: 'src="images',
+          to: 'src="https://cdn.jsdelivr.net/gh/wangding/nodejs@gh-pages/images'
         }]
       }
     },
