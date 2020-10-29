@@ -10,7 +10,7 @@
 
 王顶老师的 QQ 学习交流群：301862163，加群时请报上自己的真实姓名，以及正在学习的课程内容。
 
-![QQ 群二维码，王顶，408542507@qq.com](https://cdn.jsdelivr.net/gh/wangding/sample@master/images/student-group.png)
+![QQ 群二维码，王顶，408542507@qq.com](https://cdn.jsdelivr.net/gh/wangding/sample@master/images/student-group.jpg)
 
 ## 课程视频
 
