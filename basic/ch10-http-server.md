@@ -139,21 +139,35 @@
 - 并将占位符 % 替换为具体的待办事项数据
 - 用 chrome 测试服务程序
 
-## 实现 RESTful API
+## 前后端分离架构的代办事项
+
+### 实现 RESTful API
 
 要求：
 - 阅读[理解 RESTful 架构](http://www.ruanyifeng.com/blog/2011/09/restful.html)
 - 阅读 [RESTful API 设计指南](http://www.ruanyifeng.com/blog/2014/05/restful_api.html)
 - 编写 12-rest-api.js 脚本
-- 使用任务 1 方法解析的框架代码
+- 使用任务 2 方法解析的框架代码
 - 服务程序要响应 GET、POST、PUT 和 DELETE 四种请求方法
-- 实现对待办事项的增、删、改、查
-- 服务端程序还要向客户端发送静态页面
+- 实现对待办事项的增、删、改、查，HTTP 接口规格如下：
+```
+method: GET,    url: /todo,    fun: get all todo items
+method: POST,   url: /todo,    fun: insert todo item
+method: DELETE, url: /todo,    fun: del all todo items
+method: DELETE, url: /todo:id, fun: del todo item by id
+method: PUT,    url: /todo:id, fun: update todo item by id
+```
 - 用 curl 测试 RESTful API
+- 客户端请求 url 为网站根路径时，服务程序发送代办事项页面给客户端
+- 所以，服务程序不是纯粹的 HTTP 接口服务
+
+### 实现前端页面
+
+- 代办事项页面使用前端脚本，fetch 请求 HTTP 接口
+- 并将获取的待办事项 JSON 数据展示到页面上
 - 阅读 [fetch 官方文档](https://fetch.spec.whatwg.org/)
-- 阅读 [fetch 用法说明](http://blog.csdn.net/kajweb/article/details/72593482)
+- 阅读 [fetch 用法说明](https://segmentfault.com/a/1190000007019545)
 - 编写客户端代码使用 RESTful API
-- 执行 `wget https://sample.wangding.in/nodejs/todo.html` 命令，获取网页 html 代码
 - 在页面上实现查询和增加代办事项的功能
 - 在页面上实现删除和修改代办事项的功能
 - 用 chrome 测试 web 服务程序
