@@ -18,7 +18,7 @@
 - 用 telnet 工具了解 HTTP 协议的相关知识
 - 用 curl 工具了解 HTTP 协议的相关知识
 - 用 chrome 开发者工具了解 HTTP 协议的相关知识
-- 用上面三个工具访问 http://sample.wangding.in/web/one-div.html ，查看请求和响应的头信息，如下图所示：
+- 用上面三个工具访问 http://sample.wangding.co/web/one-div.html ，查看请求和响应的头信息，如下图所示：
 - 搞明白请求头部字段列表中每个字段的含义和作用
 - 搞明白响应头部字段列表中每个字段的含义和作用
 

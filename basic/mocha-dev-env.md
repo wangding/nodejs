@@ -107,7 +107,7 @@ exit                  // 切换到开发者账户 wangding
 cd
 mkdir spa
 cd ~/spa
-wget https://sample.wangding.in/nodejs/tern-project
+wget https://sample.wangding.co/nodejs/tern-project
 mv tern-project .tern-project
 vim  a.js             // 命令行打开 vim 编辑器
 i                     // 进入插入模式
@@ -161,7 +161,7 @@ browser-sync --version  // 应该看到版本号不低于：2.23.6
 
 ## Vim 代码编辑器
 
-1. 阅读 [Vim 笔记](https://note.wangding.in/office/vim.html)
+1. 阅读 [Vim 笔记](https://note.wangding.co/office/vim.html)
 2. 执行下列命令
 ```
 cd                     // 回到家目录

@@ -23,7 +23,7 @@
 - 接收键盘输入字符
 - 将接收到的键盘数据发送到远程服务器上
 - 将远程服务器的响应数据打印到控制台上
-- 连接到 HTTP 服务器上做测试，测试服务器地址：http://sample.wangding.in/web/one-div.html
+- 连接到 HTTP 服务器上做测试，测试服务器地址：http://sample.wangding.co/web/one-div.html
 - 连接到 FTP 服务器上做测试，测试服务器地址：ftp://ftp.gnu.org
 
 ## 阅读 Node.js API 资料

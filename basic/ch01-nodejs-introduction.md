@@ -36,16 +36,16 @@
 ## 熟悉开发环境的使用
 
 - 熟悉[开发环境的使用](./env-manual.md)
-- 熟悉常用的 [linux 命令用法](https://note.wangding.in/linux/centos.html)
-- 熟悉 [Git 命令](https://note.wangding.in/office/git.html)的用法
-- 熟悉 [vim 的用法](https://note.wangding.in/office/vim.html)
+- 熟悉常用的 [linux 命令用法](https://note.wangding.co/linux/centos.html)
+- 熟悉 [Git 命令](https://note.wangding.co/office/git.html)的用法
+- 熟悉 [vim 的用法](https://note.wangding.co/office/vim.html)
 
 ## hello world 命令行程序
 
 要求：
 - 创建 nodejs-demo 目录
 - 把 .tern-project 代码自动补全配置文件，放到 nodejs-demo 目录下，操作方法如下：
-  - 在 nodejs-demo 目录下，运行 `wget https://sample.wangding.in/nodejs/tern-project`
+  - 在 nodejs-demo 目录下，运行 `wget https://sample.wangding.co/nodejs/tern-project`
   - 在 nodejs-demo 目录下，运行 `mv tern-project .tern-project`
 - 创建 01-introduction 目录
 - 编写 01-hello-world.js

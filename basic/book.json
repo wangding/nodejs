@@ -26,14 +26,14 @@
   ],
   "pluginsConfig": {
     "versions": {
-      "gitbookConfigURL": "https://nodejs.wangding.in/book.json",
+      "gitbookConfigURL": "https://nodejs.wangding.co/book.json",
       "options": [
       {
-        "value": "https://nodejs.wangding.in",
+        "value": "https://nodejs.wangding.co",
         "text": "Node.js 应用开发"
       },
       {
-        "value": "https://nodejs.wangding.in/advanced/",
+        "value": "https://nodejs.wangding.co/advanced/",
         "text": "Node.js 高级实战"
       }]
     },
@@ -87,7 +87,7 @@
       "caption": "图：_CAPTION_"
     },
     "bsz": {
-      "copyright": "2018&nbsp;-&nbsp;<span class=\"bsz-this-year\"></span>&nbsp;by&nbsp;<a href=\"https://i.wangding.in\">王顶</a>.&nbsp;All rights reserved."
+      "copyright": "2018&nbsp;-&nbsp;<span class=\"bsz-this-year\"></span>&nbsp;by&nbsp;<a href=\"https://i.wangding.co\">王顶</a>.&nbsp;All rights reserved."
     }
   },
   "styles": {

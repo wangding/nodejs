@@ -27,7 +27,7 @@
 
 要求：
 - 使用 Node.js 命令行调试器，调试 server.js 程序，去掉程序中的 bug
-- 获取 server.js 程序，运行：`wget https://sample.wangding.in/nodejs/server.js`
+- 获取 server.js 程序，运行：`wget https://sample.wangding.co/nodejs/server.js`
 
 ## Chrome 图形界面调试器
 
@@ -38,4 +38,4 @@
 
 要求：
 - 使用 Node.js 性能分析工具，分析 profile.js 程序
-- 获取 profile.js 程序，运行：`wget https://sample.wangding.in/nodejs/profile.js`
+- 获取 profile.js 程序，运行：`wget https://sample.wangding.co/nodejs/profile.js`
