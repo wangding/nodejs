@@ -15,7 +15,6 @@
     "anchor-navigation-ex",
     "copy-code-button",
     "prism",
-    "github-buttons@2.1.0",
     "splitter",
     "image-captions-extended",
     "bsz",
@@ -47,11 +46,6 @@
     },
     "anchor-navigation-ex": {
       "multipleH1": false
-    },
-    "github-buttons": {
-      "repo": "wangding/nodejs",
-      "types": ["star"],
-      "size": "small"
     },
     "forkmegithub-cn": {
       "url": "https://github.com/wangding/nodejs",
