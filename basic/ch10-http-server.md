@@ -78,7 +78,7 @@
 - 用 curl 测试服务程序
 - TODO list 表单页面样式如下：
 
-  ![form-get，王顶，node.js，408542507@qq.com](./images/todo-list.png)
+  ![form-get，王顶，node.js，408542507@qq.com](./images/todo-list.webp)
 
 ## 处理 POST 请求的 FORM 表单
 
@@ -103,7 +103,7 @@
 - 命令运行结果要求能够正确的换行显示
 - 程序的运行效果，如下图所示：
 
-  ![form-cmd，王顶，node.js，408542507@qq.com](./images/form-cmd.gif)
+  ![form-cmd，王顶，node.js，408542507@qq.com](./images/form-cmd.webp)
 
 ## 处理文件上传
 

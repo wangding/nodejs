@@ -22,7 +22,7 @@
 - 搞明白请求头部字段列表中每个字段的含义和作用
 - 搞明白响应头部字段列表中每个字段的含义和作用
 
-  ![http-headers，王顶，408542507@qq.com](./images/http-headers.png)
+  ![http-headers，王顶，408542507@qq.com](./images/http-headers.webp)
 
 ## GET 请求网站页面
 
@@ -54,7 +54,7 @@
 - 运行并测试程序
 - 运行效果如下图所示：
 
-  ![github-api，王顶，408542507@qq.com](./images/github-api.png)
+  ![github-api，王顶，408542507@qq.com](./images/github-api.webp)
 
 ## POST 发送数据
 

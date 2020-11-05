@@ -31,7 +31,7 @@ vim                // 命令行打开 vim 编辑器
 :q                 // vim 提示 Done 时，:q 退出安装界面
 :q                 // 退出 vim
 ```
-![vim-plugin-install](images/vim-plugin-install.png)
+![vim-plugin-install](images/vim-plugin-install.webp)
 
 ## 验证安装的 emmet vim 插件
 
