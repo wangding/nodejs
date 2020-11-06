@@ -29,61 +29,75 @@
 - 运行安装命令
 
 ```bash
-# 安装 mariadb 和 mariadb-server
-sudo yum install -y mariadb mariadb-server
+# 下载并安装 MySQL 官方的 Yum Repository
+
+wget -i -c http://dev.mysql.com/get/mysql57-community-release-el7-10.noarch.rpm
+
+# yum 安装 mysql
+
+sudo yum -y install mysql57-community-release-el7-10.noarch.rpm
+
+# 安装 mysql 服务程序，这个步骤时间可能会比较长，取决于个人网速
+
+sudo yum -y install mysql-community-server
 
 # 启动数据库服务
-sudo systemctl start mariadb
 
-# 配置 MariaDB root 账户的密码
-mysql_secure_installation
+sudo systemctl start mysqld.service
 
-# 配置项如下：
-Enter current password for root (enter for none):回车
-Set root password? [Y/n]回车
-New password:输入密码（自己要记住）
-Re-enter new password:再次输入密码
-Remove anonymous users? [Y/n]回车
-Remove test database and access to it? [Y/n]n
-Reload privilege tables now? [Y/n]回车
+# 查看 MySQL 运行状态
 
-# 访问 MariaDB
+sudo systemctl status mysqld.service
+
+# 找到 mysql 初始的 root 用户密码
+
+sudo grep "password" /var/log/mysqld.log
+
+# 进入数据库 Shell 环境，修改 root 账户密码
+# 注意，密码有复杂度要求，要记住改后的密码
+
 mysql -u root -p
-# -p 参数会提示输入密码，输入密码后，就可以访问数据库了。
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'iqjLryKLu9%C';
+
+# 在数据库 Shell 环境中，测试 root 账户的权限
+
+show databases;
+create database abc;
+show databases;
+exit;
 ```
 
 ## 命令行操作 MySQL
 
 要求：
 - Linux 命令行连接 MySQL
-- 在 test 数据库中，创建 books 表
+- 在 test 数据库中，创建 areas 表
 ```
-+---------+---------+------+-----+---------+-------+
-| Field   | Type    | Null | Key | Default | Extra |
-+---------+---------+------+-----+---------+-------+
-| book_id | int(11) | YES  |     | NULL    |       |
-| title   | text    | YES  |     | NULL    |       |
-| status  | int(11) | YES  |     | NULL    |       |
-+---------+---------+------+-----+---------+-------+
++-----------+--------------+------+-----+---------+----------------+
+| Field     | Type         | Null | Key | Default | Extra          |
++-----------+--------------+------+-----+---------+----------------+
+| id        | int(11)      | NO   | PRI | NULL    | auto_increment |
+| area_name | varchar(255) | NO   | UNI | NULL    |                |
++-----------+--------------+------+-----+---------+----------------+
 ```
-- 在 books 表上练习 CURD 操作
+- 在 areas 表上练习 CURD 操作
 
-## 阅读 mysql API 资料
+## 阅读 mysql2 API 资料
 
-- [mysql API 资料](https://github.com/mysqljs/mysql)
+- [mysql2 API 资料](https://www.npmjs.com/package/mysql2)
 
 ## 用 Node.js 对 MySQL 做 CURD 操作
 
 要求：
 - 编写 03-mysql.js 脚本
-- 安装 mysql 第三方库
+- 安装 mysql2 第三方库
 - 连接到 test 数据库，做以下操作
-- 在 books 表中插入一条记录
-- 查询 books 表中的记录
-- 在 books 表中更改刚才插入的记录
-- 查询 books 表中的记录
-- 在 books 表中删除刚才修改的记录
-- 查询 books 表中的记录
+- 在 areas 表中插入一条记录
+- 查询 areas 表中的记录
+- 在 areas 表中更改刚才插入的记录
+- 查询 areas 表中的记录
+- 在 areas 表中删除刚才修改的记录
+- 查询 areas 表中的记录
 - 关闭连接
 
 ## 基于 MySQL 存储的 Todo List
@@ -92,7 +106,7 @@ mysql -u root -p
 - 创建 04-todo-list 子目录
 - 复制 16-http-server/05-form-post 代码到 04-todo-list 目录下，改名为 index.js
 - 在 04-todo-list 子目录 npm 初始化项目配置文件 package.json
-- npm 安装 mysql 模块，作为开发依赖项写入项目配置文件
+- npm 安装 mysql2 模块，作为开发依赖项写入项目配置文件
 - 创建 models 子目录
 - models 目录下，编写 config.json 文件，配置 mysql 数据库连接参数
 - models 目录下，编写 database.js 脚本，创建 mysql 数据库连接池
@@ -101,18 +115,3 @@ mysql -u root -p
 - TodoList 类的 addItem 方法向 todo 表中添加一条待办事项
 - 命令行连接 mysql 数据库，创建 todo_list 数据库以及 todo 表
 - 用 chrome 或 curl 测试服务程序
-
-## 基于 MySQL 存储的 Todo List API
-
-要求：
-- 复制 18-express/07-todo-list-api 代码到 19-data-storage 目录
-- 将 07-todo-list-api 目录改名为 05-todo-list-api
-- 进入 05-todo-list-api 目录
-- npm 安装 mysql 模块
-- 复制任务五的 models 和 test 两个子目录及下面的代码文件
-- models 目录下，完善 todo-list.js 脚本
-- TodoList 类的 delAll 方法删除 todo 表中的所有记录
-- TodoList 类的 delete 方法删除 todo 表中指定 id 的记录
-- TodoList 类的 update 方法更改 todo 表中指定 id 的 item 字段
-- 改写 router/index.js 路由模块，使用数据库操作模块 models/todo-list.js 来操作待办事项数据
-- 用 curl 测试服务程序
