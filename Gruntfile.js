@@ -51,22 +51,17 @@ module.exports = function (grunt) {
         }, {
           from: '<link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">',
           to: '<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/wangding/i@master/favicon.svg">'
-        }, {
-          from: 'href="gitbook',
-          to: 'href="https://cdn.jsdelivr.net/gh/wangding/nodejs@gh-pages/gitbook'
-        }, {
-          from: 'href="styles',
-          to: 'href="https://cdn.jsdelivr.net/gh/wangding/nodejs@gh-pages/styles'
-        }, {
-          from: 'href="images',
-          to: 'href="https://cdn.jsdelivr.net/gh/wangding/nodejs@gh-pages/images'
-        }, {
-          from: 'src="gitbook',
-          to: 'src="https://cdn.jsdelivr.net/gh/wangding/nodejs@gh-pages/gitbook'
-        }, {
-          from: 'src="images',
-          to: 'src="https://cdn.jsdelivr.net/gh/wangding/nodejs@gh-pages/images'
         }]
+      }
+    },
+    qiniu_qupload: {
+      default_options: {
+        options: {
+          ak: 'QINIU_AK',
+          sk: 'QINIU_SK',
+          bucket: 'gb-nodejs',
+          assets: [{src: '_book', prefix: ''}]
+        }
       }
     },
     copy: {
@@ -98,6 +93,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-text-replace');
   grunt.loadNpmTasks('grunt-unescape-html');
   grunt.loadNpmTasks('grunt-json-minify');
+  grunt.loadNpmTasks('@wangding/grunt-qiniu-qupload');
 
   grunt.registerTask('minify', ['unescape', 'copy:html', 'replace', 'htmlmin', 'cssmin', 'uglify', 'copy:html', 'copy:js', 'json-minify']);
+  grunt.registerTask('upload', ['qiniu_qupload']);
 };

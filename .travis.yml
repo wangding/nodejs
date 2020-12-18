@@ -9,12 +9,13 @@ after_script:
   - gitbook build basic/ _book
   - gitbook build advanced/ _book/advanced/
   - grunt minify
+  - cp book.json ./_book
+  - grunt upload
   - cd ./_book
   - git init
   - git config user.name "${USER_NAME}"
   - git config user.email "${USER_EMAIL}"
   - cp ../CNAME .
-  - cp ../book.json .
   - git add .
   - git commit -m "publish gitbook"
   - git push --force --quiet "https://${ACC_TOKEN}@${GH_REF}" master:${BRANCH}
