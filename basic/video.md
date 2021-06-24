@@ -4,6 +4,11 @@
 - 课程视频放在 B 站，**登录 B 站**后，课程视频可以**高清**观看
 - 视频中的代码文字较小，**最好在电脑上观看**视频，不适合在手机上观看
 
+## 开发环境使用
+
+- [Git 使用](https://www.bilibili.com/video/BV14E411k7Um)
+- [Vim 使用](https://www.bilibili.com/video/BV1gv411H7ib?p=3)
+
 ## Node.js 简介
 
 - [开发环境搭建](https://www.bilibili.com/video/BV1iy4y1y7hm?p=1)
@@ -139,3 +144,76 @@
 - [文件压缩与解压缩](https://www.bilibili.com/video/BV1iy4y1y7hm?p=79)
 - [对 HTTP 数据压缩](https://www.bilibili.com/video/BV1iy4y1y7hm?p=80)
 - [通过 HTTP Proxy 查看 HTTP 数据压缩](https://www.bilibili.com/video/BV1iy4y1y7hm?p=81)
+
+## JavaScript 异步编程
+
+- [JavaScript 异步编程概述](https://www.bilibili.com/video/BV1iy4y1y7hm?p=82)
+- [JavaScript 异步并发操作](https://www.bilibili.com/video/BV1iy4y1y7hm?p=83)
+- [回调函数的异步流程控制](https://www.bilibili.com/video/BV1iy4y1y7hm?p=84)
+- [Promise 的异步流程控制](https://www.bilibili.com/video/BV1iy4y1y7hm?p=85)
+- [await 的异步流程控制](https://www.bilibili.com/video/BV1iy4y1y7hm?p=86)
+- [回调异步流程控制的数据传递](https://www.bilibili.com/video/BV1iy4y1y7hm?p=87)
+- [Promise 异步流程控制的数据传递](https://www.bilibili.com/video/BV1iy4y1y7hm?p=88)
+- [await 异步流程控制的数据传递](https://www.bilibili.com/video/BV1iy4y1y7hm?p=89)
+
+## HTTP 编程概述
+
+- [HTTP 协议概述](https://www.bilibili.com/video/BV1iy4y1y7hm?p=90)
+
+### HTTP 客户端程序
+
+- [爬虫概述](https://www.bilibili.com/video/BV1iy4y1y7hm?p=91)
+- [简单爬虫的实现](https://www.bilibili.com/video/BV1iy4y1y7hm?p=92)
+- [复杂爬虫的实现](https://www.bilibili.com/video/BV1iy4y1y7hm?p=93)
+
+### HTTP 服务端程序
+
+- [后台模板渲染架构](https://www.bilibili.com/video/BV1iy4y1y7hm?p=94)
+- [前后端分离架构](https://www.bilibili.com/video/BV1iy4y1y7hm?p=95)
+
+## Koa2 快速上手
+
+- [第一个 koa web 服务](https://www.bilibili.com/video/BV1iy4y1y7hm?p=96)
+
+### 中间件
+
+- [中间件是什么](https://www.bilibili.com/video/BV1iy4y1y7hm?p=97)
+- [中间件的操作流程和数据传递](https://www.bilibili.com/video/BV1iy4y1y7hm?p=98)
+- [中间件的异步操作和洋葱模型](https://www.bilibili.com/video/BV1iy4y1y7hm?p=99)
+
+### 路由
+
+- [koa 原生路由](https://www.bilibili.com/video/BV1iy4y1y7hm?p=100)
+- [koa-router 路由和请求参数获取](https://www.bilibili.com/video/BV1iy4y1y7hm?p=101)
+- [路由模块化和路由模块管理](https://www.bilibili.com/video/BV1iy4y1y7hm?p=102)
+
+## 常用的 Web 编程技术
+
+### 数据库访问
+
+- [数据存储概述](https://www.bilibili.com/video/BV1iy4y1y7hm?p=103)
+- [数据库的基本概念](https://www.bilibili.com/video/BV1iy4y1y7hm?p=104)
+- [MySQL 的安装与 Shell 操作](https://www.bilibili.com/video/BV1iy4y1y7hm?p=105)
+- [Workbench 的安装和使用](https://www.bilibili.com/video/BV1iy4y1y7hm?p=106)
+- [SQL 编程（上）](https://www.bilibili.com/video/BV1iy4y1y7hm?p=107)
+- [SQL 编程（下）](https://www.bilibili.com/video/BV1iy4y1y7hm?p=108)
+- [SQL 编程（中）](https://www.bilibili.com/video/BV1iy4y1y7hm?p=109)
+
+### HTTP 接口服务
+
+- [HTTP 接口服务概述](https://www.bilibili.com/video/BV1iy4y1y7hm?p=110)
+- [mysql2 API 操作数据库（上）](https://www.bilibili.com/video/BV1iy4y1y7hm?p=111)
+- [mysql2 API 操作数据库（下）](https://www.bilibili.com/video/BV1iy4y1y7hm?p=112)
+
+### Sequelize ORM
+
+- [ORM 概述](https://www.bilibili.com/video/BV1iy4y1y7hm?p=113)
+- [Sequelize 执行简单查询](https://www.bilibili.com/video/BV1iy4y1y7hm?p=114)
+- [Sequelize 执行高级查询（上）](https://www.bilibili.com/video/BV1iy4y1y7hm?p=115)
+- [Sequelize 执行高级查询（下）](https://www.bilibili.com/video/BV1iy4y1y7hm?p=116)
+
+### JWT 身份验证
+
+- [JWT 概述](https://www.bilibili.com/video/BV1iy4y1y7hm?p=117)
+- [对接口服务实现 JWT 身份验证（上）](https://www.bilibili.com/video/BV1iy4y1y7hm?p=118)
+- [对接口服务实现 JWT 身份验证（下）](https://www.bilibili.com/video/BV1iy4y1y7hm?p=119)
