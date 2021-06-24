@@ -8,9 +8,9 @@
 
 ## 学习交流群
 
-王顶老师的 QQ 学习交流群：301862163，加群时请报上自己的真实姓名，以及正在学习的课程内容。
+王顶老师的 QQ 学习交流群：301862163，加群时请报上自己的真实姓名，以及正在学习的课程内容。软件学院的学生不用加入此群，使用班级 QQ 群交流即可。
 
-![QQ 群二维码，王顶，408542507@qq.com](https://cdn.jsdelivr.net/gh/wangding/nodejs@master/basic/images/student-group.webp)
+![QQ 群二维码，王顶，408542507@qq.com](https://cdn.jsdelivr.net/gh/wangding/sample@master/images/student-group.webp)
 
 ## 课程视频
 
@@ -24,8 +24,12 @@
 
 ## 通关任务
 
-按课程讲授的顺序，排列在电子书左侧导航中，所有通关任务对应有参考的示例代码，请见下面 nodejs-demo 仓库的链接。
+按课程讲授的顺序，排列在电子书左侧导航中，大部分通关任务对应有参考的示例代码，请见下面 nodejs-demo 仓库的链接。
 
 ## 示例代码
 
-- [Demo Code](https://github.com/wangding/nodejs-demo/)
+- [nodejs-demo](https://github.com/wangding/nodejs-demo)，包含大部分 node.js 原生 API 的示例代码。
+- [nodejs-advanced-demo](https://github.com/wangding/nodejs-advanced-demo)，包含 Koa2 框架、JWT 和 ORM，等第三方 API 的示例代码。
+- [entropy](https://github.com/wangding/entropy)，计算信源熵的命令行工具示例代码，这个程序支持所有控制台交互方式。
+- [cartoon-api](https://github.com/wangding/cartoon-api)，漫画书网站的 HTTP API 接口服务，这个示例代码是基于 Koa2 和 sequelize ORM 开发的，后台数据库用的是 MySQL。
+- [todo-list](https://github.com/wangding/todo-list)，待办事项 web app 的示例代码。
