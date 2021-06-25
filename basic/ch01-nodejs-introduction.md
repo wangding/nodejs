@@ -36,9 +36,9 @@
 ## 熟悉开发环境的使用
 
 - 熟悉[开发环境的使用](./env-manual.md)
-- 熟悉常用的 [linux 命令用法](https://note.wangding.co/linux/centos.html)
-- 熟悉 [Git 命令](https://note.wangding.co/office/git.html)的用法
-- 熟悉 [vim 的用法](https://note.wangding.co/office/vim.html)
+- 熟悉常用的 [linux 命令用法](http://note.wangding.co/linux/centos.html)
+- 熟悉 [Git 命令](http://note.wangding.co/office/git.html)的用法
+- 熟悉 [vim 的用法](http://note.wangding.co/office/vim.html)
 
 ## hello world 命令行程序
 

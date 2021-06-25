@@ -161,7 +161,7 @@ browser-sync --version  // 应该看到版本号不低于：2.23.6
 
 ## Vim 代码编辑器
 
-1. 阅读 [Vim 笔记](https://note.wangding.co/office/vim.html)
+1. 阅读 [Vim 笔记](http://note.wangding.co/office/vim.html)
 2. 执行下列命令
 ```
 cd                     // 回到家目录

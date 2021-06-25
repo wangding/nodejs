@@ -129,7 +129,7 @@ gitbook --version       // 应该看到 CLI 的版本号和 GitBook 的版本号
 
 ## 练习 vim 代码编辑器
 
-1. 阅读 [Vim 笔记](https://note.wangding.co/office/vim.html)
+1. 阅读 [Vim 笔记](http://note.wangding.co/office/vim.html)
 2. 执行下列命令
 ```
 cd                     // 回到家目录
