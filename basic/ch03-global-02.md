@@ -133,9 +133,10 @@
 
 要求：
 - 编写 04-export-object.js 脚本
-- 定义 Circle 构造函数
-- Circle 对象有三个公开方法，分别计算圆的直径、面积和周长
-- 导出 Circle 构造函数
+- 定义 Circle 类
+- Circle 类有三个公开 getter 属性方法，分别是圆的直径、面积和周长
+- Circle 构造函数接收一个参数：圆的半径
+- 导出 Circle 类
 - 打印 module 信息
 - 编写 04-main.js 脚本
 - 导入 04-export-object.js
