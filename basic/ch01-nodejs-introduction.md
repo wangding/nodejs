@@ -15,7 +15,7 @@
 
 **方式一：导入虚拟机（推荐）**
 
-- 下载并安装 vmware workstation Pro 12+（**已经安装 vmware workstation，跳过此步**）
+- 下载并安装 vmware workstation Pro 15+（**已经安装 vmware workstation，跳过此步**）
 - 下载 [mocha 虚拟机](http://pan.baidu.com/s/1o8a3E3o)压缩文件
 - 解压缩 mocha 虚拟机
 - 用 vmware workstation，打开解压后的 mocha 虚拟机
@@ -25,13 +25,30 @@
 - 确保在 mocha 虚拟机中，`ping www.baidu.com` 可以正常执行
 - 下载并安装 [xshell 6](https://www.netsarang.com/zh/free-for-home-school/)
 - 用 XShell 链接 mocha 虚拟机
-- 配置 mocha 虚拟机的 git 参数，包括：user.name 和 user.email
-- 在 GitHub 或码云创建测试仓库，确保 git 可以向远程仓库提交代码
 
 **方式二：从头安装**
 
 - 安装步骤请参考：[Node.js 开发环境搭建](setup-dev-env.html)
 - 安装 CentOS 虚拟机，请参考：[教学视频](http://edu.51cto.com/center/course/lesson/index?id=166501)
+
+## 配置开发环境
+
+**4.1 配置 git 参数**
+
+- 配置 git 的 user.name 和 user.email 参数，否则 `git commit` 不能正常工作
+- 运行命令 `git config --list`，查看当前的 git 配置信息
+- 如果没有配置 user.name 和 user.email 参数，请执行下面的操作
+- 运行命令 `git config --global user.email "Your Email"`，配置 user.name 参数
+- 运行命令 `git config --global user.name "Your Name"`，配置 user.email 参数
+- 注意，上面两个命令需要把双引号中的文字改成具体的姓名和邮箱
+- 运行命令 `git config --list`，查看刚配置的 git 参数
+
+**4.2 配置默认的 node.js 版本**
+
+- 虚拟机中用 nvm 安装了 node.js 三个版本：8, 10 和 12，运行 `nvm list` 命令，可以查看到这些信息
+- 运行 `nvm use` 命令，可以切换到 node.js 三个版本中的任意一个
+- nvm 默认的 node.js 版本是 8.11，意味着如果运行 `nvm use 12`，将 node.js 版本切换到 12，但是 linux 重启后，node.js 版本会自动恢复到 8.11
+- 运行命令 `nvm alias default 12.18`，将 node.js 的默认版本设为 12.18
 
 ## 熟悉开发环境的使用
 
@@ -39,6 +56,7 @@
 - 熟悉常用的 [linux 命令用法](http://note.wangding.co/linux/centos.html)
 - 熟悉 [Git 命令](http://note.wangding.co/office/git.html)的用法
 - 熟悉 [vim 的用法](http://note.wangding.co/office/vim.html)
+- 可以选择观看[课程视频](./video.md)来熟悉开发环境
 
 ## hello world 命令行程序
 
