@@ -18,9 +18,8 @@
 
 ## 幻灯片
 
-- [Node.js 应用开发（上）](https://github.com/wangding/courses/blob/master/nodejs/nodejs01.pptx)
-- [Node.js 应用开发（中）](https://github.com/wangding/courses/blob/master/nodejs/nodejs02.pptx)
-- [Node.js 应用开发（下）](https://github.com/wangding/courses/blob/master/nodejs/nodejs03.pptx)
+- [Node.js 应用开发 01](https://gitee.com/edu2act/course-nodejs/blob/master/nodejs01.pptx)
+- [Node.js 应用开发 02](https://gitee.com/edu2act/course-nodejs/blob/master/nodejs02.pptx)
 
 ## 通关任务
 
@@ -28,8 +27,8 @@
 
 ## 示例代码
 
-- [nodejs-demo](https://github.com/wangding/nodejs-demo)，包含大部分 node.js 原生 API 的示例代码。
-- [nodejs-advanced-demo](https://github.com/wangding/nodejs-advanced-demo)，包含 Koa2 框架、JWT 和 ORM，等第三方 API 的示例代码。
-- [entropy](https://github.com/wangding/entropy)，计算信源熵的命令行工具示例代码，这个程序支持所有控制台交互方式。
-- [cartoon-api](https://github.com/wangding/cartoon-api)，漫画书网站的 HTTP API 接口服务，这个示例代码是基于 Koa2 和 sequelize ORM 开发的，后台数据库用的是 MySQL。
-- [todo-list](https://github.com/wangding/todo-list)，待办事项 web app 的示例代码。
+- [nodejs-demo](https://gitee.com/wangding/nodejs-demo)，包含大部分 node.js 原生 API 的示例代码。
+- [nodejs-advanced-demo](https://gitee.com/wangding/nodejs-advanced-demo)，包含 Koa2 框架、JWT 和 ORM，等第三方 API 的示例代码。
+- [entropy](https://gitee.com/wangding/entropy)，计算信源熵的命令行工具示例代码，这个程序支持所有控制台交互方式。
+- [cartoon-api](https://gitee.com/wangding/cartoon-api)，漫画书网站的 HTTP API 接口服务，这个示例代码是基于 Koa2 和 sequelize ORM 开发的，后台数据库用的是 MySQL。
+- [todo-list-api](https://gitee.com/wangding/todo-list-api)，待办事项 HTTP API 接口服务的示例代码。
