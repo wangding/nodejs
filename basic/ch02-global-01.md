@@ -25,7 +25,7 @@
 - 通过命令行重定向，观察 console.log 和 console.error 两个方法所使用流的区别
 ```bash
 ./01-format.js > output.txt
-./01-format.js 2 > error-msg.txt
+./01-format.js 2> error-msg.txt
 ```
 
 ## 控制台基准测试
