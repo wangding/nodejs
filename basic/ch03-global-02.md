@@ -217,3 +217,29 @@
 - 运行上面的命令，把 `08-circle` 目录，复制到 `node_modules` 文件下，并改名为 `circle`
 - 编写 08-main.js 脚本
 - 导入 circle 对象，调用 circle 的三个方法
+
+## 在 node.js 中使用 ES6 模块机制
+
+要求：
+- 编写 09-es6-module.js 脚本
+- 用 ES6 的 `import` 关键字引入 node.js 内置模块：http
+- 用 ES6 的 `import` 关键字引入 chalk 第三方模块
+- 创建类似 hello-world-server 的 web app 监听 8080 端口
+- 另外，在收到 http 请求时，在控制台用亮绿色 (chalk.greenBright) 打印 HTTP 请求起始行
+- 请求起始行，例如：`GET / HTTP/1.1`，包括三部分：
+  - 请求方法(req.method)
+  - 请求路径(req.url)
+  - HTTP 版本(req.httpVersion)
+- 运行 09-es6-module.js 脚本，用 curl 或浏览器测试该 web app
+
+要求：
+- 复制 04-export-object.js 为 09-export-object.js
+- 修改代码，用 ES6 的 `export` 关键字导出 Circle 类
+- 编写 09-main.js 脚本，`import` 导入 09-export-object.js 的 Circle 类
+- 根据命令行参数的 radius 数据，控制台输出圆的周长和面积信息
+- 例如：
+```bash
+$ ./09-main.js 8
+circle area:          201.06192982974676
+circle circumference: 50.26548245743669
+```
