@@ -4,7 +4,7 @@
 
 - [EventEmitter API 资料](http://nodejs.cn/api/events.html)
 
-## 使用 EventEmitter 类
+## 使用 EventEmitter 类（可选）
 
 要求：
 - 创建 08-event 目录
@@ -15,24 +15,24 @@
 - hello 事件处理函数在控制台打印 hello world 信息
 - bye 事件处理函数在控制台打印 goodbye 信息，并结束程序
 
-## 原型继承 EventEmitter 类
+## 继承 EventEmitter 类
 
 要求：
 - 编写 02-dog.js 以及 02-play-dog.js 脚本
-- Dog 类原型继承 EventEmitter 类
+- 02-dog.js 脚本实现 Dog 类，并导出 Dog 类
+- Dog 类继承 EventEmitter 类
 - Dog 类中，包含：name 和 energy 两个私有数据成员
-- name 是狗的名字
-- energy 是狗的能量
-- 狗每叫一次，energy 减 1，energy 为零时，狗不能叫
+- name 是狗的名字，energy 是狗的能量
 - 用构造函数对私有数据 name 和 energy 进行初始化
-- 每隔 1 秒发出 bark 狗叫事件
-- 02-dog.js 模块导出 Dog 类
+- energy 大于零时，每隔 1 秒发出 bark 狗叫事件
+- 狗每叫一次，energy 减 1，energy 为零时，狗不能叫
+- Dog 的 energy 可以被修改
 - 02-play-dog.js 中导入 Dog 类
 - 实例化多个 Dog 的对象，不同的 Dog 对象有不同的名字和能量
 - 不同的狗采用同一个 bark 事件处理函数
 - bark 事件处理函数在控制台打印狗的名字以及它的能量
 
-## util.inherits 方法继承 EventEmitter 类
+## util.inherits 方法继承 EventEmitter 类（可选）
 
 要求：
 - 编写 03-radio.js 以及 03-listen-radio.js 脚本
@@ -46,7 +46,7 @@
 - 处理 radio 对象的 play 和 stop 事件
 - play 和 stop 事件处理函数打印 station 电台信息以及状态
 
-## 复制 EventEmitter 类成员
+## 复制 EventEmitter 类成员（可选）
 
 要求：
 - 复制 03-radio.js 和 03-listen-radio.js 脚本
@@ -60,13 +60,14 @@
 - 要求：
 - 复制 02-dog.js 和 02-play-dog.js 脚本
 - 编写 05-dog.js 和 05-play-dog.js 脚本
-- 不使用 EventEmitter 类，自己实现事件机制
+- 不使用 EventEmitter 类，编写 05-event.js 脚本，自己实现 Event 类
+- Dog 类继承自己实现的 Event 类
 - 测试程序的运行
 
-## 自己实现事件机制
+## 自己实现事件机制（可选）
 
 - 要求：
 - 复制 03-radio.js 和 03-listen-radio.js 脚本
 - 编写 06-radio.js 和 06-listen-radio.js 脚本
-- 不使用 EventEmitter 类，自己实现事件机制
+- 不使用 EventEmitter 类，Radio 类继承 05-event.js 脚本中的 Event 类
 - 测试程序的运行
