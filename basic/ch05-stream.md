@@ -29,6 +29,7 @@
 - web 服务器根路径是当面脚本所在目录
 - web 服务监听 8080 端口
 - 正确响应浏览器发送的 URL 请求
+- 将 URL 地址中的文件内容，发送给浏览器
 - 当 URL 地址中的资源文件不存在时，提示用户文件不存在的错误信息
 
 ## 基于流的 Web 静态文件服务
@@ -75,11 +76,9 @@
 
 要求：
 - 编写 07-green-stream.js 脚本
-- 阅读 [ANSI 转义码资料](https://encyclopedia.thefreedictionary.com/ANSI+escape+code)
 - 定义 GreenStream 类继承 Writable 类
 - GreenStream 类将收到的数据输出到标准输出流中
-- 输出的文本信息格式化成绿色，参考下面代码：
-- `console.log('\033[1;32m' + 'hello world!' + '\033[1;37m');`
+- 使用 chalk，将输出的文本信息格式化成亮绿色
 - 实例化 GreenStream 类，将标准输入流连接到自己定义的可写流对象上
 - 运行程序，观察程序的运行效果
 
