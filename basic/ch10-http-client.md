@@ -39,18 +39,10 @@
 ## GET 请求 HTTP API
 
 要求：
-- 编写 02-get-weather.js 脚本
-- 调用天气预报 API，实现城市天气查询：https://www.free-api.com/doc/396
-- 用 GET 方法请求天气信息
-- 支持命令行参数：城市名称
-- 运行并测试程序
-
-要求：
-- 编写 03-get-repos.js 脚本
-- 获取某个账户的所有 GitHub 仓库的数量和名称
+- 编写 02-get-repos.js 脚本
+- 获取某个账户的所有公开 Gitee 仓库的数量和名称
 - 账户信息通过命令行参数获取
-- API 地址：`https://api.github.com/search/repositories?q=user:wangding`
-- API 参考：https://developer.github.com/v3/
+- API 参考：https://gitee.com/api/v5/swagger#/getV5UsersUsernameRepos
 - 运行并测试程序
 - 运行效果如下图所示：
 
@@ -59,17 +51,32 @@
 ## POST 发送数据
 
 要求：
-- 编写 04-post.js 脚本
+- 编写 03-post.js 脚本
 - 向指定的 URL 地址发出 HTTP POST 请求
 - POST 请求中携带向服务器程序发送的特定数据
 - 向服务器程序发送的数据通过命令行参数获取
 - 将服务器程序的响应起始行、响应头和响应体内容打印到控制台
-- 编写 04-server.js 脚本
-- 接收 04-post.js 脚本发送的 POST 请求数据
+- 编写 03-server.js 脚本
+- 接收 03-post.js 脚本发送的 POST 请求数据
 - 将接收到的请求起始行、请求头和请求体数据打印到控制台
 - 运行并测试程序
 
-## 爬虫程序
+## 简单爬虫程序
+
+要求：
+- 编写 04-crawler.js 脚本
+- 爬取[动漫屋网站](https://tel.dm5.com/)的漫画书封面图片
+- 需爬取的网页地址：https://tel.dm5.com/manhua-list/
+- 提示：
+- 用 chrome 打开网址：https://tel.dm5.com/manhua-list/
+- 打开 chrome 开发者工具，切换到 network 选项卡
+- 在网页上点击【题材】-> 【热血】，观察 chorme 开发者工具的 network 选项卡下的 HTTP 请求
+- 观察第一个请求 `dm5.ashx?t=xxxx`，这个请求是一个 AJAX 请求，返回数据是 JSON
+- 返回的 JSON 数据中，有漫画书的封面 URL 地址
+- 可以把这个 JSON 数据保存为一个 json 文件，根据这个 json 文件，来爬取漫画书的封面图片
+- 这个 JSON 数据相当于爬虫的任务链接列表
+
+## 复杂爬虫程序
 
 要求：
 - 编写 05-crawler.js 脚本
@@ -77,11 +84,11 @@
 - 用 cheerio 对爬取的 HTML 页面进行 DOM 元素解析
 - cheerio 用法请参考：[cheerio API](https://cnodejs.org/topic/5203a71844e76d216a727d2e)
 - 爬取 segmentfault 网站的免费课程信息
-- 需爬取的网页地址：https://ke.sifou.com/free
+- 需爬取的网页地址：https://ke.segmentfault.com/free
 - 从爬取的网页中解析出课程信息，包括：课程名称，课程地址
 - 将爬取的课程信息格式化输出到控制台
 
-## HTTP 重定向
+## HTTP 重定向（略）
 
 要求：
 - 编写 06-redirection.js 脚本
