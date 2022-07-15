@@ -23,7 +23,7 @@
 - 登录 mocha 虚拟机，用户名：wangding，密码：ddd
 - 配置 mocha 虚拟机的网卡 IP 地址，具体操作请参考：[教学视频](https://www.bilibili.com/video/bv1iy4y1y7hm)
 - 确保在 mocha 虚拟机中，`ping www.baidu.com` 可以正常执行
-- 下载并安装 [xshell 6](https://www.netsarang.com/zh/free-for-home-school/)
+- 下载并安装 [xshell](https://www.xshell.com/zh/free-for-home-school/)
 - 用 XShell 链接 mocha 虚拟机
 
 **方式二：从头安装**
@@ -56,7 +56,7 @@
 要求：
 - 创建 nodejs-demo 目录
 - 把 .tern-project 代码自动补全配置文件，放到 nodejs-demo 目录下，操作方法如下：
-  - 在 nodejs-demo 目录下，运行 `wget https://sample.wangding.co/nodejs/tern-project`
+  - 在 nodejs-demo 目录下，运行 `wget http://sample.wangding.co/nodejs/tern-project`
   - 在 nodejs-demo 目录下，运行 `mv tern-project .tern-project`
 - 创建 01-introduction 目录
 - 编写 01-hello-world.js

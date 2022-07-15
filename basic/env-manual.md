@@ -26,7 +26,7 @@
 cd
 mkdir tmp
 cd tmp
-wget https://sample.wangding.co/nodejs/tern-project
+wget http://sample.wangding.co/nodejs/tern-project
 mv tern-project .tern-project
 vi a.js               // 命令行打开 vim 编辑器
 i                     // 进入插入模式

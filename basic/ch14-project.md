@@ -17,7 +17,7 @@
 - 对程序中的通用模块用 Mocha 做单元测试，用 Istanbul 做代码覆盖率测试
 - 命令行程序的交互效果，请参考下面的屏幕截图：
 
-  ![entropy 命令行界面](https://cdn.jsdelivr.net/gh/wangding/nodejs@master/basic/images/entropy.gif)
+  ![entropy 命令行界面](./images/entropy.gif)
 
 ## 待办事项
 

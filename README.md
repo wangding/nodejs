@@ -10,7 +10,7 @@
 
 王顶老师的 QQ 学习交流群：301862163，加群时请报上自己的真实姓名，以及正在学习的课程内容。软件学院的学生不用加入此群，使用班级 QQ 群交流即可。
 
-![QQ 群二维码，王顶，408542507@qq.com](https://cdn.jsdelivr.net/gh/wangding/sample@master/images/student-group.webp)
+![QQ 群二维码，王顶，408542507@qq.com](http://sample.wangding.co/images/student-group.webp)
 
 ## 课程视频
 

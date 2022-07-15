@@ -12,4 +12,4 @@
 
 ## 示例代码
 
-- [Demo Code](https://gitee.com/wangding/nodejs-advanced-demo)
+- [Demo Code](https://bitbucket.org/wngding/nodejs-advanced-demo)

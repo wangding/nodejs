@@ -2,7 +2,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [http API 资料](http://nodejs.cn/api/http.html)
+- [http API 资料](https://www.nodeapp.cn/http.html)
 
 ## 了解 HTTP 协议
 

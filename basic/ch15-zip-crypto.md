@@ -2,7 +2,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [zlib API 资料](http://nodejs.cn/api/zlib.html)  
+- [zlib API 资料](https://www.nodeapp.cn/zlib.html)  
 
 ## GZip 压缩文件
 

@@ -107,7 +107,7 @@ exit                  // 切换到开发者账户 wangding
 cd
 mkdir spa
 cd ~/spa
-wget https://sample.wangding.co/nodejs/tern-project
+wget http://sample.wangding.co/nodejs/tern-project
 mv tern-project .tern-project
 vim  a.js             // 命令行打开 vim 编辑器
 i                     // 进入插入模式

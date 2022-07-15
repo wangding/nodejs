@@ -11,7 +11,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [console API 资料](http://nodejs.cn/api/console.html)
+- [console API 资料](https://www.nodeapp.cn/console.html)
 
 ## 控制台格式化输出信息
 
@@ -38,7 +38,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [process API 资料](http://nodejs.cn/api/process.html)
+- [process API 资料](https://www.nodeapp.cn/process.html)
 
 ## 获取平台信息
 
@@ -109,7 +109,7 @@
 
 ## 阅读 Node.js API 资料
 
-- 阅读 [global API 资料](http://nodejs.cn/api/globals.html) 中的六个定时器函数相关的资料
+- 阅读 [global API 资料](https://www.nodeapp.cn/globals.html) 中的六个定时器函数相关的资料
 
 ## 定时炸弹
 

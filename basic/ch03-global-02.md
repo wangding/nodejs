@@ -2,7 +2,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [Buffer API 资料](http://nodejs.cn/api/buffer.html)
+- [Buffer API 资料](https://www.nodeapp.cn/buffer.html)
 
 ## Buffer 基本操作
 
@@ -44,9 +44,9 @@
 要求：
 - 编写 04-data-uri.js 脚本
 - 阅读 [data URI scheme 资料](https://en.wikipedia.org/wiki/Data_URI_scheme)
-- 执行 `wget https://sample.wangding.co/nodejs/nodejs-logo.bmp` 下载 nodejs-logo.bmp 测试图片
-- 执行 `wget https://sample.wangding.co/nodejs/qr-code.jpg` 下载 qr-code.jpg 测试图片
-- 执行 `wget https://sample.wangding.co/nodejs/book.png` 下载 book.png 测试图片
+- 执行 `wget http://sample.wangding.co/nodejs/nodejs-logo.bmp` 下载 nodejs-logo.bmp 测试图片
+- 执行 `wget http://sample.wangding.co/nodejs/qr-code.jpg` 下载 qr-code.jpg 测试图片
+- 执行 `wget http://sample.wangding.co/nodejs/book.png` 下载 book.png 测试图片
 - 从命令行参数获取图片文件名
 - 命令行参数的格式：`cmd file_name`
 - 命令行参数不正确时，提示用户命令行参数的正确格式
@@ -87,7 +87,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [module API 资料](http://nodejs.cn/api/modules.html)
+- [module API 资料](https://www.nodeapp.cn/modules.html)
 
 ## 使用第三方模块
 
