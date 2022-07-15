@@ -2,7 +2,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [Buffer API 资料](https://www.nodeapp.cn/buffer.html)
+- [Buffer API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/buffer.html)
 
 ## Buffer 基本操作
 
@@ -95,7 +95,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [module API 资料](https://www.nodeapp.cn/modules.html)
+- [module API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/modules.html)
 
 ## 使用第三方模块
 

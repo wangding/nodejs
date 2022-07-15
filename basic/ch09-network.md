@@ -2,7 +2,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [net API 资料](https://www.nodeapp.cn/net.html)
+- [net API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/net.html)
 
 ## TCP 服务端程序
 
@@ -32,7 +32,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [dgram API 资料](https://www.nodeapp.cn/dgram.html)  
+- [dgram API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/dgram.html)  
 
 ## UDP 服务端程序
 
@@ -57,7 +57,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [dns API 资料](https://www.nodeapp.cn/dns.html)
+- [dns API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/dns.html)
 
 ## 域名解析
 

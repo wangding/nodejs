@@ -110,7 +110,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [https API 资料](https://www.nodeapp.cn/https.html)
+- [https API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/https.html)
 
 ## 实现 HTTPS 服务
 

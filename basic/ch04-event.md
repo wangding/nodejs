@@ -2,7 +2,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [EventEmitter API 资料](https://www.nodeapp.cn/events.html)
+- [EventEmitter API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/events.html)
 
 ## 使用 EventEmitter 类（可选）
 

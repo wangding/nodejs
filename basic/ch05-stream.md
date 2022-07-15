@@ -2,7 +2,7 @@
 
 ## 阅读参考资料
 
-- [Node.js 流 API 资料](https://www.nodeapp.cn/stream.html)
+- [Node.js 流 API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/stream.html)
 - [海纳百川：Node.js Stream](https://www.eebreakdown.com/2016/10/nodejs-streams.html)
 - [深入理解 Node.js Stream 内部机制](https://fed.taobao.org/blog/2017/09/01/nodejs-stream/)
 - [Node.js 流: 你需要知道的一切](https://juejin.im/post/5940a9c3128fe1006a0ab176)

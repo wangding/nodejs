@@ -2,7 +2,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [url API 资料](https://www.nodeapp.cn/url.html)
+- [url API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/url.html)
 
 ## 解析 HTTP 方法
 

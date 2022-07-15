@@ -12,7 +12,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [console API 资料](https://www.nodeapp.cn/console.html)
+- [console API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/console.html)
 
 ## 控制台格式化输出信息
 
@@ -20,13 +20,17 @@
 
 - 创建 03-console 目录
 - 编写 01-format.js 脚本
-- 定义一个 user 对象，包含三个字段：name, age, qq
-- 使用三种占位符，分别输出三种变量类型：字符串，整数和 JSON 数据
-- 以两种不用占位符的方式输出 `user.qq` 信息
+- 定义一个 user 对象，包含三个字段：name（字符串）, age（整数）, qq（字符串）
+- 使用六种占位符，分别输出四种变量类型：字符串、整数（两种）、浮点数和对象（两种）
+- 使用四种不同的方式输出字符串信息
+- 用 `console` 的 `dir` 方法输出对象和对象的数组
+- 用 `console` 的 `dir` 方法输出层次较深的对象
+- 用 `console` 的 `table` 方法输出对象和对象的数组，观察 `index` 列的区别
+- 用 `console` 的 `table` 方法输出对象数组的某些字段
 - 向标准错误流中输出信息：`Error：something wrong!`
-- 通过命令行重定向，观察 console.log 和 console.error 两个方法所使用流的区别
+- 通过命令行重定向，观察 `console` 的 `log` 和 `error` 两个方法所使用流的区别
 ```bash
-./01-format.js > output.txt
+./01-format.js 1> output.txt
 ./01-format.js 2> error-msg.txt
 ```
 
@@ -41,7 +45,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [process API 资料](https://www.nodeapp.cn/process.html)
+- [process API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/process.html)
 
 ## 获取平台信息
 
@@ -118,7 +122,7 @@
 
 ## 阅读 Node.js API 资料
 
-- 阅读 [global API 资料](https://www.nodeapp.cn/globals.html) 中的六个定时器函数相关的资料
+- 阅读 [global API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/globals.html) 中的六个定时器函数相关的资料
 
 ## 定时炸弹
 

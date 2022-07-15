@@ -2,7 +2,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [文件 API 资料](https://www.nodeapp.cn/fs.html)
+- [文件 API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/fs.html)
 - 将 fs 模块中的函数分类整理成[思维导图](http://naotu.baidu.com/file/74c2915d47a4e7ae561b9f57940865c3?token=743a4bf398643762)
 
 ## 回调异步方式打印文件内容

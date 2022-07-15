@@ -3,9 +3,8 @@
 ## 阅读参考资料
 
 - [Node.js 官方网站](https://nodejs.org/)
-- [Node.js 中文网站](http://nodejs.cn/)
-- [Node.js 官方 API](https://nodejs.org/dist/latest-v8.x/docs/api/)
-- [Node.js 中文 API](http://nodejs.cn/api/)
+- [Node.js 官方 API](https://nodejs.org/dist/latest-v18.x/docs/api/)
+- [Node.js 中文 API](https://nodejs.cn/dist/latest-v18.x/docs/api/)
 
 ## 下载并浏览电子书
 

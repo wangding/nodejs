@@ -2,7 +2,7 @@
 
 ## 阅读 API 资料
 
-- [子进程 API 资料](https://www.nodeapp.cn/child_process.html)
+- [子进程 API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/child_process.html)
 
 ## execFile 方式调用外部程序
 
