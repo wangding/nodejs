@@ -43,13 +43,6 @@
 - 注意，上面两个命令需要把双引号中的文字改成具体的姓名和邮箱
 - 运行命令 `git config --list`，查看刚配置的 git 参数
 
-**4.2 配置默认的 node.js 版本**
-
-- 虚拟机中用 nvm 安装了 node.js 三个版本：8, 10 和 12，运行 `nvm list` 命令，可以查看到这些信息
-- 运行 `nvm use` 命令，可以切换到 node.js 三个版本中的任意一个
-- nvm 默认的 node.js 版本是 8.11，意味着如果运行 `nvm use 12`，将 node.js 版本切换到 12，但是 linux 重启后，node.js 版本会自动恢复到 8.11
-- 运行命令 `nvm alias default 12.18`，将 node.js 的默认版本设为 12.18
-
 ## 熟悉开发环境的使用
 
 - 熟悉[开发环境的使用](./env-manual.md)
