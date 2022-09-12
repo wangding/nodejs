@@ -134,3 +134,11 @@
 - `timer1` 启动后，倒计时 5s 结束 `timer1` 并启动 `timer2`
 - `timer2` 定时任务执行 5 次后退出
 - 运行程序，测试程序执行的效果
+
+## sleep
+
+要求：
+- 编写 03-sleep.js 脚本
+- 用 Promise 实例封装 sleep 方法，可以让程序暂停执行若干毫秒
+- 运行程序，测试程序执行的效果
+- 使用 node.js v15 引入的 Promise 版本的 setTimeout 实现 sleep
