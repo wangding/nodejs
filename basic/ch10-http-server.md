@@ -2,8 +2,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [url API 资料](http://nodejs.cn/api/url.html)
-- [querystring API 资料](http://nodejs.cn/api/querystring.html)
+- [url API 资料](https://www.nodeapp.cn/url.html)
 
 ## 解析 HTTP 方法
 
@@ -22,12 +21,13 @@
 
 要求：
 - 编写脚本代码 02-url-parse.js
-- 使用 http 模块、url 模块以及 querystring 模块
-- 创建 web 服务监听 8080 端口
+- 解析给定的 url 地址：`http://wangding:123@www.baidu.com:8080/a/b/c?age=20&gender=M#/d/e/f`
+- 在控制台打印解析的结果
+- 使用 http 模块，创建 web 服务监听 8080 端口
 - 对 HTTP 请求的 URL 地址进行解析
 - 在控制台打印解析的结果
-- 对 URL 中的查询字符串进行解析，在控制台打印结果
-- 解析给定的 url 地址：`http://wangding:123@www.baidu.com:8080/a/b/c?age=20&gender=M#/d/e/f`，并在控制台打印解析的结果
+- 用 `curl http://localhost:8080/a/b/c?age=20&gender=M#/d/e/f` 命令测试上面的服务程序
+- 思考为什么没有解析出 hash: `#/d/e/f`
 
 ## 解析 HTTP 请求头
 
@@ -37,6 +37,7 @@
 - 在控制台打印完整的 HTTP 请求起始行和请求头信息
 - 在控制台打印 HTTP 请求头信息中的 User-Agent、Host 和 Content-Type 三个字段信息
 - 在 curl 程序中向 web 服务发送特定的头部字段信息 `Content-Type:appliction/json`，测试服务程序
+- `curl -H "Content-Type:appliction/json" http://localhost:8080`
 - 解析 HTTP 协议的基本身份验证请求头字段：authorization，将用户名和密码信息打印在控制台
 - 用命令 `curl http://wangding:123@localhost:8080` 测试服务程序
 
@@ -47,7 +48,8 @@
 - 使用 http 模块创建 web 服务监听 8080 端口
 - 当客户端请求网站根路径（/）时，发送给客户端一个 h1 格式的 hello world! 网页
 - 并且发送响应状态码 200
-- 并且发送响应头字段列表：Content-Type: text/html 以及 Content-Length: XXX（这三个 X 表示响应体的实际字节数）
+- 并且发送响应头字段列表：Content-Type: text/html 以及 Content-Length: XXX
+- Content-Length 中的三个 X 表示响应体的实际字节数
 - 当客户端请求网站其他路径时，发送状态码 404，以及 Resource not found！信息
 - 用 curl 程序测试这个 web 服务的不同 URL，查看响应起始行、响应报文头以及响应体
 
@@ -165,7 +167,7 @@ method: PUT,    url: /todo:id, fun: update todo item by id
 
 - 代办事项页面使用前端脚本，fetch 请求 HTTP 接口
 - 并将获取的待办事项 JSON 数据展示到页面上
-- 阅读 [fetch 官方文档](https://fetch.spec.whatwg.org/)
+- 阅读 [fetch 官方文档](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API)
 - 阅读 [fetch 用法说明](https://segmentfault.com/a/1190000007019545)
 - 编写客户端代码使用 RESTful API
 - 在页面上实现查询和增加代办事项的功能
