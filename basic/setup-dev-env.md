@@ -76,9 +76,13 @@
 
 **此后的所有安装步骤都是在 Linux 虚拟机中进行操作。**
 
-## 安装 vim 8
+## 安装 vim 9
 
 ```bash
+# 卸载低版本的 vim
+sudo yum remove vim -y
+vim --version
+
 # 安装工具软件和依赖库
 sudo yum install -y ruby ruby-devel lua lua-devel luajit wget unzip \
 luajit-devel ctags git python python-devel \
@@ -109,6 +113,8 @@ cd vim-master/src
 --enable-rubyinterp=yes \
 --enable-pythoninterp=yes \
 --with-python-config-dir=/usr/lib/python2.7/config \
+--enable-python3interp=yes \
+--with-python3-config-dir=/usr/lib/python3.6/config \
 --enable-perlinterp=yes \
 --enable-luainterp=yes \
 --enable-gui=gtk2 \
@@ -121,7 +127,7 @@ make
 # 安装软件
 sudo make install
 
-# 检查 vim 版本，应该是 8
+# 检查 vim 版本，应该是 9
 vim --version
 ```
 

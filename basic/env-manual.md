@@ -35,12 +35,7 @@ ESC                   // 回到普通模式
 :q!                   // 不保存退出
 vi a.js               // 命令行打开 vim 编辑器
 i                     // 进入插入模式
-$.                    // 输入 $ 和点之后看到 jQuery 全局对象 $ 的方法提示
-ESC                   // 回到普通模式
-:q!                   // 不保存退出
-vi a.js               // 命令行打开 vim 编辑器
-i                     // 进入插入模式
-process.              // 输入 process 和点之后看到 node.js 全局对象 process 的方法提示
+console.              // 输入 console 和点之后看到 node.js 全局对象 console 的方法提示
 ESC                   // 回到普通模式
 :q!                   // 不保存退出
 ```
