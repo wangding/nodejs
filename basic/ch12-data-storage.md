@@ -25,6 +25,10 @@
 ## 安装 MySQL
 
 要求：
+- 确保当前的 Linux 虚拟机上 MySQL 环境
+- 执行命令：`mysql --version`，检查 MySQL 客户端是否安装
+- 执行命令：`systemctl status mysqld`，检查 MySQL 服务程序是否运行
+- 如果上面两个命令的运行结果正常，请跳过下面的安装过程
 - 在 CentOS 7 Linux 上安装 MySQL
 - 运行安装命令
 
