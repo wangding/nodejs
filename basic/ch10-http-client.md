@@ -11,10 +11,9 @@
   - HTTP 命令，包括：GET、POST，等
   - HTTP 报文，包括：请求报文头，请求报文体、响应报文头和响应报文体
   - HTTP 响应状态码
-- 阅读 [HTTP 协议资料](https://encyclopedia.thefreedictionary.com/HTTP)
-- 阅读 [HTTP 协议入门](http://www.ruanyifeng.com/blog/2016/08/http.html)
-- 阅读 [HTTP 头部字段资料](https://encyclopedia.thefreedictionary.com/List+of+HTTP+headers)
-- 阅读 [HTTP 状态码资料](https://encyclopedia.thefreedictionary.com/List+of+HTTP+status+codes)
+- 阅读 [HTTP 协议资料](https://developer.mozilla.org/zh-CN/docs/Web/HTTP)
+- 阅读 [HTTP 头部字段资料](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers)
+- 阅读 [HTTP 状态码资料](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status)
 - 用 telnet 工具了解 HTTP 协议的相关知识
 - 用 curl 工具了解 HTTP 协议的相关知识
 - 用 chrome 开发者工具了解 HTTP 协议的相关知识
