@@ -196,8 +196,8 @@
 - [MySQL 的安装与 Shell 操作](https://www.bilibili.com/video/BV1iy4y1y7hm?p=105)
 - [Workbench 的安装和使用](https://www.bilibili.com/video/BV1iy4y1y7hm?p=106)
 - [SQL 编程（上）](https://www.bilibili.com/video/BV1iy4y1y7hm?p=107)
-- [SQL 编程（下）](https://www.bilibili.com/video/BV1iy4y1y7hm?p=108)
-- [SQL 编程（中）](https://www.bilibili.com/video/BV1iy4y1y7hm?p=109)
+- [SQL 编程（中）](https://www.bilibili.com/video/BV1iy4y1y7hm?p=108)
+- [SQL 编程（下）](https://www.bilibili.com/video/BV1iy4y1y7hm?p=109)
 
 ### HTTP 接口服务
 
