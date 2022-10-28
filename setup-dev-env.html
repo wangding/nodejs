@@ -1,0 +1,204 @@
+<!DOCTYPE HTML><html lang="zh-hans"><head><meta charset="UTF-8"><meta content="text/html; charset=utf-8" http-equiv="Content-Type"><title>搭建 Node.js 开发环境 · Node.js 应用开发</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="description" content=""><meta name="generator" content="GitBook 3.2.3"><meta name="author" content="王顶"><link rel="stylesheet" href="gitbook/style.css"><link rel="stylesheet" href="gitbook/gitbook-plugin-forkmegithub-cn/plugin.css"><link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css"><link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css"><link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css"><link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css"><link rel="stylesheet" href="gitbook/gitbook-plugin-image-captions-extended/image-captions.css"><link rel="stylesheet" href="gitbook/gitbook-plugin-bsz/bsz.css"><link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox.css"><link rel="stylesheet" href="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css"><link rel="stylesheet" href="gitbook/gitbook-plugin-gtalk/gtalk.css"><link rel="stylesheet" href="gitbook/gitbook-plugin-versions-select/plugin.css"><link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css"><link rel="stylesheet" href="styles/website.css"><meta name="HandheldFriendly" content="true"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png"><link rel="shortcut icon" href="http://i.wangding.co/favicon.svg"><link rel="next" href="mocha-dev-env.html"><link rel="prev" href="ch14-project.html"></head><body><div class="book"><div class="book-summary"><div id="book-search-input" role="search"><input type="text" placeholder="输入并搜索"></div><nav role="navigation"><ul class="summary"><li class="chapter" data-level="1.1" data-path="./"><a href="./">简介</a></li><li class="chapter" data-level="1.2" data-path="ch01-nodejs-introduction.html"><a href="ch01-nodejs-introduction.html">第一课：Node.js 简介</a></li><li class="chapter" data-level="1.3" data-path="ch02-global-01.html"><a href="ch02-global-01.html">第二课：全局（上）</a></li><li class="chapter" data-level="1.4" data-path="ch03-global-02.html"><a href="ch03-global-02.html">第三课：全局（下）</a></li><li class="chapter" data-level="1.5" data-path="ch04-event.html"><a href="ch04-event.html">第四课：事件</a></li><li class="chapter" data-level="1.6" data-path="ch05-stream.html"><a href="ch05-stream.html">第五课：流</a></li><li class="chapter" data-level="1.7" data-path="ch06-file-system.html"><a href="ch06-file-system.html">第六课：文件系统</a></li><li class="chapter" data-level="1.8" data-path="ch07-debug.html"><a href="ch07-debug.html">第七课：调试</a></li><li class="chapter" data-level="1.9" data-path="ch08-child-process.html"><a href="ch08-child-process.html">第八课：子进程</a></li><li class="chapter" data-level="1.10" data-path="ch09-network.html"><a href="ch09-network.html">第九课：网络</a></li><li class="chapter" data-level="1.11" data-path="ch10-http-client.html"><a href="ch10-http-client.html">第十课：HTTP 客户端</a></li><li class="chapter" data-level="1.12" data-path="ch10-http-server.html"><a href="ch10-http-server.html">第十课：HTTP 服务端</a></li><li class="chapter" data-level="1.13" data-path="ch11-http-advanced.html"><a href="ch11-http-advanced.html">第十一课：HTTP 进阶</a></li><li class="chapter" data-level="1.14" data-path="ch12-data-storage.html"><a href="ch12-data-storage.html">第十二课：数据存储</a></li><li class="chapter" data-level="1.15" data-path="ch13-express.html"><a href="ch13-express.html">第十三课：Express 框架</a></li><li class="chapter" data-level="1.16" data-path="ch14-project.html"><a href="ch14-project.html">第十四课：综合案例</a></li><li class="header">附录</li><li class="chapter active" data-level="2.1" data-path="setup-dev-env.html"><a href="setup-dev-env.html">搭建 Node.js 开发环境</a></li><li class="chapter" data-level="2.2" data-path="mocha-dev-env.html"><a href="mocha-dev-env.html">升级开发环境</a></li><li class="chapter" data-level="2.3" data-path="env-manual.html"><a href="env-manual.html">开发环境使用</a></li><li class="chapter" data-level="2.4" data-path="video.html"><a href="video.html">视频清单</a></li><li class="chapter" data-level="2.5" data-path="test.html"><a href="test.html">课堂测验</a></li><li class="divider"></li><li><a href="https://www.gitbook.com" target="blank" class="gitbook-link">本书使用 GitBook 发布</a></li></ul></nav></div><div class="book-body"><div class="body-inner"><div class="book-header" role="navigation"><!-- Title --><h1><i class="fa fa-circle-o-notch fa-spin"></i> <a href=".">搭建 Node.js 开发环境</a></h1></div><div class="page-wrapper" tabindex="-1" role="main"><div class="page-inner"><div class="search-plus" id="book-search-results"><div class="search-noresults"><section class="normal markdown-section"><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon"></span><a href="#搭建-nodejs-开发环境"><b> </b>搭建 Node.js 开发环境</a></li><ul><li><span class="title-icon"></span><a href="#下载软件包"><b>1. </b>下载软件包</a></li><li><span class="title-icon"></span><a href="#安装软件包"><b>2. </b>安装软件包</a></li><li><span class="title-icon"></span><a href="#安装-linux-虚拟机"><b>3. </b>安装 Linux 虚拟机</a></li><ul><li><span class="title-icon"></span><a href="#创建空白虚拟机"><b>3.1. </b>创建空白虚拟机</a></li><li><span class="title-icon"></span><a href="#设置虚拟机硬件"><b>3.2. </b>设置虚拟机硬件</a></li><li><span class="title-icon"></span><a href="#安装操作系统"><b>3.3. </b>安装操作系统</a></li><li><span class="title-icon"></span><a href="#设置虚拟机-ip-地址"><b>3.4. </b>设置虚拟机 IP 地址</a></li><li><span class="title-icon"></span><a href="#通过-xshell-连接-linux-虚拟机"><b>3.5. </b>通过 XShell 连接 Linux 虚拟机</a></li></ul><li><span class="title-icon"></span><a href="#安装-vim-9"><b>4. </b>安装 vim 9</a></li><li><span class="title-icon"></span><a href="#安装-nodejs"><b>5. </b>安装 node.js</a></li><li><span class="title-icon"></span><a href="#安装-zsh"><b>6. </b>安装 zsh</a></li><li><span class="title-icon"></span><a href="#安装-vim-和-zsh-配置文件"><b>7. </b>安装 vim 和 zsh 配置文件</a></li><li><span class="title-icon"></span><a href="#安装-vim-插件管理工具-vundle"><b>8. </b>安装 vim 插件管理工具 Vundle</a></li><li><span class="title-icon"></span><a href="#安装-vim-插件"><b>9. </b>安装 vim 插件</a></li><li><span class="title-icon"></span><a href="#安装-ternforvim-的第三方依赖"><b>10. </b>安装 tern_for_vim 的第三方依赖</a></li><li><span class="title-icon"></span><a href="#安装-ycm"><b>11. </b>安装 YCM</a></li><li><span class="title-icon"></span><a href="#安装开发辅助工具"><b>12. </b>安装开发辅助工具</a></li><li><span class="title-icon"></span><a href="#检查开发辅助工具"><b>13. </b>检查开发辅助工具</a></li><li><span class="title-icon"></span><a href="#检查-vim-插件"><b>14. </b>检查 vim 插件</a></li></ul></ul></div><a href="#搭建-nodejs-开发环境" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="搭建-nodejs-开发环境"><a name="搭建-nodejs-开发环境" class="anchor-navigation-ex-anchor" href="#搭建-nodejs-开发环境"><i class="fa fa-link" aria-hidden="true"></i></a> 搭建 Node.js 开发环境</h1><p>本文档基于 Linux CentOS 7 发行版，搭建基于命令行的 Node.js 开发环境。下面的安装步骤，如果没有特殊说明，<strong>一定不要在 root 账户下操作</strong>。</p><h2 id="下载软件包"><a name="下载软件包" class="anchor-navigation-ex-anchor" href="#下载软件包"><i class="fa fa-link" aria-hidden="true"></i></a>1. 下载软件包</h2><p>在 Win10 操作系统下载下列软件包：</p><ul><li>从腾讯软件中心下载 VMWare Worksation Pro 最新版</li><li>从腾讯软件中心下载 XShell 最新版</li><li>从 CentOS 官网下载 <a href="http://isoredirect.centos.org/centos/7/isos/x86_64/CentOS-7-x86_64-Everything-1708.iso" target="_blank">CentOS 安装镜像包</a></li></ul><h2 id="安装软件包"><a name="安装软件包" class="anchor-navigation-ex-anchor" href="#安装软件包"><i class="fa fa-link" aria-hidden="true"></i></a>2. 安装软件包</h2><p>在 Win10 操作系统安装下列软件包：</p><ul><li>安装 VMWare Workstation</li><li>安装 XShell</li></ul><h2 id="安装-linux-虚拟机"><a name="安装-linux-虚拟机" class="anchor-navigation-ex-anchor" href="#安装-linux-虚拟机"><i class="fa fa-link" aria-hidden="true"></i></a>3. 安装 Linux 虚拟机</h2><h3 id="创建空白虚拟机"><a name="创建空白虚拟机" class="anchor-navigation-ex-anchor" href="#创建空白虚拟机"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. 创建空白虚拟机</h3><p>运行 vmware workstation pro 软件，创建一个空白虚拟机，操作如下：</p><ul><li>vmware 软件窗口中点击“创建新的虚拟机”按钮</li><li>出现新建虚拟机向导对话框</li><li>您希望选择什么类型的配置，选择“自定义（高级）”，点击“下一步”按钮</li><li>虚拟机硬件兼容性配置，使用默认设置，点击“下一步”按钮</li><li>安装来源，选择“稍后安装操作系统”来创建一个空白的虚拟机，点击“下一步”按钮</li><li>客户端操作系统，选择“Linux”，版本，选择“CentOS 64位”，点击“下一步”按钮</li><li>虚拟机名称和位置，使用默认设置或者自己定义，点击“下一步”按钮</li><li>处理器配置，使用默认设置：1 个 CPU 1 个内核，点击“下一步”按钮</li><li>内存配置，使用默认设置：1024 M（1G 内存），点击“下一步”按钮</li><li>网络连接配置，使用默认设置：使用网络地址转换（NAT），点击“下一步”按钮</li><li>I/O 控制器类型，使用默认设置：LSI Logic（推荐），点击“下一步”按钮</li><li>选择磁盘，使用默认设置：创建新虚拟磁盘，点击“下一步”按钮</li><li>指定磁盘容量，使用默认设置：20 G，并选择“将虚拟磁盘存储为单个文件”，点击“下一步”按钮</li><li>磁盘文件名称：使用默认设置，点击“下一步”按钮</li><li>已经准备好虚拟机，点击“完成”按钮</li></ul><h3 id="设置虚拟机硬件"><a name="设置虚拟机硬件" class="anchor-navigation-ex-anchor" href="#设置虚拟机硬件"><i class="fa fa-link" aria-hidden="true"></i></a>3.2. 设置虚拟机硬件</h3><p>在刚创建的空白虚拟机上，需要进一步编辑虚拟机设置，操作如下：</p><ul><li>移除声卡硬件</li><li>移除 USB 控制器硬件</li><li>移除打印机硬件</li><li>CD/DVD 使用 ISO 镜像文件：点击“浏览”按钮，找到下载的 CentOS ISO 镜像文件</li><li>指定显示器设置，配置监视器器的分辨率为：1024 X 768</li><li>最后，点击“确定”按钮，完成虚拟机硬件设置</li></ul><h3 id="安装操作系统"><a name="安装操作系统" class="anchor-navigation-ex-anchor" href="#安装操作系统"><i class="fa fa-link" aria-hidden="true"></i></a>3.3. 安装操作系统</h3><p>点击“开启虚拟机”绿色三角按钮，虚拟机窗口出现电脑自检画面，安装向导界面中，进行如下操作设置：</p><p>【有待完善】</p><ul><li>第一个安装画面：选择安装 CentOS 7</li><li>语言：中文</li><li>安全策略：Common Profile for General-Purpose Systems</li><li>软件选择：</li><li>安装介质</li><li>安装位置</li><li>网络启用</li><li>root 密码</li><li>创建新用户并设置密码，把新用户加到管理员组中</li></ul><h3 id="设置虚拟机-ip-地址"><a name="设置虚拟机-ip-地址" class="anchor-navigation-ex-anchor" href="#设置虚拟机-ip-地址"><i class="fa fa-link" aria-hidden="true"></i></a>3.4. 设置虚拟机 IP 地址</h3><p>【有待完善】</p><h3 id="通过-xshell-连接-linux-虚拟机"><a name="通过-xshell-连接-linux-虚拟机" class="anchor-navigation-ex-anchor" href="#通过-xshell-连接-linux-虚拟机"><i class="fa fa-link" aria-hidden="true"></i></a>3.5. 通过 XShell 连接 Linux 虚拟机</h3><p>【有待完善】</p><p><strong>此后的所有安装步骤都是在 Linux 虚拟机中进行操作。</strong></p><h2 id="安装-vim-9"><a name="安装-vim-9" class="anchor-navigation-ex-anchor" href="#安装-vim-9"><i class="fa fa-link" aria-hidden="true"></i></a>4. 安装 vim 9</h2><pre class="language-"><code class="lang-bash"><span class="token comment"># 卸载低版本的 vim</span>
+<span class="token function">sudo</span> yum remove <span class="token function">vim</span> <span class="token parameter variable">-y</span>
+<span class="token function">vim</span> <span class="token parameter variable">--version</span>
+
+<span class="token comment"># 安装工具软件和依赖库</span>
+<span class="token function">sudo</span> yum <span class="token function">install</span> <span class="token parameter variable">-y</span> ruby ruby-devel lua lua-devel luajit <span class="token function">wget</span> <span class="token function">unzip</span> <span class="token punctuation">\</span>
+luajit-devel ctags <span class="token function">git</span> python python-devel <span class="token punctuation">\</span>
+python3 python3-devel tcl-devel ncurses-devel<span class="token punctuation">\</span>
+perl perl-devel perl-ExtUtils-ParseXS <span class="token punctuation">\</span>
+perl-ExtUtils-XSpp perl-ExtUtils-CBuilder <span class="token punctuation">\</span>
+perl-ExtUtils-Embed gcc lrzsz ncurses-devel
+
+<span class="token comment"># 切换到家目录</span>
+<span class="token builtin class-name">cd</span>
+
+<span class="token comment"># 创建 GitHub 仓库根目录</span>
+<span class="token function">mkdir</span> repos
+<span class="token builtin class-name">cd</span> repos
+
+<span class="token comment"># 下载 vim 源代码</span>
+<span class="token function">wget</span> https://github.com/vim/vim/archive/master.zip
+
+<span class="token comment"># 解压缩源代码</span>
+<span class="token function">unzip</span> master.zip
+
+<span class="token comment"># 切换到 vim 源代码目录</span>
+<span class="token builtin class-name">cd</span> vim-master/src
+
+<span class="token comment"># 配置 vim</span>
+./configure --with-features<span class="token operator">=</span>huge <span class="token punctuation">\</span>
+--enable-multibyte <span class="token punctuation">\</span>
+--enable-rubyinterp<span class="token operator">=</span>yes <span class="token punctuation">\</span>
+--enable-pythoninterp<span class="token operator">=</span>yes <span class="token punctuation">\</span>
+--with-python-config-dir<span class="token operator">=</span>/usr/lib/python2.7/config <span class="token punctuation">\</span>
+--enable-python3interp<span class="token operator">=</span>yes <span class="token punctuation">\</span>
+--with-python3-config-dir<span class="token operator">=</span>/usr/lib/python3.6/config <span class="token punctuation">\</span>
+--enable-perlinterp<span class="token operator">=</span>yes <span class="token punctuation">\</span>
+--enable-luainterp<span class="token operator">=</span>yes <span class="token punctuation">\</span>
+--enable-gui<span class="token operator">=</span>gtk2 <span class="token punctuation">\</span>
+--enable-cscope <span class="token punctuation">\</span>
+<span class="token parameter variable">--prefix</span><span class="token operator">=</span>/usr/local
+
+<span class="token comment"># 编译软件</span>
+<span class="token function">make</span>
+
+<span class="token comment"># 安装软件</span>
+<span class="token function">sudo</span> <span class="token function">make</span> <span class="token function">install</span>
+
+<span class="token comment"># 检查 vim 版本，应该是 9</span>
+<span class="token function">vim</span> <span class="token parameter variable">--version</span>
+</code></pre><p>上面是源代码编译安装，或者使用 <code>yum</code> 安装</p><pre class="language-"><code># 切换到 root 账户下
+su
+
+rpm -Uvh http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch.rpm
+rpm --import http://mirror.ghettoforge.org/distributions/gf/RPM-GPG-KEY-gf.el7
+yum -y remove vim-minimal vim-common vim-enhanced sudo
+yum -y --enablerepo=gf-plus install vim-enhanced sudo
+
+# 切换到 wangding 账户
+exit
+
+# 检查 vim 版本，应该是 8
+vim --version
+</code></pre><h2 id="安装-nodejs"><a name="安装-nodejs" class="anchor-navigation-ex-anchor" href="#安装-nodejs"><i class="fa fa-link" aria-hidden="true"></i></a>5. 安装 node.js</h2><pre class="language-"><code class="lang-bash"><span class="token function">sudo</span> yum <span class="token function">install</span> <span class="token parameter variable">-y</span> gcc-c++ <span class="token function">make</span>
+<span class="token function">curl</span> <span class="token parameter variable">--location</span> https://rpm.nodesource.com/setup_10.x <span class="token operator">|</span> <span class="token function">sudo</span> <span class="token function">bash</span> -
+<span class="token function">sudo</span> yum <span class="token function">install</span> <span class="token parameter variable">-y</span> nodejs
+
+<span class="token comment"># 检查 node.js 安装是否成功</span>
+<span class="token function">node</span> <span class="token parameter variable">-v</span>
+
+<span class="token comment"># 检查 npm 是否安装成功</span>
+<span class="token function">npm</span> <span class="token parameter variable">-v</span>
+</code></pre><h2 id="安装-zsh"><a name="安装-zsh" class="anchor-navigation-ex-anchor" href="#安装-zsh"><i class="fa fa-link" aria-hidden="true"></i></a>6. 安装 zsh</h2><p>zsh 的安装过程如下：</p><pre class="language-"><code class="lang-bash"><span class="token comment"># 查看当前的 shell</span>
+<span class="token builtin class-name">echo</span> <span class="token environment constant">$SHELL</span>
+
+<span class="token comment"># 安装 zsh</span>
+<span class="token function">sudo</span> yum <span class="token function">install</span> <span class="token parameter variable">-y</span> <span class="token function">zsh</span>
+
+<span class="token comment"># 安装 wget</span>
+<span class="token function">sudo</span> yum <span class="token function">install</span> <span class="token parameter variable">-y</span> <span class="token function">wget</span>
+
+<span class="token comment"># 安装 oh-my-zsh</span>
+<span class="token function">wget</span> https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh <span class="token parameter variable">-O</span> - <span class="token operator">|</span> <span class="token function">sh</span>
+
+<span class="token comment"># 却换 bash 至 zsh</span>
+chsh <span class="token parameter variable">-s</span> /bin/zsh
+
+<span class="token comment"># 查新登录 shell</span>
+<span class="token builtin class-name">exit</span>
+
+<span class="token comment"># 连接 XShell，重新登录 Linux 检查命令行提示符变化</span>
+</code></pre><h2 id="安装-vim-和-zsh-配置文件"><a name="安装-vim-和-zsh-配置文件" class="anchor-navigation-ex-anchor" href="#安装-vim-和-zsh-配置文件"><i class="fa fa-link" aria-hidden="true"></i></a>7. 安装 vim 和 zsh 配置文件</h2><p>安装完 vim 和 zsh 配置文件后，需要安装 zsh 插件。特别注意，<strong>安装 zsh 插件的过程不要中途退出，一定要等到出现命令行提示符再进行其他操作。</strong></p><pre class="language-"><code class="lang-bash"><span class="token comment"># 切换到 repos 目录</span>
+<span class="token builtin class-name">cd</span> ~/repos
+
+<span class="token comment"># 克隆 wangding/tools 仓库</span>
+<span class="token function">git</span> clone https://github.com/wangding/tools
+
+<span class="token comment"># 安装配置文件</span>
+<span class="token builtin class-name">cd</span> tools
+./install.sh
+
+<span class="token comment"># 检查配置文件</span>
+<span class="token function">ls</span> <span class="token parameter variable">-al</span> ~
+
+<span class="token comment"># .vimrc 文件应该存在</span>
+<span class="token comment"># .zshrc 文件应该存在</span>
+
+<span class="token comment"># 安装 zsh 插件，注意安装过程不要中途退出，一定要等到出现命令行提示符再进行其他操作</span>
+<span class="token function">zsh</span>
+
+<span class="token comment"># 退出当前 Shell</span>
+<span class="token builtin class-name">exit</span>
+
+<span class="token comment"># 连接 XShell，重新登录 Linux，zsh 的主题和插件都应该安装成功</span>
+</code></pre><h2 id="安装-vim-插件管理工具-vundle"><a name="安装-vim-插件管理工具-vundle" class="anchor-navigation-ex-anchor" href="#安装-vim-插件管理工具-vundle"><i class="fa fa-link" aria-hidden="true"></i></a>8. 安装 vim 插件管理工具 Vundle</h2><pre class="language-"><code class="lang-bash"><span class="token function">mkdir</span> <span class="token parameter variable">-p</span> ~/.vim/bundle
+<span class="token builtin class-name">cd</span> ~/.vim/bundle
+<span class="token function">git</span> clone https://github.com/VundleVim/Vundle.vim.git
+</code></pre><h2 id="安装-vim-插件"><a name="安装-vim-插件" class="anchor-navigation-ex-anchor" href="#安装-vim-插件"><i class="fa fa-link" aria-hidden="true"></i></a>9. 安装 vim 插件</h2><p>注意：安装 vim 插件的过程，<strong>不要中途退出，一定要等到所有插件都安装完成后，再进行其他操作</strong>。安装插件的过程如下图所示。</p><pre class="language-"><code class="lang-bash"><span class="token comment"># 运行 vim 编辑器</span>
+<span class="token function">vim</span>
+
+<span class="token comment"># 安装 vim 插件</span>
+:PluginInstall
+
+<span class="token comment"># 退出 vim 插件安装</span>
+:q
+
+<span class="token comment"># 退出 vim</span>
+:q
+</code></pre><figure id="fig2.1.1"><a href="images/vim-plugin-install.webp" rel="grouped" title="vim 插件的安装过程：王顶，408542507@qq.com" target="_self" class="fancybox"><div class="image-wrapper"><img src="images/vim-plugin-install.webp" alt="vim 插件的安装过程：王顶，408542507@qq.com"></div></a><figcaption>图：vim 插件的安装过程：王顶，408542507@qq.com</figcaption></figure><h2 id="安装-ternforvim-的第三方依赖"><a name="安装-ternforvim-的第三方依赖" class="anchor-navigation-ex-anchor" href="#安装-ternforvim-的第三方依赖"><i class="fa fa-link" aria-hidden="true"></i></a>10. 安装 tern_for_vim 的第三方依赖</h2><pre class="language-"><code class="lang-bash"><span class="token comment"># 切换到 tern_for_vim 目录</span>
+<span class="token builtin class-name">cd</span> ~/.vim/bundle/tern_for_vim
+
+<span class="token comment"># 安装第三方依赖</span>
+<span class="token function">npm</span> Install
+</code></pre><h2 id="安装-ycm"><a name="安装-ycm" class="anchor-navigation-ex-anchor" href="#安装-ycm"><i class="fa fa-link" aria-hidden="true"></i></a>11. 安装 YCM</h2><pre class="language-"><code class="lang-bash"><span class="token comment"># 安装开发工具</span>
+<span class="token function">sudo</span> yum <span class="token function">install</span> <span class="token parameter variable">-y</span> automake gcc gcc-c++ kernel-devel cmake python-devel python3-devel
+
+<span class="token comment"># 切换到 YCM 目录</span>
+<span class="token builtin class-name">cd</span> ~/.vim/bundle/YouCompleteMe
+
+<span class="token comment"># 安装 YCM</span>
+./install.py --tern-completer
+</code></pre><h2 id="安装开发辅助工具"><a name="安装开发辅助工具" class="anchor-navigation-ex-anchor" href="#安装开发辅助工具"><i class="fa fa-link" aria-hidden="true"></i></a>12. 安装开发辅助工具</h2><pre class="language-"><code class="lang-bash"><span class="token function">su</span>                    // 切换到 root 账户
+yum <span class="token function">install</span> <span class="token parameter variable">-y</span> tree python-pygments     // 安装 Linux 命令行 tree 工具和语法高亮工具
+<span class="token function">npm</span> i <span class="token parameter variable">-g</span> htmlhint     // 安装 HTMLHint 静态代码检查工具
+<span class="token function">npm</span> i <span class="token parameter variable">-g</span> csslint      // 安装 CSSLint 静态代码检查工具
+<span class="token function">npm</span> i <span class="token parameter variable">-g</span> eslint       // 安装 ESLint 静态代码检查工具
+<span class="token function">npm</span> i <span class="token parameter variable">-g</span> browser-sync // 安装热加载工具
+<span class="token function">su</span> wangding           // 切换到开发者账户
+</code></pre><h2 id="检查开发辅助工具"><a name="检查开发辅助工具" class="anchor-navigation-ex-anchor" href="#检查开发辅助工具"><i class="fa fa-link" aria-hidden="true"></i></a>13. 检查开发辅助工具</h2><pre class="language-"><code class="lang-bash">tree /boot              // 应该看到 boot 目录的树状结构
+htmlhint <span class="token parameter variable">--version</span>      // 应该看到版本号：0.9.13 或以上
+csslint <span class="token parameter variable">--version</span>       // 应该看到版本号：v1.0.4 或以上
+eslint <span class="token parameter variable">--version</span>        // 应该看到版本号：v4.17.0 或以上
+browser-sync <span class="token parameter variable">--version</span>  // 应该看到版本号：2.23.6 或以上
+</code></pre><h2 id="检查-vim-插件"><a name="检查-vim-插件" class="anchor-navigation-ex-anchor" href="#检查-vim-插件"><i class="fa fa-link" aria-hidden="true"></i></a>14. 检查 vim 插件</h2><ul><li>验证 JavaScript 代码补全插件，操作步骤如下：</li></ul><pre class="language-"><code class="lang-bash"><span class="token builtin class-name">cd</span>
+<span class="token function">mkdir</span> <span class="token builtin class-name">test</span>
+<span class="token builtin class-name">cd</span> <span class="token builtin class-name">test</span>
+<span class="token function">touch</span> .tern-project
+<span class="token function">vim</span> .tern-project
+</code></pre><p>.tern-project 文件的内容如下：</p><pre class="language-"><code class="lang-javascript"><span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;libs&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;browser&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;jquery&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;node&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><pre class="language-"><code class="lang-bash"><span class="token function">vim</span> a.js
+
+i                    // 进入 <span class="token function">vim</span> 的插入模式
+window.              // 输入 window 然后按 <span class="token builtin class-name">.</span> 看一下是否有 window 对象的属性、方法列出
+Tab                  // 按键盘 tab 键，在 window 对象的属性、方法上切换
+<span class="token punctuation">(</span>                    // 切换到 Date 按左括号 <span class="token punctuation">(</span>，移动光标到行尾，输入分号 <span class="token punctuation">;</span>
+Enter X <span class="token number">2</span>            // 按两次回车键
+$.                   // 输入 $ 然后按 <span class="token builtin class-name">.</span> 看一下是否有 JQuery $ 对象的属性、方法列出
+                     // 如果没有自动补全的列表，删除 <span class="token builtin class-name">.</span> 重新输入 <span class="token builtin class-name">.</span> 再一两次
+                     // 切换到 isArray 按左括号 <span class="token punctuation">(</span>，移动光标到行尾，输入分号 <span class="token punctuation">;</span>
+Enter X <span class="token number">2</span>            // 按两次回车键
+process.             // 输入 process 然后按 <span class="token builtin class-name">.</span> 看一下是否有 process 对象的属性、方法列出
+                     // 输入 ar，tab 键选择 argv，输入分号 <span class="token punctuation">;</span>
+:q<span class="token operator">!</span>                  // 不保存退出
+</code></pre><ul><li>验证 emmet vim 插件，操作步骤如下：</li></ul><pre class="language-"><code class="lang-bash"><span class="token function">vim</span>  a.html          // 命令行打开 <span class="token function">vim</span> 编辑器
+i                    // 进入插入模式
+<span class="token operator">!</span><span class="token operator">&lt;</span>ctrl<span class="token operator">&gt;</span>+y,           // 输入感叹号，然后同时按 ctrl 和 y 键，然后按逗号键
+                     // <span class="token function">vim</span> 窗口中应该出现 HTML5 的页面框架代码
+:q<span class="token operator">!</span>                  // 不保存退出
+</code></pre><ul><li>验证 jsdoc vim 插件，操作步骤如下：</li></ul><pre class="language-"><code class="lang-bash"><span class="token function">vim</span>  a.js            // 命令行打开 <span class="token function">vim</span> 编辑器
+i                    // 进入插入模式
+                     // 写一个 x + y 的 <span class="token function">add</span> 加法函数，代码如下
+<span class="token keyword">function</span> add<span class="token punctuation">(</span>x, y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token builtin class-name">return</span> x + y<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+ESC                  // 退出插入模式，进入普通模式，移动光标到第一行
+:JsDoc               // 按冒号进入命令模式，输入 JsDoc<span class="token operator">&lt;</span>回车<span class="token operator">&gt;</span>，注意命令大小写不要写错
+                     // <span class="token function">vim</span> 窗口中应该出现函数头注释框架
+:q<span class="token operator">!</span>                  // 不保存退出
+</code></pre><ul><li>验证 CSS 代码补全功能，操作步骤如下：</li></ul><pre class="language-"><code class="lang-bash"><span class="token function">vim</span>  a.css           // 命令行打开 <span class="token function">vim</span> 编辑器
+i                    // 进入插入模式
+                     // 写一个 body 的 CSS 样式代码，如下：
+body <span class="token punctuation">{</span>
+  background:        // 注意在输入冒号和空格之后，应该弹出代码补全窗口
+ESC                  // 回到普通模式
+:q<span class="token operator">!</span>                  // 不保存退出
+</code></pre><p></p><footer class="page-footer"><span class="page-footer-copyright">2018 - <span class="bsz-this-year"></span> by <a href="http://i.wangding.co" target="_blank">王顶</a>. All rights reserved.</span><span class="page-footer-footer-update"><span id="busuanzi_container_site_uv">本站访客人数 <span id="busuanzi_value_site_uv"></span> 人次</span></span></footer><script>document.getElementsByClassName("bsz-this-year")[0].innerHTML = new Date().getFullYear();</script><script async src="//cdn.jsdelivr.net/gh/sukkaw/busuanzi@2.3/bsz.pure.mini.js"></script><p></p><p></p><div id="gitalk-container"></div><script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script><script>window.onload = function() {gitbook.events.on("page.change", function() {var gitalk = new Gitalk({"clientID":"082a682f79b163ab6198","clientSecret":"f872143a272619b840ea2a1838f1316aa38ba994","repo":"nodejs","owner":"wangding","admin":["wangding"],"labels":["nodejs"],"id":"/setup-dev-env.html"});gitalk.render("gitalk-container");});};var gitalk = new Gitalk({"clientID":"082a682f79b163ab6198","clientSecret":"f872143a272619b840ea2a1838f1316aa38ba994","repo":"nodejs","owner":"wangding","admin":["wangding"],"labels":["nodejs"],"id":"/setup-dev-env.html"});gitalk.render("gitalk-container");</script><p></p></section></div><div class="search-results"><div class="has-results"><h1 class="search-results-title"><span class="search-results-count"></span> results matching "<span class="search-query"></span>"</h1><ul class="search-results-list"></ul></div><div class="no-results"><h1 class="search-results-title">No results matching "<span class="search-query"></span>"</h1></div></div></div></div></div></div><a href="ch14-project.html" class="navigation navigation-prev" aria-label="Previous page: 第十四课：综合案例"><i class="fa fa-angle-left"></i> </a><a href="mocha-dev-env.html" class="navigation navigation-next" aria-label="Next page: 升级开发环境"><i class="fa fa-angle-right"></i></a></div><script>var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"搭建 Node.js 开发环境","level":"2.1","depth":1,"next":{"title":"升级开发环境","level":"2.2","depth":1,"path":"mocha-dev-env.md","ref":"mocha-dev-env.md","articles":[]},"previous":{"title":"第十四课：综合案例","level":"1.16","depth":1,"path":"ch14-project.md","ref":"ch14-project.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-sharing","edit-link","forkmegithub-cn","search-plus","sharing-plus","anchor-navigation-ex","copy-code-button","prism","splitter","image-captions-extended","bsz","fancybox","image-wrapper","gtalk","versions-select"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"image-wrapper":{},"prism":{},"fancybox":{"helpers":{"buttons":{}}},"splitter":{},"image-captions-extended":{},"bsz":{"copyright":"2018&nbsp;-&nbsp;<span class=\"bsz-this-year\"></span>&nbsp;by&nbsp;<a href=\"http://i.wangding.co\">王顶</a>.&nbsp;All rights reserved."},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"versions-select":{"type":"branches"},"fontsettings":{"theme":"white","family":"sans","size":2},"gtalk":{"clientID":"082a682f79b163ab6198","clientSecret":"f872143a272619b840ea2a1838f1316aa38ba994","repo":"nodejs","owner":"wangding","admin":["wangding"],"labels":["nodejs"]},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"copy-code-button":{},"forkmegithub-cn":{"color":"red","url":"https://github.com/wangding/nodejs"},"versions":{"gitbookConfigURL":"http://nodejs.wangding.co/book.json","options":[{"value":"http://nodejs.wangding.co","text":"Node.js 应用开发"},{"value":"http://nodejs.wangding.co/advanced/","text":"Node.js 高级实战"}]},"sharing":{"qq":true,"all":["weibo","douban","qzone","qq"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"edit-link":{"label":"编辑本页","base":"https://github.com/wangding/nodejs/blob/master/"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{},"image-captions":{"caption":"图：_CAPTION_","variable_name":"_pictures"}},"theme":"default","author":"王顶","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"index.html#fig1.1.1","level":"1.1","list_caption":"Figure: QQ 群二维码，王顶，408542507@qq.com","alt":"QQ 群二维码，王顶，408542507@qq.com","nro":1,"url":"http://sample.wangding.co/images/student-group.webp","index":1,"caption_template":"图：_CAPTION_","label":"QQ 群二维码，王顶，408542507@qq.com","attributes":{},"skip":false,"key":"1.1.1"},{"backlink":"ch02-global-01.html#fig1.3.1","level":"1.3","list_caption":"Figure: 02-calc，王顶，408542507@qq.com","alt":"02-calc，王顶，408542507@qq.com","nro":2,"url":"./images/02-calc.webp","index":1,"caption_template":"图：_CAPTION_","label":"02-calc，王顶，408542507@qq.com","attributes":{},"skip":false,"key":"1.3.1"},{"backlink":"ch10-http-client.html#fig1.11.1","level":"1.11","list_caption":"Figure: http-headers，王顶，408542507@qq.com","alt":"http-headers，王顶，408542507@qq.com","nro":3,"url":"./images/http-headers.webp","index":1,"caption_template":"图：_CAPTION_","label":"http-headers，王顶，408542507@qq.com","attributes":{},"skip":false,"key":"1.11.1"},{"backlink":"ch10-http-client.html#fig1.11.2","level":"1.11","list_caption":"Figure: github-api，王顶，408542507@qq.com","alt":"github-api，王顶，408542507@qq.com","nro":4,"url":"./images/github-api.webp","index":2,"caption_template":"图：_CAPTION_","label":"github-api，王顶，408542507@qq.com","attributes":{},"skip":false,"key":"1.11.2"},{"backlink":"ch10-http-server.html#fig1.12.1","level":"1.12","list_caption":"Figure: form-get，王顶，node.js，408542507@qq.com","alt":"form-get，王顶，node.js，408542507@qq.com","nro":5,"url":"./images/todo-list.webp","index":1,"caption_template":"图：_CAPTION_","label":"form-get，王顶，node.js，408542507@qq.com","attributes":{},"skip":false,"key":"1.12.1"},{"backlink":"ch10-http-server.html#fig1.12.2","level":"1.12","list_caption":"Figure: form-cmd，王顶，node.js，408542507@qq.com","alt":"form-cmd，王顶，node.js，408542507@qq.com","nro":6,"url":"./images/form-cmd.webp","index":2,"caption_template":"图：_CAPTION_","label":"form-cmd，王顶，node.js，408542507@qq.com","attributes":{},"skip":false,"key":"1.12.2"},{"backlink":"ch10-http-server.html#fig1.12.3","level":"1.12","list_caption":"Figure: todo-api，王顶，node.js，408542507@qq.com","alt":"todo-api，王顶，node.js，408542507@qq.com","nro":7,"url":"./images/todo-api.gif","index":3,"caption_template":"图：_CAPTION_","label":"todo-api，王顶，node.js，408542507@qq.com","attributes":{},"skip":false,"key":"1.12.3"},{"backlink":"ch14-project.html#fig1.16.1","level":"1.16","list_caption":"Figure: entropy 命令行界面","alt":"entropy 命令行界面","nro":8,"url":"./images/entropy.gif","index":1,"caption_template":"图：_CAPTION_","label":"entropy 命令行界面","attributes":{},"skip":false,"key":"1.16.1"},{"backlink":"setup-dev-env.html#fig2.1.1","level":"2.1","list_caption":"Figure: vim 插件的安装过程：王顶，408542507@qq.com","alt":"vim 插件的安装过程：王顶，408542507@qq.com","nro":9,"url":"images/vim-plugin-install.webp","index":1,"caption_template":"图：_CAPTION_","label":"vim 插件的安装过程：王顶，408542507@qq.com","attributes":{},"skip":false,"key":"2.1.1"},{"backlink":"mocha-dev-env.html#fig2.2.1","level":"2.2","list_caption":"Figure: vim-plugin-install","alt":"vim-plugin-install","nro":10,"url":"images/vim-plugin-install.webp","index":1,"caption_template":"图：_CAPTION_","label":"vim-plugin-install","attributes":{},"skip":false,"key":"2.2.1"}]},"title":"Node.js 应用开发","language":"zh-hans","gitbook":"*","description":"Node.js 应用开发课程资料"},"file":{"path":"setup-dev-env.md","mtime":"2022-10-28T03:18:16.768Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-28T03:19:58.562Z"},"basePath":".","book":{"language":""}});
+        });</script></div><script src="gitbook/gitbook.js"></script><script src="gitbook/theme.js"></script><script src="gitbook/gitbook-plugin-edit-link/plugin.js"></script><script src="gitbook/gitbook-plugin-forkmegithub-cn/plugin.js"></script><script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script><script src="gitbook/gitbook-plugin-search-plus/search.js"></script><script src="gitbook/gitbook-plugin-sharing-plus/buttons.js"></script><script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script><script src="gitbook/gitbook-plugin-splitter/splitter.js"></script><script src="gitbook/gitbook-plugin-fancybox/jquery.min.js"></script><script src="gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script><script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script><script src="gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script><script src="gitbook/gitbook-plugin-fancybox/plugin.js"></script><script src="gitbook/gitbook-plugin-versions-select/plugin.js"></script><script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script></body></html>

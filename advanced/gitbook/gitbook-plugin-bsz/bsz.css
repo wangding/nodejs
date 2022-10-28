@@ -1,0 +1,22 @@
+.page-footer {
+  border-top: 1px solid #ccc;
+  color: #808080;
+  font-size: 12px;
+  margin-top: 50px;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.page-footer-copyright {
+  display: inline-block;
+}
+
+.page-footer a {
+  color: #808080;
+  text-decoration: underline;
+}
+
+.page-footer-footer-update {
+  display: inline-block;
+  float: right;
+}
