@@ -1,47 +1,29 @@
-# 第 14 课：测试
+# 第 14 课：单元测试
 
-## 阅读 Node.js API 资料
-
-- [assert API 资料](http://nodejs.cn/api/assert.html)
-
-## 使用 assert 模块
+## 了解 Jest
 
 要求：
 
-- 创建 17-test 目录
-- 编写 todo.js 脚本
-- 编写 todo.test.js 脚
-
-## 了解 Mocha
-
-要求：
-
-- 浏览 [Mocha 官方网站](http://mochajs.org)
-- 浏览 [Mocha GitHub 仓库](https://github.com/mochajs/mocha)
+- 浏览 [Jest 官方网站](https://jestjs.io/zh-Hans/docs/getting-started)
+- 浏览 [Jest 实践指南](https://github.yanhaixiang.com/jest-tutorial/)
 
 ## 创建被测项目
 
 要求：
 
-- 创建 mocha-demo 项目文件夹
-- 初始化 Git 仓库
-- npm init 初始化项目
+- 创建 jest-demo 项目文件夹
+- 初始化 Git 仓库，`git init`
+- 初始化项目，`npm init`
 - 编写 calc.js 模块，实现加法函数、减法函数、乘法函数和除法函数
-- 编写 index.js 模块，对 calc.js 模块进行调用
+- 编写 app.js 模块，对 calc.js 模块进行调用
+- 通过命令行传递三个参数：operator，num1，num2
 - 运行被测项目
-- npm 安装 mocha
-- npm 安装 chai
-- 提交代码到 Git 仓库
-
-参考：
-
-- 初始化代码：[calc.js][calc_js_origin]
-- 完成后代码：[calc.js][calc_js_final]
 
 ## 编写测试脚本
 
 要求：
 
+- 安装 jest 单元测试框架，`npm install -D jest`，
 - 编写 calc.js 模块的自动化测试脚本 calc.test.js
 - 编写加法函数的测试套件及测试用例
 - 编写减法函数的测试套件及测试用例
@@ -50,13 +32,8 @@
 - 执行自动化测试
 - 查看自动化测试报告，包括：测试用例总数，通过的测试用例数，失败的测试用例数，总的测试耗时
 - 根据需要修改 calc.js 中的 bug，或者修改 calc.test.js 中的代码
-- 把自动化测试脚本提交 Git 仓库
 
-参考：
-
-- 自动化测试脚本代码：[calc.test.js][calc_test_js]
-
-## mocha 的基本用法
+## jest 的基本用法
 
 要求：
 
@@ -219,7 +196,6 @@
 [date_test_js_es6]: https://github.com/wangding/mocha-demo/blob/bbb1c62e533b8c518714dc8ff9701ac6c25d5d0e/test/date.test.js
 [hosted-redmine-login-test-js]: https://github.com/wangding/mocha-demo/blob/0c46b79fe422301b706dca86dc821d9f3903134c/test/hostedredmine-login.test.js
 [travis_yml]: https://github.com/wangding/mocha-demo/blob/c912a65a02cf018aebe874d9bae7e63bd2d0e537/.travis.yml
-[calc_js_origin]: https://github.com/wangding/mocha-demo/blob/6340e47606d092d4e338956a486d6ad123e3286b/calc.js
 [calc_js_final]: https://github.com/wangding/mocha-demo/blob/dc22176b6e615034fe3f770328ca7425690b4ffb/calc.js
 [calc_test_js]: https://github.com/wangding/mocha-demo/blob/dc22176b6e615034fe3f770328ca7425690b4ffb/test/calc.test.js
 [date_js_origin]: https://github.com/wangding/mocha-demo/blob/cae1d4f0354c034577a93ab08eaaa9da690c8f61/date.js
