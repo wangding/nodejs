@@ -15,10 +15,13 @@
 - [第十一课：HTTP 进阶](ch11-http-advanced.md)
 - [第十二课：数据存储](ch12-data-storage.md)
 - [第十三课：Express 框架](ch13-express.md)
-- [第十四课：综合案例](ch14-project.md)
+- [第十四课：测试](ch14-testing.md)
+- [第十五课：压缩](ch15-zip.md)
+- [第十六课：加密]()
 
 ## 附录
 
+- [综合案例](project.md)
 - [搭建 Node.js 开发环境](setup-dev-env.md)
 - [升级开发环境](mocha-dev-env.md)
 - [开发环境使用](env-manual.md)

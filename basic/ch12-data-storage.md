@@ -3,7 +3,8 @@
 ##  Web 静态文件服务
 
 要求：
-- 创建目录 18-data-storage
+
+- 创建目录 19-data-storage
 - 复制 09-stream/02-static-web-server.js 到当前目录
 - 修改文件名为 01-static-web-server.js
 - 实现内存缓存机制，提升 web 服务器的性能
@@ -16,6 +17,7 @@
 ## 基于文件存储 RESTful API
 
 要求：
+
 - 复制 16-http-server/08-rest-api.js 到当前目录
 - 修改文件名为 02-rest-api.js
 - 修改 02-rest-api.js 脚本
@@ -25,6 +27,7 @@
 ## 安装 MySQL
 
 要求：
+
 - 确保当前的 Linux 虚拟机上 MySQL 环境
 - 执行命令：`mysql --version`，检查 MySQL 客户端是否安装
 - 执行命令：`systemctl status mysqld`，检查 MySQL 服务程序是否运行
@@ -74,16 +77,18 @@ exit;
 ## 命令行操作 MySQL
 
 要求：
+
 - Linux 命令行连接 MySQL
 - 在 test 数据库中，创建 areas 表
-```
-+-----------+--------------+------+-----+---------+----------------+
-| Field     | Type         | Null | Key | Default | Extra          |
-+-----------+--------------+------+-----+---------+----------------+
-| id        | int(11)      | NO   | PRI | NULL    | auto_increment |
-| area_name | varchar(255) | NO   | UNI | NULL    |                |
-+-----------+--------------+------+-----+---------+----------------+
-```
+
+  ```
+  +-----------+--------------+------+-----+---------+----------------+
+  | Field     | Type         | Null | Key | Default | Extra          |
+  +-----------+--------------+------+-----+---------+----------------+
+  | id        | int(11)      | NO   | PRI | NULL    | auto_increment |
+  | area_name | varchar(255) | NO   | UNI | NULL    |                |
+  +-----------+--------------+------+-----+---------+----------------+
+  ```
 - 在 areas 表上练习 CURD 操作
 
 ## 阅读 mysql2 API 资料
@@ -93,6 +98,7 @@ exit;
 ## 用 Node.js 对 MySQL 做 CURD 操作
 
 要求：
+
 - 编写 03-mysql.js 脚本
 - 安装 mysql2 第三方库
 - 连接到 test 数据库，做以下操作
@@ -107,6 +113,7 @@ exit;
 ## 基于 MySQL 存储的 Todo List
 
 要求：
+
 - 创建 04-todo-list 子目录
 - 复制 16-http-server/05-form-post 代码到 04-todo-list 目录下，改名为 index.js
 - 在 04-todo-list 子目录 npm 初始化项目配置文件 package.json

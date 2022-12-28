@@ -7,6 +7,7 @@
 ## 了解 HTTP 协议
 
 要求：
+
 - HTTP 协议相关的知识主要包括：
   - HTTP 命令，包括：GET、POST，等
   - HTTP 报文，包括：请求报文头，请求报文体、响应报文头和响应报文体
@@ -26,6 +27,7 @@
 ## GET 请求网站页面
 
 要求：
+
 - 创建 16-http-client 目录
 - 编写 01-my-curl.js 脚本
 - 获取命令行参数：要请求的 URL 地址
@@ -38,6 +40,7 @@
 ## GET 请求 HTTP API
 
 要求：
+
 - 编写 02-get-repos.js 脚本
 - 获取某个账户的所有公开 Gitee 仓库的数量和名称
 - 账户信息通过命令行参数获取
@@ -50,6 +53,7 @@
 ## POST 发送数据
 
 要求：
+
 - 编写 03-post.js 脚本
 - 向指定的 URL 地址发出 HTTP POST 请求
 - POST 请求中携带向服务器程序发送的特定数据
@@ -63,6 +67,7 @@
 ## 简单爬虫程序
 
 要求：
+
 - 编写 04-crawler.js 脚本
 - 爬取[动漫屋网站](https://tel.dm5.com/)的漫画书封面图片
 - 需爬取的网页地址：https://tel.dm5.com/manhua-list/
@@ -78,6 +83,7 @@
 ## 复杂爬虫程序
 
 要求：
+
 - 编写 05-crawler.js 脚本
 - `npm i -S cheerio` 安装项目依赖 cheerio
 - 用 cheerio 对爬取的 HTML 页面进行 DOM 元素解析
@@ -90,6 +96,7 @@
 ## HTTP 重定向（略）
 
 要求：
+
 - 编写 06-redirection.js 脚本
 - 实现对 HTTP 协议的重定向状态的处理
 - 测试 URL：http://www.sian.com/

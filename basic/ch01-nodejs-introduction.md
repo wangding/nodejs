@@ -54,6 +54,7 @@
 ## hello world 命令行程序
 
 要求：
+
 - 创建 nodejs-demo 目录
 - 把 .tern-project 代码自动补全配置文件，放到 nodejs-demo 目录下，操作方法如下：
   - 在 nodejs-demo 目录下，运行 `wget http://sample.wangding.co/nodejs/tern-project`
@@ -65,6 +66,7 @@
 ## hello world web 服务程序
 
 要求：
+
 - 编写 02-hello-world-server.js
 - 监听端口：8080
 - 当收到 HTTP 请求时，发送响应文本 `Hello world!`
@@ -75,6 +77,7 @@
 ## hello world web 服务程序
 
 要求：
+
 - 编写 03-hello-world-server.js
 - 监听端口：8080
 - 当收到 HTTP 请求时，发送响应文本 `Hello world!`

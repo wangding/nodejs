@@ -2,23 +2,27 @@
 
 ## 阅读 Node.js API 资料
 
-- [assert API 资料](http://nodejs.cn/api/assert.html)  
+- [assert API 资料](http://nodejs.cn/api/assert.html)
 
 ## 使用 assert 模块
 
-- 创建 17-test 目录  
-- 编写 todo.js 脚本  
-- 编写 todo.test.js 脚本  
+要求：
+
+- 创建 17-test 目录
+- 编写 todo.js 脚本
+- 编写 todo.test.js 脚
 
 ## 了解 Mocha
 
 要求：
+
 - 浏览 [Mocha 官方网站](http://mochajs.org)
 - 浏览 [Mocha GitHub 仓库](https://github.com/mochajs/mocha)
 
 ## 创建被测项目
 
 要求：
+
 - 创建 mocha-demo 项目文件夹
 - 初始化 Git 仓库
 - npm init 初始化项目
@@ -30,12 +34,14 @@
 - 提交代码到 Git 仓库
 
 参考：
+
 - 初始化代码：[calc.js][calc_js_origin]
 - 完成后代码：[calc.js][calc_js_final]
 
 ## 编写测试脚本
 
 要求：
+
 - 编写 calc.js 模块的自动化测试脚本 calc.test.js
 - 编写加法函数的测试套件及测试用例
 - 编写减法函数的测试套件及测试用例
@@ -47,16 +53,19 @@
 - 把自动化测试脚本提交 Git 仓库
 
 参考：
+
 - 自动化测试脚本代码：[calc.test.js][calc_test_js]
 
 ## mocha 的基本用法
 
 要求：
+
 - 参考[初始 date.js 代码][date_js_origin]，实现 date.js 模块的各个函数
 - 编写 date.js 各个函数的测试套件及测试用例
 - 把代码提交 Git 仓库
 
 参考：
+
 - 初始化代码：[date.js][date_js_origin]
 - 完成后代码：[date.js][date_js_final]
 - 自动化测试脚本代码：[date.test.js][date_test_js]
@@ -64,43 +73,50 @@
 ## 命令行参数
 
 要求：
+
 - 生成 mochawesome 网页格式的报告
 - 创建 mocha.opt 配置文件来执行自动化测试
 - 修改 package.json 通过 npm test 来执行自动化测试
 - 提交代码到 Git 仓库
 
-参考：
-- 完成后代码：[mocha.opts][mocha_opts] 
-- 完成后代码：[package.json][package_json]
+完成后代码：
+
+- [mocha.opts][mocha_opts]
+- [package.json][package_json]
 
 
 ## 测试用例管理
 
 要求：
+
 - 改写 calc.test.js 脚本，skip 所有测试套件中 0 ? 0 = 0 的测试案例
 - 改写 calc.test.js 脚本，only 加法、乘法和除法测试套件
 - 执行 calc.test.js 测试脚本，观察执行效果
 - 把代码提交 Git 仓库
 
-参考：  
-初始的代码：[calc.test.js][calc_test_js_origin_task01]  
-完成后代码：[calc.test.js][calc_test_js_final_task01]  
+参考：
+
+- 初始的代码：[calc.test.js][calc_test_js_origin_task01]
+- 完成后代码：[calc.test.js][calc_test_js_final_task01]
 
 ## 测试用例钩子
 
 要求：
+
 - 改写 calc.test.js 脚本，在加法测试套件中增加 befor，after，beforeEach，afterEach 四个钩子函数
 - 钩子函数中实现 console.log 打印功能
 - 执行 calc.test.js 自动化测试脚本，观察钩子函数的执行效果
-- 把代码提交 Git 仓库 
+- 把代码提交 Git 仓库
 
-参考：  
-初始的代码：[calc.test.js][calc_test_js_final_task01]  
-完成后代码：[calc.test.js][calc_test_js_final_task02]  
+参考：
+
+- 初始的代码：[calc.test.js][calc_test_js_final_task01]
+- 完成后代码：[calc.test.js][calc_test_js_final_task02]
 
 ## 异步测试
 
 要求：
+
 - 编写简单的异步测试脚本，设置超时时间为 3000ms
 - 执行测试脚本，并观察超时报错
 - 在执行测试脚本时增加 --timeout 参数，观察是否报错
@@ -108,15 +124,16 @@
 - 用 superagent 编写简单的异步测试脚本，测试 GitHub 网站的 API
 - 用 node-fetch 编写 Promise 方式的异步测试脚本，测试 GitHub 网站的 API
 
-参考：  
-完成后代码：  
-- [timeout.test.js][timeout_test_js]   
-- [async.test.js][async_test_js]    
-- [promise.test.js][promise_test_js]    
+完成后代码：
 
-## 测试前端代码 
+- [timeout.test.js][timeout_test_js]
+- [async.test.js][async_test_js]
+- [promise.test.js][promise_test_js]
+
+## 测试前端代码
 
 要求：
+
 - 在 mocha-demo 目录下，创建 browser 子目录
 - 执行 mocha init 创建前端测试的脚手架代码
 - 在 browser 目录下添加被测模块 add.js
@@ -125,15 +142,16 @@
 - 用浏览器打开 index.html 页面，执行前端代码的测试
 - 把代码提交 Git 仓库
 
-参考：  
-完成后的代码：  
-- [add.js][add_js]  
-- [index.html][index_html]  
-- [tests.js][tests_js]  
+完成后的代码：
+
+- [add.js][add_js]
+- [index.html][index_html]
+- [tests.js][tests_js]
 
 ## ES6 测试脚本
 
 要求：
+
 - 用 ES6 来改写 calc.test.js 和 date.test.js 两个测试脚本
 - 安装 babel
 - 创建 babel 配置文件
@@ -141,15 +159,16 @@
 - 改写 mocha.opts 文件，使得 npm test 脚本能生效
 - 提交代码到 Git 仓库
 
-参考：   
-完成后的代码：  
-- [.babelrc][babelrc]  
-- [calc.test.js][calc_test_js_es6]  
-- [date.test.js][date_test_js_es6]  
+完成后的代码：
+
+- [.babelrc][babelrc]
+- [calc.test.js][calc_test_js_es6]
+- [date.test.js][date_test_js_es6]
 
 ## 代码覆盖率
 
 要求：
+
 - 安装 istanbul 工具
 - 创建 simple.js 代码
 - 执行覆盖率测试
@@ -159,18 +178,20 @@
 ## webdriver 整合
 
 要求：
+
 - 安装 selenium-webdriver
 - 编写 hosted-redmine-login.test.js 测试代码
 - 将测试代码与 mocha 整合
 - 把代码提交 Git 仓库
 
-参考：   
-完成后的代码：   
-- [hosted-redmine-login.test.js][hosted-redmine-login-test-js]   
+完成后的代码：
+
+- [hosted-redmine-login.test.js][hosted-redmine-login-test-js]
 
 ## 持续集成工具整合
 
 要求：
+
 - 用 GitHub 账户登录 travis-ci 网站
 - 对 mocha-demo 项目启用持续集成
 - 在 mocha-demo 项目目录下增加 .travis.yml 文件
@@ -179,9 +200,9 @@
 - 修改 clac.js 代码，引入 bug，将修改后的代码提交 GitHub 仓库
 - 观察继续集成的过程报告
 
-参考：   
-完成后的代码：  
-- [.travis.yml][travis_yml]   
+完成后的代码：
+
+- [.travis.yml][travis_yml]
 
 <!-- 本文档中的链接 -->
 [calc_test_js_origin_task01]: https://github.com/wangding/mocha-demo/blob/dc22176b6e615034fe3f770328ca7425690b4ffb/test/calc.test.js

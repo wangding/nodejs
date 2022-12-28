@@ -7,6 +7,7 @@
 ## 使用 EventEmitter 类（可选）
 
 要求：
+
 - 创建 08-event 目录
 - 编写 01-event-emitter.js 脚本
 - 实例化 EventEmitter 对象
@@ -18,6 +19,7 @@
 ## 继承 EventEmitter 类
 
 要求：
+
 - 编写 02-dog.js 以及 02-play-dog.js 脚本
 - 02-dog.js 脚本实现 Dog 类，并导出 Dog 类
 - Dog 类继承 EventEmitter 类
@@ -35,6 +37,7 @@
 ## util.inherits 方法继承 EventEmitter 类（可选）
 
 要求：
+
 - 编写 03-radio.js 以及 03-listen-radio.js 脚本
 - radio 类用 util 的 inherits 方法继承 EventEmitter 类
 - radio 类的构造函数有一个入口参数 station 对象
@@ -49,6 +52,7 @@
 ## 复制 EventEmitter 类成员（可选）
 
 要求：
+
 - 复制 03-radio.js 和 03-listen-radio.js 脚本
 - 编写 04-radio.js 和 04-listen-radio.js 脚本
 - 不使用 util.inherits 方法继承 EventEmitter 类
@@ -57,7 +61,8 @@
 
 ## 自己实现事件机制
 
-- 要求：
+要求：
+
 - 复制 02-dog.js 和 02-play-dog.js 脚本
 - 编写 05-dog.js 和 05-play-dog.js 脚本
 - 不使用 EventEmitter 类，编写 05-event.js 脚本，自己实现 Event 类
@@ -66,7 +71,8 @@
 
 ## 自己实现事件机制（可选）
 
-- 要求：
+要求：
+
 - 复制 03-radio.js 和 03-listen-radio.js 脚本
 - 编写 06-radio.js 和 06-listen-radio.js 脚本
 - 不使用 EventEmitter 类，Radio 类继承 05-event.js 脚本中的 Event 类
@@ -74,57 +80,58 @@
 
 ## 生产者和消费者
 
-- 要求：
+要求：
+
 - 编写 07-prd-csm.js 脚本
 - 生产者：Producer，create 方法把新数据放到队列 queue 中
 - 消费者：Consumer，destory 方法把队列 queue 中的数据取出
 - 队列：Queue，用数组实现。在队列末尾放入新数据，数组长度加一。在队列头部取出数据，数组长度减一。
 - 在已有代码基础上完成功能要求，不能修改 main 函数，其他的代码可以根据需要添加和修改。
 - 要求生产数据，和消费数据并发执行。即，生产一个数据，消费一个数据。具体功能参考下面的代码和运行效果
-- 部分代码：
+- 部分代码如下：
 
-```javascript
-class Queue {
-  constructor() {}
-  write(data) {}
-  read() {}
-}
-
-class Producer {
-  constructor() {}
-  create(data){
-    log('+ prd create:', data);
-    queue.write(data);
+  ```javascript
+  class Queue {
+    constructor() {}
+    write(data) {}
+    read() {}
   }
-}
 
-class Consumer {
-  constructor() {}
-  destroy(){
-    log('- csm destroy:', queue.read());
+  class Producer {
+    constructor() {}
+    create(data){
+      log('+ prd create:', data);
+      queue.write(data);
+    }
   }
-}
 
-function main() {
-  const prd = new Producer();
-  for(let i=0; i<5; i++) {
-    prd.create(i);
+  class Consumer {
+    constructor() {}
+    destroy(){
+      log('- csm destroy:', queue.read());
+    }
   }
-}
 
-main();
-```
-- 运行效果如下：  
+  function main() {
+    const prd = new Producer();
+    for(let i=0; i<5; i++) {
+      prd.create(i);
+    }
+  }
 
-```bash
-+ prd create: 0
-- csm destroy: 0
-+ prd create: 1
-- csm destroy: 1
-+ prd create: 2
-- csm destroy: 2
-+ prd create: 3
-- csm destroy: 3
-+ prd create: 4
-- csm destroy: 4
-```
+  main();
+  ```
+- 运行效果如下：
+
+  ```bash
+  + prd create: 0
+  - csm destroy: 0
+  + prd create: 1
+  - csm destroy: 1
+  + prd create: 2
+  - csm destroy: 2
+  + prd create: 3
+  - csm destroy: 3
+  + prd create: 4
+  - csm destroy: 4
+  ```

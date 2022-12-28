@@ -7,6 +7,7 @@
 ## Buffer 基本操作
 
 要求：
+
 - 创建 06-buffer 目录
 - 编写 01-basic.js 脚本
 - 实例化一个 buffer 对象 buf1，缓冲区的大小是 256 字节，初始化第一个字节为零，控制台打印 buf1 的长度和内容
@@ -20,6 +21,7 @@
 ## Buffer 编码
 
 要求：
+
 - 编写 02-encode.js 脚本
 - 阅读 [basic authentication 资料](https://encyclopedia.thefreedictionary.com/Basic+access+authentication)
 - 从命令行参数获取登录网站的用户名和密码信息
@@ -30,6 +32,8 @@
 - 将拼接后的字符串转化成 base64 编码，并打印在控制台上
 
 ## Buffer 解码
+
+要求：
 
 - 编写 03-decode.js 脚本
 - 从命令行参数获取用户名和密码信息的 base64 编码字符串
@@ -42,6 +46,7 @@
 ## Buffer 实现 Data URI
 
 要求：
+
 - 编写 04-data-uri.js 脚本
 - 阅读 [data URI scheme 资料](https://en.wikipedia.org/wiki/Data_URI_scheme)
 - 执行 `wget http://sample.wangding.co/nodejs/nodejs-logo.bmp` 下载 nodejs-logo.bmp 测试图片
@@ -58,6 +63,7 @@
 - 浏览器请求 HTTP 服务的 URL 地址时，得到嵌入图片数据的 HTML 页面
 
 提示：
+
 - 文件操作需要导入 fs 模块： `const fs = require('fs');`
 - 读取文件数据可以使用 readFileSync 方法：`var data = fs.readFileSync(fileName);`
 - 同步读取文件时，如果文件不存在会抛出异常，可以使用 `try-catch` 捕获异常
@@ -67,6 +73,7 @@
 ## Buffer 读取位图信息
 
 要求：
+
 - 编写 05-bmp-info.js 脚本
 - 阅读 [BMP 文件格式资料](https://encyclopedia.thefreedictionary.com/BMP+file+format)
 - 从命令行参数获取图片文件名
@@ -78,6 +85,7 @@
 ## Buffer 写位图文件
 
 要求：
+
 - 编写 06-bmp-write.js 脚本
 - 从命令行参数获取图片文件名
 - 命令行参数的格式：`cmd file_name`
@@ -92,6 +100,7 @@
 ## 使用第三方模块
 
 要求：
+
 - 创建 07-module 目录
 - 编写 01-chalk.js 脚本
 - 阅读 [chalk 模块](https://www.npmjs.com/package/chalk)文档
@@ -104,6 +113,7 @@
 ## 创建自定义模块，导出变量
 
 要求：
+
 - 编写 02-export-var.js 脚本
 - 导出变量 Math.PI
 - 打印 module 信息
@@ -116,6 +126,7 @@
 ## 创建自定义模块，导出函数
 
 要求：
+
 - 编写 03-export-function.js 脚本
 - 定义 circle 工厂函数
 - 函数的入口参数是圆的半径
@@ -132,6 +143,7 @@
 ## 创建自定义模块，导出对象 v1
 
 要求：
+
 - 编写 04-export-object.js 脚本
 - 定义 Circle 类
 - Circle 类有三个公开 getter 属性方法，分别是圆的直径、面积和周长
@@ -147,6 +159,7 @@
 ## 创建自定义模块，导出对象 v2
 
 要求：
+
 - 编写 05-export-object.js 脚本
 - 定义 circle 对象字面量
 - circle 对象有三个公开方法，分别计算圆的直径、面积和周长
@@ -161,6 +174,7 @@
 ## 创建自定义模块，导出对象 v3
 
 要求：
+
 - 编写 06-export-object.js 脚本
 - 在 module.exports 对象上添加三个属性，分别是直径、周长和面积
 - 给三个属性分别赋值为函数，计算圆的直径、面积和周长
@@ -175,6 +189,7 @@
 ## 使用模块级变量在对象间共享信息
 
 要求：
+
 - 编写 07-share.js 脚本
 - 定义模块级变量 count
 - 定义构造函数 Num
@@ -192,6 +207,7 @@
 ## 管理一组相关模块
 
 要求：
+
 - 创建 08-circle 文件夹
 - 目录结构如下
 ```
@@ -221,6 +237,7 @@
 ## 在 node.js 中使用 ES6 模块机制
 
 要求：
+
 - 编写 09-es6-module.js 脚本
 - 用 ES6 的 `import` 关键字引入 node.js 内置模块：http
 - 用 ES6 的 `import` 关键字引入 chalk 第三方模块
@@ -233,6 +250,7 @@
 - 运行 09-es6-module.js 脚本，用 curl 或浏览器测试该 web app
 
 要求：
+
 - 复制 04-export-object.js 为 09-export-object.js
 - 修改代码，用 ES6 的 `export` 关键字导出 Circle 类
 - 编写 09-main.js 脚本，`import` 导入 09-export-object.js 的 Circle 类

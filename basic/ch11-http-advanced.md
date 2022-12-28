@@ -3,6 +3,7 @@
 ## 实现 HTTP 基本验证
 
 要求：
+
 - 创建 18-http-advanced 目录
 - 编写 01-auth-basic.js 脚本
 - 实现 web 服务程序
@@ -16,6 +17,7 @@
 ## Cookie 基本操作
 
 要求：
+
 - 编写 02-cookie-opt.js 脚本
 - 使用 http 模块创建 web 服务监听 8080 端口
 - 解析请求头中的 Cookie 数据，将解析的 Cookie 信息打印到控制台上
@@ -26,6 +28,7 @@
 ## Cookie 状态保持
 
 要求：
+
 - 编写 03-cookie-status.js 脚本
 - 使用 http 模块创建 web 服务监听 8080 端口
 - 客户端程序每次请求服务程序时，对总请求的次数计数，打印到控制台
@@ -42,6 +45,7 @@
 ## Cookie 辅助登录
 
 要求：
+
 - 编写 04-cookie-auth.js 脚本
 - 使用 http 模块创建 web 服务监听 8080 端口
 - 在客户端的 Cookie 中保存登录的状态信息
@@ -62,6 +66,7 @@
 ## 实现 Session
 
 要求：
+
 - 编写 05-session.js 脚本
 - 使用 http 模块创建 web 服务监听 8080 端口
 - 在客户端的 Cookie 中保存 SessionID 信息
@@ -75,6 +80,7 @@
 ## Session 辅助登录
 
 要求：
+
 - 在前两个任务的基础上编写 06-session-auth.js 脚本
 - 使用 SessionID 作为登录状态的验证
 - Cookie 中 SessionID 如果不存在，打开登录页面
@@ -86,6 +92,7 @@
 ## TODO List
 
 要求：
+
 - 利用上一个任务 Session 辅助验证的技术改造 TODO List
 - 实现 TODO List 身份验证
 - 实现不同登录用户的 TODO List 操作
@@ -93,6 +100,7 @@
 ## 实现 HTTP 代理
 
 要求：
+
 - 编写 07-proxy.js 脚本
 - 实现对 HTTP 协议的 GET 请求的代理
 - 在代理程序中捕获浏览器的 HTTP 请求信息，输出到控制台
@@ -107,6 +115,7 @@
 ## 实现 HTTPS 服务
 
 要求：
+
 - 编写 08-https-server.js 脚本
 - 实现 HTTPS 协议的 Web 服务
 - 收到浏览器请求后，发送给客户端 hello world 信息

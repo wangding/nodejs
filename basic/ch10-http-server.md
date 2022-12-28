@@ -7,6 +7,7 @@
 ## 解析 HTTP 方法
 
 要求：
+
 - 创建文件夹 17-http-server
 - 编写脚本代码 01-method-parse.js
 - 使用 http 模块创建 web 服务监听 8080 端口
@@ -20,6 +21,7 @@
 ## 解析 URL
 
 要求：
+
 - 编写脚本代码 02-url-parse.js
 - 解析给定的 url 地址：`http://wangding:123@www.baidu.com:8080/a/b/c?age=20&gender=M#/d/e/f`
 - 在控制台打印解析的结果
@@ -32,6 +34,7 @@
 ## 解析 HTTP 请求头
 
 要求：
+
 - 编写脚本代码 03-req-header-parse.js
 - 使用 http 模块创建 web 服务监听 8080 端口
 - 在控制台打印完整的 HTTP 请求起始行和请求头信息
@@ -44,6 +47,7 @@
 ## 处理 HTTP 响应
 
 要求：
+
 - 编写脚本代码 04-response.js
 - 使用 http 模块创建 web 服务监听 8080 端口
 - 当客户端请求网站根路径（/）时，发送给客户端一个 h1 格式的 hello world! 网页
@@ -56,6 +60,7 @@
 ## 处理上传数据
 
 要求：
+
 - 编写脚本代码 05-upload.js
 - 使用 http 模块创建 web 服务监听 8080 端口
 - 请求的 URL 不是网站根路径（/）时，提示客户端 404 错误
@@ -70,6 +75,7 @@
 ## 处理 GET 请求的 FORM 表单
 
 要求：
+
 - 编写脚本代码 06-form-get.js
 - 使用 http 模块创建 web 服务监听 8080 端口
 - 当 HTTP 请求的 URL 不是网站根路径（/）时，提示客户端 404 错误
@@ -85,6 +91,7 @@
 ## 处理 POST 请求的 FORM 表单
 
 要求：
+
 - 编写脚本代码 07-form-post.js
 - 使用 http 模块创建 web 服务监听 8080 端口
 - 当 HTTP 请求的 URL 不是网站根路径（/）时，提示客户端 404 错误
@@ -97,6 +104,7 @@
 ## 网页 Linux 命令行
 
 要求：
+
 - 基于 07-form-post.js 代码
 - 编写 08-form-cmd.js 脚本
 - 用户在表单页面上提交 linux 命令
@@ -110,6 +118,7 @@
 ## 处理文件上传
 
 要求：
+
 - 编写 09-upload-file.js 脚本
 - 能够接收任意格式文件上传
 - 将上传的文件保存在脚本所在目录
@@ -122,6 +131,7 @@
 ## 上传图片
 
 要求：
+
 - 在 09-upload-file.js 脚本的基础上
 - 编写 10-upload-pic.js 脚本
 - 能够接收任意格式图片文件（png, jpg, gif, bmp）上传
@@ -133,6 +143,7 @@
 ## 后台模板渲染
 
 要求：
+
 - 编写 11-form-html.js 脚本
 - 对 07-form-post.js 重构
 - 将 07-form-post.js 脚本中的 HTML 代码，保存在单独的文件中 template.html
@@ -146,6 +157,7 @@
 ### 实现 RESTful API
 
 要求：
+
 - 阅读[理解 RESTful 架构](http://www.ruanyifeng.com/blog/2011/09/restful.html)
 - 阅读 [RESTful API 设计指南](http://www.ruanyifeng.com/blog/2014/05/restful_api.html)
 - 编写 12-rest-api.js 脚本
@@ -164,6 +176,8 @@ method: PUT,    url: /todo:id, fun: update todo item by id
 - 所以，服务程序不是纯粹的 HTTP 接口服务
 
 ### 实现前端页面
+
+要求：
 
 - 代办事项页面使用前端脚本，fetch 请求 HTTP 接口
 - 并将获取的待办事项 JSON 数据展示到页面上

@@ -3,6 +3,7 @@
 ## koa 原生路由
 
 要求：
+
 - 创建 05-router 目录
 - 编写 01-origin-router.js 脚本
 - 利用中间件解析漫画书作者的 HTTP API，接口规格如下：
@@ -21,6 +22,8 @@
 
 ## koa-router 中间件
 
+要求：
+
 - 编写 02-koa-router.js 脚本
 - 引入 koa-router 中间件
 - 参考任务 1 的 API 规范，定义五个路由方法
@@ -30,6 +33,8 @@
 - 运行 curl 测试服务程序
 
 ## 获取请求参数
+
+要求：
 
 - 编写 03-get-request-data.js 脚本
 - 引入 koa-bodyparser 中间件
@@ -46,6 +51,8 @@
 
 ## koa 路由模块
 
+要求：
+
 - 编写 04-koa-router-module.js 脚本
 - 在上一个任务代码基础上
 - 把漫画书作责接口路由的五个方法封装成单独的路由模块
@@ -54,6 +61,8 @@
 - 运行 curl 测试服务程序
 
 ## 路由管理
+
+要求：
 
 - 编写 05-router-manager.js 脚本
 - 参考漫画书作者路由模块，编写 tags 和 areas 路由模块

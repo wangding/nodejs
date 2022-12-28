@@ -2,27 +2,29 @@
 
 ## 阅读 API 资料
 
-- [子进程 API 资料](https://www.nodeapp.cn/child_process.html)  
+- [子进程 API 资料](https://www.nodeapp.cn/child_process.html)
 
 ## execFile 方式调用外部程序
 
 要求：
-- 创建 12-child-process 目录  
+
+- 创建 12-child-process 目录
 - 编写 01-exec-file.js 脚本
-- 可以执行任何一个外部程序  
-- 命令行参数中有需要执行的外部程序以及外部程序的参数  
+- 可以执行任何一个外部程序
+- 命令行参数中有需要执行的外部程序以及外部程序的参数
 - 如果没有命令行参数，执行 cat 命令，打印 01-exec-file.js 脚本文件内容  
-- 外部程序运行的正确信息打印在控制台上  
-- 外部程序运行的错误信息打印在控制台上  
-- 测试用例 1：执行 `./01-exec-file.js`，预期结果：控制台打印 01-exec-file.js 文件内容  
-- 测试用例 2：执行 `./01-exec-file.js mkdir abc`，预期结果：当前目录下创建 abc 文件夹  
-- 测试用例 3：执行 `./01-exec-file.js mkdir abc`, 预期结果：报错，abc 文件夹已存在  
-- 测试用例 4：执行 `./01-exec-file.js ls -l / /usr /var`，预期结果：长格式输出根目录、/usr 和 /var 三个目录的内容  
-- 测试用例 5：执行 `./01-exec-file.js abc`，预期结果：报错，Error: spawn abc ENOENT  
+- 外部程序运行的正确信息打印在控制台上
+- 外部程序运行的错误信息打印在控制台上
+- 测试用例 1：执行 `./01-exec-file.js`，预期结果：控制台打印 01-exec-file.js 文件内容
+- 测试用例 2：执行 `./01-exec-file.js mkdir abc`，预期结果：当前目录下创建 abc 文件夹
+- 测试用例 3：执行 `./01-exec-file.js mkdir abc`, 预期结果：报错，abc 文件夹已存在
+- 测试用例 4：执行 `./01-exec-file.js ls -l / /usr /var`，预期结果：长格式输出根目录、/usr 和 /var 三个目录的内容 
+- 测试用例 5：执行 `./01-exec-file.js abc`，预期结果：报错，Error: spawn abc ENOENT 
 
 ## spawn 方式调用外部程序
 
 要求：
+
 - 编写 02-spawn-v1.js 脚本
 - 打印当前进程 ID 信息
 - 执行一个外部命令，例如：cat 打印 02-spawn-v1.js 脚本文件内容
@@ -30,6 +32,7 @@
 ## 自定义的外部程序
 
 要求：
+
 - 编写 03-child.js 脚本
 - 打印当前进程 ID 信息
 - 每 2 秒在控制台打印当前时间
@@ -38,6 +41,7 @@
 ## execFile 调用自定义的外部程序
 
 要求：
+
 - 编写 04-exec-file.js 脚本
 - 打印当前进程 ID 信息
 - 调用 03-child.js 外部程序
@@ -46,6 +50,7 @@
 ## spawn 调用自定义的外部程序
 
 要求：
+
 - 编写 05-spawn-v2.js 脚本
 - 打印当前进程 ID 信息
 - 调用 03-child.js 外部程序
@@ -56,6 +61,7 @@
 ## HTTP 服务调用自定义的外部程序
 
 要求：
+
 - 编写 06-spawn-v3.js 脚本
 - 创建 HTTP 服务
 - 监听 8080 端口
@@ -66,6 +72,7 @@
 ## 管道方式连接多个外部程序
 
 要求：
+
 - 编写 07-spawn-v4.js 脚本
 - 创建一个 `data.txt` 文本文件，内容如下：
 ```
@@ -81,6 +88,7 @@ wangding
 ## spawn 进程分离
 
 要求：
+
 - 编写 08-detach.js 脚本
 - 打印主进程 ID 信息
 - 用 spawn 方法调用 03-child.js 外部程序
@@ -92,6 +100,7 @@ wangding
 ## exec 方式调用外部程序
 
 要求：
+
 - 编写 09-exec.js 脚本
 - 支持命令行参数
 - 命令行参数描述要只执行的外部程序
@@ -101,6 +110,7 @@ wangding
 ## fork 方法调用外部程序
 
 要求：
+
 - 编写 10-fork.js 脚本
 - 打印当前进程 ID 信息
 - 用 fork 方法调用 03-child.js 外部程序
@@ -110,6 +120,7 @@ wangding
 ## 进程间通信之子进程
 
 要求：
+
 - 编写 11-ipc-child.js 脚本
 - 打印当前进程 ID 信息
 - 接收到父进程发送的消息后，将消息内容打印到控制台
@@ -118,6 +129,7 @@ wangding
 ## 进程间通信之父进程
 
 要求：
+
 - 编写 12-ipc-father.js 脚本
 - 打印当前进程 ID 信息
 - 用 fork 方法调用 11-ipc-child.js 程序
@@ -128,6 +140,7 @@ wangding
 ## 同步调用外部程序
 
 要求：
+
 - 编写 13-sync.js 脚本
 - 打印父进程 ID 信息
 - 用 spawn 的同步版本调用 03-child.js 外部程序

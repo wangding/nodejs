@@ -8,7 +8,8 @@
 ## 编写 hello world web 程序
 
 要求：
-- 创建目录 18-express
+
+- 创建目录 19-express
 - 创建子目录 01-hello-world
 - 进入子目录 01-hello-world
 - `npm init` 初始化项目
@@ -21,6 +22,7 @@
 ## Web 静态文件服务
 
 要求：
+
 - 创建目录 02-static-web-server
 - 进入 02-static-web-server 子目录
 - npm 命令初始化项目
@@ -35,6 +37,7 @@
 ## 了解 Express 框架代码
 
 要求：
+
 - 切换到 linux 的 root 账户
 - `npm i -g express-generator` 全局安装 express 代码生成器
 - 切换到 linux 的开发者账户
@@ -55,6 +58,7 @@
 ## 基本路由
 
 要求：
+
 - 创建子目录 04-basic-router
 - 进入子目录 04-basic-router
 - npm 命令初始化项目
@@ -75,6 +79,7 @@
 ## 任务 6: 路由模块
 
 要求：
+
 - 创建子目录 05-router-module
 - 进入子目录 05-router-module
 - npm 命令初始化项目
@@ -92,6 +97,7 @@
 ## Express 版 TODO List
 
 要求：
+
 - 用 express 代码生成器生成框架代码 06-todo-list
 - 删除主程序 app.js 对 Cookie 机制的支持
 - 删除主程序 app.js 对静态文件服务的支持
@@ -109,6 +115,7 @@
 ## Express 版 TODO List API
 
 要求：
+
 - 用 express 代码生成器生成框架代码 07-todo-list-api
 - 删除主程序 app.js 对 Cookie 机制的支持
 - 删除主程序 app.js 对静态文件服务的支持
@@ -124,6 +131,7 @@
 ## Express 版 cookie-opt
 
 要求：
+
 - 创建子目录 08-cookie-opt
 - 进入子目录 08-cookie-opt
 - npm 命令初始化项目
@@ -139,6 +147,7 @@
 ## Express 版 cookie-status
 
 要求：
+
 - 用 express 代码生成器生成框架代码 09-cookie-status
 - 删除 routes/users.js 路由模块
 - 修改 app.js 删除 user.js 路由模块的引用和挂载
@@ -151,6 +160,7 @@
 ## Express 版 cookie-auth
 
 要求：
+
 - 用 express 代码生成器生成框架代码 10-cookie-auth
 - 删除 routes/users.js 路由模块
 - 修改 app.js 删除 user.js 路由模块的引用和挂载
@@ -164,6 +174,7 @@
 ## 签名 Cookie
 
 要求：
+
 - 创建子目录 11-signed-cookie
 - 进入子目录 11-signed-cookie
 - npm 命令初始化项目
@@ -176,6 +187,7 @@
 ## Express session 辅助验证
 
 要求：
+
 - 用 express 代码生成器生成框架代码 12-session-auth
 - 进入子目录 12-session-auth
 - 修改 package.json 删除 cookie-parser 组件依赖
