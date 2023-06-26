@@ -1,0 +1,51 @@
+name: build and publish
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      QINIU_AK: ${{ secrets.QINIU_AK }}
+      QINIU_SK: ${{ secrets.QINIU_SK }}
+
+    strategy:
+      matrix:
+        node-version: [10.5]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: install dependencies
+      run: npm install
+
+    - name: install gitbook plugins
+      run: npx gitbook install
+
+    - name: copy dependencies 1
+      run: cp -r ./node_modules ./basic
+
+    - name: copy dependencies 2
+      run: cp -r ./node_modules ./advanced
+
+    - name: build gitbook 1
+      run: npx gitbook build basic ./_book
+
+    - name: build gitbook 2
+      run: npx gitbook build advanced ./_book/advanced
+
+    - name: minify code
+      run: npx grunt minify
+
+    - name: copy book.json
+      run: cp book.json ./_book
+
+    - name: upload website
+      run: npx grunt upload
