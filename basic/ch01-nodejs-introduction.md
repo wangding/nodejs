@@ -12,6 +12,16 @@
 
 ## 搭建开发环境
 
+**在 windows 上安装 Node.js**
+
+- 下载 [Node.js msi 安装包](https://nodejs.org/dist/v18.17.1/node-v18.17.1-x64.msi)
+- 运行 Node.js msi 安装包
+- 从开始菜单，运行 `Node.js command prompt`
+- 运行命令 `node -v`
+- 运行命令 `npm -v`
+- 确保软件安装成功，如下图所示
+![nodejs](./images/nodejs.png)
+
 **方式一：导入虚拟机（推荐）**
 
 - 下载并安装 vmware workstation Pro 15+（**已经安装 vmware workstation，跳过此步**）
@@ -50,7 +60,7 @@
 - 熟悉 [vim 的用法](http://note.wangding.co/office/vim.html)
 - 可以选择观看[课程视频](./video.md)来熟悉开发环境
 
-## hello world 命令行程序
+## 命令行程序
 
 要求：
 
@@ -62,9 +72,9 @@
 - 编写 01-hello-world.js
 - 在命令行打印 `hello world!` 字符
 
-## hello world web 服务程序
+## web 服务程序
 
-要求：
+版本 1 要求：
 
 - 编写 02-hello-world-server.js
 - 监听端口：8080
@@ -73,9 +83,7 @@
 - 用浏览器测试 web 程序
 - 用 curl linux 命令行程序测试 web 程序
 
-## hello world web 服务程序
-
-要求：
+版本 2 要求：
 
 - 编写 03-hello-world-server.js
 - 监听端口：8080
@@ -85,3 +93,14 @@
 - 最后，调用服务对象的 `listen` 方法
 - 用浏览器测试 web 程序
 - 用 curl linux 命令行程序测试 web 程序
+
+## windows 窗口程序
+
+要求：
+- 下面的操作都在 windows 操作系统上完成
+- 克隆 rectangle-frm 仓库，`git clone https://wngding@bitbucket.org/wngding/rectangle-frm.git`
+- 运行 `Node.js command prompt`
+- 进入 rectangle-frm 项目文件夹
+- 安装项目依赖，`npm install`
+- 运行 windows 应用程序，`npm start`
+- 查看项目目录下的代码文件
