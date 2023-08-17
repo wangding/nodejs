@@ -12,7 +12,7 @@
 
 ## 阅读 Node.js API 资料
 
-- [console API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/console.html)
+- [Console API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/console.html)
 
 ## 控制台格式化输出信息
 
@@ -45,7 +45,8 @@
 
 ## 阅读 Node.js API 资料
 
-- [process API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/process.html)
+- [Process API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/process.html)
+- [OS API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/os.html)
 
 ## 获取平台信息
 
@@ -58,12 +59,20 @@
 - 在脚本中增加标准输入流的读取操作，让程序暂停执行
 - 执行 Linux 命令 `ps aux`，验证当前进程的 ID 信息和程序中得到的进程 ID 信息相同
 - 打印 Node.js 版本信息，当前登录用户 id 信息，当前登录用户所属组 id 信息以及当前脚本所在路径信息
-- 在命令行执行 'node -v' 命令，验证程序输出的 node.js 版本信息是否正确
-- 在命令行执行 'id' 命令，验证程序输出的登录账户 id 信息是否正确
-- 在命令行执行 'pwd' 命令，验证程序输出的当前工作目录信息是否正确
+- 在命令行执行 `node -v` 命令，验证程序输出的 node.js 版本信息是否正确
+- 在命令行执行 `id` 命令，验证程序输出的登录账户 id 信息是否正确
+- 在命令行执行 `pwd` 命令，验证程序输出的当前工作目录信息是否正确
 - 打印内存使用情况
 - 打印环境变量
-- 在命令行执行 'env' 命令，验证程序输出的环境变量信息正确 
+- 在命令行执行 `env` 命令，验证程序输出的环境变量信息正确
+- 打印编译当前 Node.js 可执行文件的配置选项
+- 生成当前进程的诊断报告，查看诊断报告
+- 打印当前操作系统的 CPU 信息，运行 `cat /proc/cpuinfo` 命令，验证程序输出是否正确
+- 打印当前操作系统的运行时长信息，运行 `uptime` 命令，验证程序输出是否正确
+- 打印当前操作系统的版本信息，运行 `uname` 命令，验证程序输出是否正确
+- 打印当前操作系统的内核信息，运行 `uname -a` 命令，验证程序输出是否正确
+- 打印当前操作系统的网卡信息，运行 `ifconfig` 命令，验证程序输出是否正确
+- 打印当前操作系统的用户信息，运行 `id` 命令，验证程序输出是否正确
 
 ## 获取命令行参数
 
@@ -89,6 +98,8 @@
 - 读取用户键盘输入信息，保存到对象中
 - 用户键盘输入结束后，打印完整的对象信息
 - 用户随时可以按 `Ctrl + D`，终止信息输入，打印对象信息，程序结束运行
+- 编写 03-read-line.js 脚本
+- 用 [Readline API](https://nodejs.cn/dist/latest-v18.x/docs/api/readline.html) 实现上面相同的功能
 
 ## 处理退出码
 
@@ -109,6 +120,7 @@
 - CTRL+C 发送 SIGINT 信号量，让程序退出
 - CTRL+Z 发送 SIGTSTP 信号量，让程序挂起
 - 用 kill 命令，给程序脚本发送信号量，测试程序的功能逻辑
+- 用 OS API，打印所有信号常量
 
 ## 实现 my-kill 程序
 
@@ -122,7 +134,7 @@
 
 ## 阅读 Node.js API 资料
 
-- 阅读 [global API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/globals.html) 中的六个定时器函数相关的资料
+- 阅读 [Global API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/globals.html) 中的六个定时器函数相关的资料
 
 ## 定时炸弹
 
@@ -155,6 +167,11 @@
 要求：
 
 - 编写 03-sleep.js 脚本
-- 用 Promise 实例封装 sleep 方法，可以让程序暂停执行若干毫秒
+- 执行命令 `echo hello; sleep 2; echo world`，观察 `sleep` 命令的功能和效果
+- 用 `setTimeout` 实现 `sleep` 效果，让程序暂停执行若干毫秒
+- 运行程序，测试程序执行的效果
+- 用 Promise 实例和 `setTimeout` 封装 sleep 方法，让程序暂停执行若干毫秒
 - 运行程序，测试程序执行的效果
 - 使用 node.js v15 引入的 Promise 版本的 setTimeout 实现 sleep
+- 运行程序，测试程序执行的效果
+- 比较三种实现方式的区别
