@@ -97,7 +97,7 @@
 
 - [module API 资料](https://nodejs.cn/dist/latest-v18.x/docs/api/modules.html)
 
-## 使用第三方模块
+## 使用第三方模块：chalk
 
 要求：
 
@@ -109,6 +109,18 @@
 - 安装 chalk 模块，运行程序
 - 创建 package.json 文件，用 `npm install -S chalk` 安装模块
 - 查看 package.json 文件中的依赖项
+
+## 使用第三方模块：memory-format
+
+要求：
+
+- 编写 01-mem.js 脚本
+- 导入 memory-format 模块
+- 调用 memory-format 模块的 `mem` 方法，在控制台打印进程的 RSS 数据
+- 安装 memory-format 模块，运行 `01-mem.js` 程序
+- 阅读 memory-format 代码
+- 写出此代码的工作原理
+- 说明此代码的不足指出，对其进行改进
 
 ## 创建自定义模块，导出变量
 
@@ -238,7 +250,7 @@
 
 要求：
 
-- 编写 09-es6-module.js 脚本
+- 编写 09-es6-module.mjs 脚本
 - 用 ES6 的 `import` 关键字引入 node.js 内置模块：http
 - 用 ES6 的 `import` 关键字引入 chalk 第三方模块
 - 创建类似 hello-world-server 的 web app 监听 8080 端口
@@ -251,9 +263,9 @@
 
 要求：
 
-- 复制 04-export-object.js 为 09-export-object.js
+- 复制 04-export-object.mjs 为 09-export-object.mjs
 - 修改代码，用 ES6 的 `export` 关键字导出 Circle 类
-- 编写 09-main.js 脚本，`import` 导入 09-export-object.js 的 Circle 类
+- 编写 09-main.mjs 脚本，`import` 导入 09-export-object.js 的 Circle 类
 - 根据命令行参数的 radius 数据，控制台输出圆的周长和面积信息
 - 例如：
 ```bash
