@@ -24,6 +24,4 @@
 
 - [nodejs-demo](https://bitbucket.org/wngding/nodejs-demo)，包含大部分 node.js 原生 API 的示例代码。
 - [nodejs-advanced-demo](https://bitbucket.org/wngding/nodejs-advanced-demo)，包含 Koa2 框架、JWT 和 ORM，等第三方 API 的示例代码。
-- [entropy](https://bitbucket.org/wngding/entropy)，计算信源熵的命令行工具示例代码，这个程序支持所有控制台交互方式。
 - [cartoon-api](https://bitbucket.org/wngding/cartoon-api)，漫画书网站的 HTTP API 接口服务，这个示例代码是基于 Koa2 和 sequelize ORM 开发的，后台数据库用的是 MySQL。
-- [todo-list-api](https://bitbucket.org/wngding/todo-list-api)，待办事项 HTTP API 接口服务的示例代码。
