@@ -4,7 +4,7 @@
 
 ## 课程大纲
 
-[Node.js 应用开发课程大纲](http://naotu.baidu.com/file/78f10df711456bbfed4cd77fcfa19045?token=7e206da2e15795da)
+[Node.js 应用开发课程大纲](https://www.processon.com/view/link/66c005a20b39cf526056a6e6)
 
 ## 学习交流群
 
